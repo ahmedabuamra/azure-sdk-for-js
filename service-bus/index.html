@@ -221,11 +221,11 @@ receiver.registerMessageHandler(myMessageHandler, myErrorHandler);</code></pre>
 				<ul>
 					<li>If you are <strong>not interested in viewing the message transformation</strong> (which consumes lot of console/disk space) then you can set the <code>DEBUG</code> environment variable as follows:</li>
 				</ul>
-				<pre><code class="language-bash"><span class="hljs-built_in">export</span> DEBUG=azure*,rhea*,-rhea:raw,-rhea:message,-azure:amqp-common:datatransformer</code></pre>
+				<pre><code class="language-bash"><span class="hljs-built_in">export</span> DEBUG=azure*,rhea*,-rhea:raw,-rhea:message,-azure:core-amqp:datatransformer</code></pre>
 				<ul>
 					<li>If you are interested only in <strong>errors</strong>, then you can set the <code>DEBUG</code> environment variable as follows:</li>
 				</ul>
-				<pre><code class="language-bash"><span class="hljs-built_in">export</span> DEBUG=azure:service-bus:error,azure-amqp-common:error,rhea-promise:error,rhea:events,rhea:frames,rhea:io,rhea:flow</code></pre>
+				<pre><code class="language-bash"><span class="hljs-built_in">export</span> DEBUG=azure:service-bus:error,azure-core-amqp:error,rhea-promise:error,rhea:events,rhea:frames,rhea:io,rhea:flow</code></pre>
 				<h3 id="logging-to-a-file">Logging to a file</h3>
 				<ul>
 					<li>Set the <code>DEBUG</code> environment variable as shown above and then run your test script as follows:<ul>

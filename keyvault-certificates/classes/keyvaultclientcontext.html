@@ -103,18 +103,18 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Key<wbr>Vault<wbr>Client<wbr>Context<span class="tsd-signature-symbol">(</span>credentials<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">coreHttp.ServiceClientCredentials</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">coreHttp.TokenCredential</span>, apiVersion<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">coreHttp.ServiceClientOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="keyvaultclientcontext.html" class="tsd-signature-type">KeyVaultClientContext</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Key<wbr>Vault<wbr>Client<wbr>Context<span class="tsd-signature-symbol">(</span>credentials<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">coreHttp.ServiceClientCredentials</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">coreHttp.TokenCredential</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">coreArm.AzureServiceClientOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="keyvaultclientcontext.html" class="tsd-signature-type">KeyVaultClientContext</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/36082ceb5f/sdk/keyvault/keyvault-certificates/src/core/keyVaultClientContext.ts#L18">core/keyVaultClientContext.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/d94bf59218/sdk/keyvault/keyvault-certificates/src/core/keyVaultClientContext.ts#L19">core/keyVaultClientContext.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Initializes a new instance of the KeyVaultClientContext class.</p>
+									<p>Initializes a new instance of the KeyVaultClient class.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -123,20 +123,12 @@
 									<h5>credentials: <span class="tsd-signature-type">coreHttp.ServiceClientCredentials</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">coreHttp.TokenCredential</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>Subscription credentials which uniquely identify client subscription.</p>
+											<p>Credentials needed for the client to connect to Azure.</p>
 										</div>
 									</div>
 								</li>
 								<li>
-									<h5>apiVersion: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Client API version.</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">coreHttp.ServiceClientOptions</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">coreArm.AzureServiceClientOptions</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="keyvaultclientcontext.html" class="tsd-signature-type">KeyVaultClientContext</a></h4>
@@ -148,11 +140,11 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="apiversion" class="tsd-anchor"></a>
-					<h3>api<wbr>Version</h3>
-					<div class="tsd-signature tsd-kind-icon">api<wbr>Version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> api<wbr>Version</h3>
+					<div class="tsd-signature tsd-kind-icon">api<wbr>Version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/36082ceb5f/sdk/keyvault/keyvault-certificates/src/core/keyVaultClientContext.ts#L17">core/keyVaultClientContext.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/d94bf59218/sdk/keyvault/keyvault-certificates/src/core/keyVaultClientContext.ts#L19">core/keyVaultClientContext.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -162,7 +154,7 @@
 					<div class="tsd-signature tsd-kind-icon">credentials<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">coreHttp.ServiceClientCredentials</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">coreHttp.TokenCredential</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/36082ceb5f/sdk/keyvault/keyvault-certificates/src/core/keyVaultClientContext.ts#L18">core/keyVaultClientContext.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/d94bf59218/sdk/keyvault/keyvault-certificates/src/core/keyVaultClientContext.ts#L18">core/keyVaultClientContext.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>

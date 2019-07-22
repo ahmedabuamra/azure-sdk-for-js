@@ -98,7 +98,9 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="servicebusclient.html#createqueueclient" class="tsd-kind-icon">create<wbr>Queue<wbr>Client</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="servicebusclient.html#createsubscriptionclient" class="tsd-kind-icon">create<wbr>Subscription<wbr>Client</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="servicebusclient.html#createtopicclient" class="tsd-kind-icon">create<wbr>Topic<wbr>Client</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="servicebusclient.html#createfromaadtokencredentials" class="tsd-kind-icon">create<wbr>From<wbr>Aad<wbr>Token<wbr>Credentials</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="servicebusclient.html#createfromconnectionstring" class="tsd-kind-icon">create<wbr>From<wbr>Connection<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="servicebusclient.html#createfromtokenprovider" class="tsd-kind-icon">create<wbr>From<wbr>Token<wbr>Provider</a></li>
 							</ul>
 						</section>
 					</div>
@@ -112,7 +114,7 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/524f8cd6fe/sdk/servicebus/service-bus/src/serviceBusClient.ts#L52">serviceBusClient.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/ba21be657a/sdk/servicebus/service-bus/src/serviceBusClient.ts#L60">serviceBusClient.ts:60</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -138,7 +140,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/524f8cd6fe/sdk/servicebus/service-bus/src/serviceBusClient.ts#L126">serviceBusClient.ts:126</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/ba21be657a/sdk/servicebus/service-bus/src/serviceBusClient.ts#L135">serviceBusClient.ts:135</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -167,7 +169,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/524f8cd6fe/sdk/servicebus/service-bus/src/serviceBusClient.ts#L84">serviceBusClient.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/ba21be657a/sdk/servicebus/service-bus/src/serviceBusClient.ts#L93">serviceBusClient.ts:93</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -199,7 +201,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/524f8cd6fe/sdk/servicebus/service-bus/src/serviceBusClient.ts#L107">serviceBusClient.ts:107</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/ba21be657a/sdk/servicebus/service-bus/src/serviceBusClient.ts#L116">serviceBusClient.ts:116</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -237,7 +239,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/524f8cd6fe/sdk/servicebus/service-bus/src/serviceBusClient.ts#L95">serviceBusClient.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/ba21be657a/sdk/servicebus/service-bus/src/serviceBusClient.ts#L104">serviceBusClient.ts:104</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -260,6 +262,60 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="createfromaadtokencredentials" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> create<wbr>From<wbr>Aad<wbr>Token<wbr>Credentials</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>From<wbr>Aad<wbr>Token<wbr>Credentials<span class="tsd-signature-symbol">(</span>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, credentials<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ApplicationTokenCredentials</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">UserTokenCredentials</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DeviceTokenCredentials</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">MSITokenCredentials</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/servicebusclientoptions.html" class="tsd-signature-type">ServiceBusClientOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="servicebusclient.html" class="tsd-signature-type">ServiceBusClient</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/ba21be657a/sdk/servicebus/service-bus/src/serviceBusClient.ts#L238">serviceBusClient.ts:238</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a ServiceBusClient for the Service Bus Namespace represented by the given host using
+									the TokenCredentials generated using the <code>@azure/ms-rest-nodeauth</code> library.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>host: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Fully qualified domain name for ServiceBus.
+										Most likely, {yournamespace}.servicebus.windows.net</p>
+									</div>
+								</li>
+								<li>
+									<h5>credentials: <span class="tsd-signature-type">ApplicationTokenCredentials</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">UserTokenCredentials</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DeviceTokenCredentials</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">MSITokenCredentials</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The Token credentials generated by using the
+										<code>@azure/ms-rest-nodeauth</code> library. It can be one of the following:</p>
+										<ul>
+											<li>ApplicationTokenCredentials</li>
+											<li>UserTokenCredentials</li>
+											<li>DeviceTokenCredentials</li>
+											<li>MSITokenCredentials
+											Token audience (or resource in case of MSI based credentials) to use when creating the credentials is <a href="https://servicebus.azure.net/">https://servicebus.azure.net/</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/servicebusclientoptions.html" class="tsd-signature-type">ServiceBusClientOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Options to control ways to interact with the
+										Service Bus Namespace.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="servicebusclient.html" class="tsd-signature-type">ServiceBusClient</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
 					<a name="createfromconnectionstring" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> create<wbr>From<wbr>Connection<wbr>String</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
@@ -269,7 +325,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/524f8cd6fe/sdk/servicebus/service-bus/src/serviceBusClient.ts#L160">serviceBusClient.ts:160</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/ba21be657a/sdk/servicebus/service-bus/src/serviceBusClient.ts#L169">serviceBusClient.ts:169</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -289,6 +345,53 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/servicebusclientoptions.html" class="tsd-signature-type">ServiceBusClientOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="servicebusclient.html" class="tsd-signature-type">ServiceBusClient</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="createfromtokenprovider" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> create<wbr>From<wbr>Token<wbr>Provider</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>From<wbr>Token<wbr>Provider<span class="tsd-signature-symbol">(</span>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, tokenProvider<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TokenProvider</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/servicebusclientoptions.html" class="tsd-signature-type">ServiceBusClientOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="servicebusclient.html" class="tsd-signature-type">ServiceBusClient</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/ba21be657a/sdk/servicebus/service-bus/src/serviceBusClient.ts#L199">serviceBusClient.ts:199</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a ServiceBusClient for the Service Bus Namespace represented by the given host using
+									the given TokenProvider.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>host: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Fully qualified domain name for Servicebus. Most likely,
+										<code>&lt;yournamespace&gt;.servicebus.windows.net</code>.</p>
+									</div>
+								</li>
+								<li>
+									<h5>tokenProvider: <span class="tsd-signature-type">TokenProvider</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Your custom implementation of the <a href="https://github.com/Azure/amqp-common-js/blob/master/lib/auth/token.ts" class="external">Token Provider</a>
+										interface.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/servicebusclientoptions.html" class="tsd-signature-type">ServiceBusClientOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Options to control ways to interact with the
+										Service Bus Namespace.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="servicebusclient.html" class="tsd-signature-type">ServiceBusClient</a></h4>
@@ -328,7 +431,13 @@
 								<a href="servicebusclient.html#createtopicclient" class="tsd-kind-icon">create<wbr>Topic<wbr>Client</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="servicebusclient.html#createfromaadtokencredentials" class="tsd-kind-icon">create<wbr>From<wbr>Aad<wbr>Token<wbr>Credentials</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="servicebusclient.html#createfromconnectionstring" class="tsd-kind-icon">create<wbr>From<wbr>Connection<wbr>String</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="servicebusclient.html#createfromtokenprovider" class="tsd-kind-icon">create<wbr>From<wbr>Token<wbr>Provider</a>
 							</li>
 						</ul>
 					</li>

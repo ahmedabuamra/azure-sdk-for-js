@@ -70,11 +70,13 @@
 					<li>Browser JavaScript</li>
 				</ul>
 				<h3 id="how-to-install">How to Install</h3>
-				<pre><code><span class="hljs-selector-tag">npm</span> <span class="hljs-selector-tag">install</span> @<span class="hljs-keyword">azure</span>/<span class="hljs-keyword">arm</span>-<span class="hljs-keyword">authorization</span></code></pre><h3 id="how-to-use">How to use</h3>
+				<pre><code class="language-bash">npm install @azure/arm-authorization</code></pre>
+				<h3 id="how-to-use">How to use</h3>
 				<h4 id="nodejs-authentication-client-creation-and-list-classicadministrators-as-an-example-written-in-typescript-">nodejs - Authentication, client creation and list classicAdministrators as an example written in TypeScript.</h4>
 				<h5 id="install-azure-ms-rest-nodeauth">Install @azure/ms-rest-nodeauth</h5>
-				<pre><code><span class="hljs-selector-tag">npm</span> <span class="hljs-selector-tag">install</span> @<span class="hljs-keyword">azure</span>/<span class="hljs-keyword">ms</span>-<span class="hljs-keyword">rest</span>-<span class="hljs-keyword">nodeauth</span></code></pre><h5 id="sample-code">Sample code</h5>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> msRest <span class="hljs-keyword">from</span> <span class="hljs-string">"@azure/ms-rest-js"</span>;
+				<pre><code class="language-bash">npm install @azure/ms-rest-nodeauth</code></pre>
+				<h5 id="sample-code">Sample code</h5>
+				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> msRest <span class="hljs-keyword">from</span> <span class="hljs-string">"@azure/ms-rest-js"</span>;
 <span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> msRestAzure <span class="hljs-keyword">from</span> <span class="hljs-string">"@azure/ms-rest-azure-js"</span>;
 <span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> msRestNodeAuth <span class="hljs-keyword">from</span> <span class="hljs-string">"@azure/ms-rest-nodeauth"</span>;
 <span class="hljs-keyword">import</span> { AuthorizationManagementClient, AuthorizationManagementModels, AuthorizationManagementMappers } <span class="hljs-keyword">from</span> <span class="hljs-string">"@azure/arm-authorization"</span>;
@@ -91,7 +93,8 @@ msRestNodeAuth.interactiveLogin().then(<span class="hljs-function">(<span class=
 });</code></pre>
 				<h4 id="browser-authentication-client-creation-and-list-classicadministrators-as-an-example-written-in-javascript-">browser - Authentication, client creation and list classicAdministrators as an example written in JavaScript.</h4>
 				<h5 id="install-azure-ms-rest-browserauth">Install @azure/ms-rest-browserauth</h5>
-				<pre><code><span class="hljs-selector-tag">npm</span> <span class="hljs-selector-tag">install</span> @<span class="hljs-keyword">azure</span>/<span class="hljs-keyword">ms</span>-<span class="hljs-keyword">rest</span>-<span class="hljs-keyword">browserauth</span></code></pre><h5 id="sample-code">Sample code</h5>
+				<pre><code class="language-bash">npm install @azure/ms-rest-browserauth</code></pre>
+				<h5 id="sample-code">Sample code</h5>
 				<p>See <a href="https://github.com/Azure/ms-rest-browserauth">https://github.com/Azure/ms-rest-browserauth</a> to learn how to authenticate to Azure in the browser.</p>
 				<ul>
 					<li>index.html<pre><code class="language-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
@@ -153,6 +156,9 @@ msRestNodeAuth.interactiveLogin().then(<span class="hljs-function">(<span class=
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/denyassignments.html" class="tsd-kind-icon">Deny<wbr>Assignments</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/globaladministrator.html" class="tsd-kind-icon">Global<wbr>Administrator</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/permissions.html" class="tsd-kind-icon">Permissions</a>
@@ -402,6 +408,9 @@ msRestNodeAuth.interactiveLogin().then(<span class="hljs-function">(<span class=
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="globals.html#apiversion3" class="tsd-kind-icon">api<wbr>Version3</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#apiversion4" class="tsd-kind-icon">api<wbr>Version4</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="globals.html#denyassignmentid0" class="tsd-kind-icon">deny<wbr>Assignment<wbr>Id0</a>

@@ -185,8 +185,8 @@
 					<li>Please notice that we are awaiting on the <a href="https://azure.github.io/azure-sdk-for-js/event-hubs/classes/eventhubclient.html#createfromiothubconnectionstring">createFromIotHubConnectionString</a> method to get an instance of the EventHubClient. This is different from other static methods on the client. The method talks to the IotHub endpoint to get a redirect error which contains the EventHub endpoint to talk to. It then constructs the right EventHub connection string based on the information in the redirect error and returns an instance of the EventHubClient that you can play with.</li>
 				</ul>
 				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> client = <span class="hljs-keyword">await</span> EventHubClient.createFromIotHubConnectionString(<span class="hljs-string">"connectionString"</span>);
-<span class="hljs-keyword">await</span> client.getHubRuntimeInformation();
-<span class="hljs-keyword">await</span> client.getPartitionInformation(<span class="hljs-string">"partitionId"</span>);</code></pre>
+<span class="hljs-keyword">await</span> client.getProperties();
+<span class="hljs-keyword">await</span> client.getPartitionProperties(<span class="hljs-string">"partitionId"</span>);</code></pre>
 				<p><strong>Notes:</strong> For scalable and efficient receiving, please take a look at <a href="https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/eventhub/event-processor-host">azure-event-processor-host</a>. The Event Processor host, internally uses the streaming receiver to receive events.</p>
 				<h2 id="troubleshooting">Troubleshooting</h2>
 				<h3 id="amqp-dependencies">AMQP Dependencies</h3>

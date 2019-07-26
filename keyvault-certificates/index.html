@@ -62,7 +62,9 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h1 id="azure-keyvault-certificates-client-library-for-js">Azure KeyVault Certificates client library for JS</h1>
+				<a href="#azure-keyvault-certificates-client-library-for-js" id="azure-keyvault-certificates-client-library-for-js" style="color: inherit; text-decoration: none;">
+					<h1>Azure KeyVault Certificates client library for JS</h1>
+				</a>
 				<p>TODO: update for certificates</p>
 				<p>Azure KeyVault is a service that allows you to encrypt authentication
 					keys, storage account keys, data encryption keys, .pfx files, and
@@ -82,18 +84,26 @@
 					<li>Get all deleted secrets.</li>
 				</ul>
 				<p><a href="https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/keyvault/keyvault-secrets">Source code</a> | <a href="https://www.npmjs.com/package/@azure/keyvault-secrets">Package (npm)</a> | <a href="https://docs.microsoft.com/en-us/javascript/api/%40azure/keyvault/">API Reference Documentation</a> | <a href="https://azure.microsoft.com/en-us/services/keyvault/">Product documentation</a> | <a href="https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/keyvault/keyvault-services/samples">Samples</a></p>
-				<h2 id="getting-started">Getting started</h2>
-				<h3 id="install-the-package">Install the package</h3>
+				<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
+					<h2>Getting started</h2>
+				</a>
+				<a href="#install-the-package" id="install-the-package" style="color: inherit; text-decoration: none;">
+					<h3>Install the package</h3>
+				</a>
 				<p>Install the Azure Event KeyVault Secrets client library using npm</p>
 				<p><code>npm install @azure/keyvault-secrets</code></p>
 				<p><strong>Prerequisites</strong>: You must have an <a href="https://azure.microsoft.com/free/">Azure subscription</a> and a
 					<a href="https://docs.microsoft.com/en-us/azure/key-vault/quick-create-portal">KeyVault resource</a> to use this package.
 				If you are using this package in a Node.js application, then use Node.js 6.x or higher.</p>
-				<h3 id="configure-typescript">Configure Typescript</h3>
+				<a href="#configure-typescript" id="configure-typescript" style="color: inherit; text-decoration: none;">
+					<h3>Configure Typescript</h3>
+				</a>
 				<p>TypeScript users need to have Node type definitions installed:</p>
 				<pre><code class="language-bash">npm install @types/node</code></pre>
 				<p>You also need to enable <code>compilerOptions.allowSyntheticDefaultImports</code> in your tsconfig.json. Note that if you have enabled <code>compilerOptions.esModuleInterop</code>, <code>allowSyntheticDefaultImports</code> is enabled by default. See <a href="https://www.typescriptlang.org/docs/handbook/compiler-options.html">TypeScript&#39;s compiler options handbook</a> for more information.</p>
-				<h3 id="authenticate-the-client">Authenticate the client</h3>
+				<a href="#authenticate-the-client" id="authenticate-the-client" style="color: inherit; text-decoration: none;">
+					<h3>Authenticate the client</h3>
+				</a>
 				<p>Here&#39;s an example authentication:</p>
 				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { SecretsClient } <span class="hljs-keyword">from</span> <span class="hljs-string">"@azure/keyvault-secrets"</span>;
 <span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> msRestNodeAuth <span class="hljs-keyword">from</span> <span class="hljs-string">"@azure/ms-rest-nodeauth"</span>;
@@ -114,17 +124,23 @@
 );
 
 <span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> SecretsClient(url, credential);</code></pre>
-				<h2 id="key-concepts">Key concepts</h2>
+				<a href="#key-concepts" id="key-concepts" style="color: inherit; text-decoration: none;">
+					<h2>Key concepts</h2>
+				</a>
 				<blockquote>
 					<p>Soon.</p>
 				</blockquote>
-				<h2 id="examples">Examples</h2>
+				<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+					<h2>Examples</h2>
+				</a>
 				<p>The following sections provide code snippets that cover some of the
 				common tasks using Azure KeyVault Secrets</p>
 				<ul>
 					<li><a href="#single-secret">Single secret</a></li>
 				</ul>
-				<h3 id="single-secret">Single secret</h3>
+				<a href="#single-secret" id="single-secret" style="color: inherit; text-decoration: none;">
+					<h3>Single secret</h3>
+				</a>
 				<p>Once you have created an instance of an <code>SecretsClient</code> class, you can:</p>
 				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> secretName = <span class="hljs-string">"MySecretName"</span>;
 <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> client.setSecret(<span class="hljs-string">"MySecretName"</span>, <span class="hljs-string">"MySecretValue"</span>);
@@ -145,8 +161,12 @@
 }
 
 <span class="hljs-keyword">await</span> client.deleteSecret(secretName);</code></pre>
-				<h2 id="troubleshooting">Troubleshooting</h2>
-				<h3 id="enable-logs">Enable logs</h3>
+				<a href="#troubleshooting" id="troubleshooting" style="color: inherit; text-decoration: none;">
+					<h2>Troubleshooting</h2>
+				</a>
+				<a href="#enable-logs" id="enable-logs" style="color: inherit; text-decoration: none;">
+					<h3>Enable logs</h3>
+				</a>
 				<p>You can set the following environment variable to get the debug logs when using this library.</p>
 				<ul>
 					<li>Getting debug logs from the KeyVault Secrets SDK</li>
@@ -164,13 +184,17 @@
 					<li>If you are interested only in <strong>errors</strong>, then you can set the <code>DEBUG</code> environment variable as follows:</li>
 				</ul>
 				<pre><code class="language-bash"><span class="hljs-built_in">export</span> DEBUG=azure:keyvault-secrets:error,azure-amqp-common:error,rhea-promise:error,rhea:events,rhea:frames,rhea:io,rhea:flow</code></pre>
-				<h3 id="logging-to-a-file">Logging to a file</h3>
+				<a href="#logging-to-a-file" id="logging-to-a-file" style="color: inherit; text-decoration: none;">
+					<h3>Logging to a file</h3>
+				</a>
 				<ul>
 					<li><p>Set the <code>DEBUG</code> environment variable as shown above and then run your test script as follows:</p>
 						<ul>
-							<li>Logging statements from your test script go to <code>out.log</code> and logging statements from the sdk go to <code>debug.log</code>.<pre><code class="language-bash">node your-test-script.js &gt; out.log 2&gt;debug.log</code></pre>
+							<li><p>Logging statements from your test script go to <code>out.log</code> and logging statements from the sdk go to <code>debug.log</code>.</p>
+								<pre><code class="language-bash">node your-test-script.js &gt; out.log 2&gt;debug.log</code></pre>
 							</li>
-							<li>Logging statements from your test script and the sdk go to the same file <code>out.log</code> by redirecting stderr to stdout (&amp;1), and then redirect stdout to a file:<pre><code class="language-bash">node your-test-script.js &gt;out.log 2&gt;&amp;1</code></pre>
+							<li><p>Logging statements from your test script and the sdk go to the same file <code>out.log</code> by redirecting stderr to stdout (&amp;1), and then redirect stdout to a file:</p>
+								<pre><code class="language-bash">node your-test-script.js &gt;out.log 2&gt;&amp;1</code></pre>
 							</li>
 							<li><p>Logging statements from your test script and the sdk go to the same file <code>out.log</code>.</p>
 								<pre><code class="language-bash">  node your-test-script.js &amp;&gt; out.log</code></pre>
@@ -178,11 +202,15 @@
 						</ul>
 					</li>
 				</ul>
-				<h2 id="next-steps">Next steps</h2>
+				<a href="#next-steps" id="next-steps" style="color: inherit; text-decoration: none;">
+					<h2>Next steps</h2>
+				</a>
 				<p>Please take a look at the
 					<a href="https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/keyvault/keyvault-secrets/samples">samples</a>
 				directory for detailed examples on how to use this library.</p>
-				<h2 id="contributing">Contributing</h2>
+				<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
+					<h2>Contributing</h2>
+				</a>
 				<p>This project welcomes contributions and suggestions. Most contributions require you to agree to a
 					Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
 				the rights to use your contribution. For details, visit <a href="https://cla.microsoft.com.">https://cla.microsoft.com.</a></p>
@@ -219,19 +247,193 @@
 						<a href="classes/keyvaultclientcontext.html" class="tsd-kind-icon">Key<wbr>Vault<wbr>Client<wbr>Context</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/action.html" class="tsd-kind-icon">Action</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/administratordetails.html" class="tsd-kind-icon">Administrator<wbr>Details</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/attributes.html" class="tsd-kind-icon">Attributes</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/backupcertificateresult.html" class="tsd-kind-icon">Backup<wbr>Certificate<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/backupkeyresult.html" class="tsd-kind-icon">Backup<wbr>Key<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/backupsecretresult.html" class="tsd-kind-icon">Backup<wbr>Secret<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/backupstorageresult.html" class="tsd-kind-icon">Backup<wbr>Storage<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/certificate.html" class="tsd-kind-icon">Certificate</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificateattributes.html" class="tsd-kind-icon">Certificate<wbr>Attributes</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificatebundle.html" class="tsd-kind-icon">Certificate<wbr>Bundle</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificatecreateparameters.html" class="tsd-kind-icon">Certificate<wbr>Create<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificateimportparameters.html" class="tsd-kind-icon">Certificate<wbr>Import<wbr>Parameters</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/certificateissuer.html" class="tsd-kind-icon">Certificate<wbr>Issuer</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificateissueritem.html" class="tsd-kind-icon">Certificate<wbr>Issuer<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificateissuerlistresult.html" class="tsd-kind-icon">Certificate<wbr>Issuer<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificateissuersetparameters.html" class="tsd-kind-icon">Certificate<wbr>Issuer<wbr>Set<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificateissuerupdateparameters.html" class="tsd-kind-icon">Certificate<wbr>Issuer<wbr>Update<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificateitem.html" class="tsd-kind-icon">Certificate<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificatelistresult.html" class="tsd-kind-icon">Certificate<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificatemergeparameters.html" class="tsd-kind-icon">Certificate<wbr>Merge<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificateoperation.html" class="tsd-kind-icon">Certificate<wbr>Operation</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificateoperationupdateparameter.html" class="tsd-kind-icon">Certificate<wbr>Operation<wbr>Update<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificatepolicy.html" class="tsd-kind-icon">Certificate<wbr>Policy</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificaterestoreparameters.html" class="tsd-kind-icon">Certificate<wbr>Restore<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificateupdateparameters.html" class="tsd-kind-icon">Certificate<wbr>Update<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/contact.html" class="tsd-kind-icon">Contact</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/contacts.html" class="tsd-kind-icon">Contacts</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/deletedcertificate.html" class="tsd-kind-icon">Deleted<wbr>Certificate</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/deletedcertificatebundle.html" class="tsd-kind-icon">Deleted<wbr>Certificate<wbr>Bundle</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/deletedcertificateitem.html" class="tsd-kind-icon">Deleted<wbr>Certificate<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/deletedcertificatelistresult.html" class="tsd-kind-icon">Deleted<wbr>Certificate<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/deletedkeybundle.html" class="tsd-kind-icon">Deleted<wbr>Key<wbr>Bundle</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/deletedkeyitem.html" class="tsd-kind-icon">Deleted<wbr>Key<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/deletedkeylistresult.html" class="tsd-kind-icon">Deleted<wbr>Key<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/deletedsasdefinitionbundle.html" class="tsd-kind-icon">Deleted<wbr>Sas<wbr>Definition<wbr>Bundle</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/deletedsasdefinitionitem.html" class="tsd-kind-icon">Deleted<wbr>Sas<wbr>Definition<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/deletedsasdefinitionlistresult.html" class="tsd-kind-icon">Deleted<wbr>Sas<wbr>Definition<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/deletedsecretbundle.html" class="tsd-kind-icon">Deleted<wbr>Secret<wbr>Bundle</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/deletedsecretitem.html" class="tsd-kind-icon">Deleted<wbr>Secret<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/deletedsecretlistresult.html" class="tsd-kind-icon">Deleted<wbr>Secret<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/deletedstorageaccountitem.html" class="tsd-kind-icon">Deleted<wbr>Storage<wbr>Account<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/deletedstoragebundle.html" class="tsd-kind-icon">Deleted<wbr>Storage<wbr>Bundle</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/deletedstoragelistresult.html" class="tsd-kind-icon">Deleted<wbr>Storage<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/errormodel.html" class="tsd-kind-icon">Error<wbr>Model</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/getcertificateoptions.html" class="tsd-kind-icon">Get<wbr>Certificate<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/issuer.html" class="tsd-kind-icon">Issuer</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/issuerattributes.html" class="tsd-kind-icon">Issuer<wbr>Attributes</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/issuerbundle.html" class="tsd-kind-icon">Issuer<wbr>Bundle</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/issuercredentials.html" class="tsd-kind-icon">Issuer<wbr>Credentials</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/issuerparameters.html" class="tsd-kind-icon">Issuer<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jsonwebkey.html" class="tsd-kind-icon">Json<wbr>Web<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/keyattributes.html" class="tsd-kind-icon">Key<wbr>Attributes</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/keybundle.html" class="tsd-kind-icon">Key<wbr>Bundle</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/keycreateparameters.html" class="tsd-kind-icon">Key<wbr>Create<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/keyimportparameters.html" class="tsd-kind-icon">Key<wbr>Import<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/keyitem.html" class="tsd-kind-icon">Key<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/keylistresult.html" class="tsd-kind-icon">Key<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/keyoperationresult.html" class="tsd-kind-icon">Key<wbr>Operation<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/keyoperationsparameters.html" class="tsd-kind-icon">Key<wbr>Operations<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/keyproperties.html" class="tsd-kind-icon">Key<wbr>Properties</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/keyrestoreparameters.html" class="tsd-kind-icon">Key<wbr>Restore<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/keysignparameters.html" class="tsd-kind-icon">Key<wbr>Sign<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/keyupdateparameters.html" class="tsd-kind-icon">Key<wbr>Update<wbr>Parameters</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/keyvaultclientcreatecertificateoptionalparams.html" class="tsd-kind-icon">Key<wbr>Vault<wbr>Client<wbr>Create<wbr>Certificate<wbr>Optional<wbr>Params</a>
@@ -321,10 +523,28 @@
 						<a href="interfaces/keyvaultclientupdatestorageaccountoptionalparams.html" class="tsd-kind-icon">Key<wbr>Vault<wbr>Client<wbr>Update<wbr>Storage<wbr>Account<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/keyvaulterror.html" class="tsd-kind-icon">Key<wbr>Vault<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/keyverifyparameters.html" class="tsd-kind-icon">Key<wbr>Verify<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/keyverifyresult.html" class="tsd-kind-icon">Key<wbr>Verify<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/lifetimeaction.html" class="tsd-kind-icon">Lifetime<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/newpipelineoptions.html" class="tsd-kind-icon">New<wbr>Pipeline<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/organizationdetails.html" class="tsd-kind-icon">Organization<wbr>Details</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/parsedkeyvaultentityidentifier.html" class="tsd-kind-icon">Parsed<wbr>Key<wbr>Vault<wbr>Entity<wbr>Identifier</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/pendingcertificatesigningrequestresult.html" class="tsd-kind-icon">Pending<wbr>Certificate<wbr>Signing<wbr>Request<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/proxyoptions.html" class="tsd-kind-icon">Proxy<wbr>Options</a>
@@ -336,13 +556,88 @@
 						<a href="interfaces/retryoptions.html" class="tsd-kind-icon">Retry<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/sasdefinitionattributes.html" class="tsd-kind-icon">Sas<wbr>Definition<wbr>Attributes</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/sasdefinitionbundle.html" class="tsd-kind-icon">Sas<wbr>Definition<wbr>Bundle</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/sasdefinitioncreateparameters.html" class="tsd-kind-icon">Sas<wbr>Definition<wbr>Create<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/sasdefinitionitem.html" class="tsd-kind-icon">Sas<wbr>Definition<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/sasdefinitionlistresult.html" class="tsd-kind-icon">Sas<wbr>Definition<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/sasdefinitionupdateparameters.html" class="tsd-kind-icon">Sas<wbr>Definition<wbr>Update<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/secretattributes.html" class="tsd-kind-icon">Secret<wbr>Attributes</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/secretbundle.html" class="tsd-kind-icon">Secret<wbr>Bundle</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/secretitem.html" class="tsd-kind-icon">Secret<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/secretlistresult.html" class="tsd-kind-icon">Secret<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/secretproperties.html" class="tsd-kind-icon">Secret<wbr>Properties</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/secretrestoreparameters.html" class="tsd-kind-icon">Secret<wbr>Restore<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/secretsetparameters.html" class="tsd-kind-icon">Secret<wbr>Set<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/secretupdateparameters.html" class="tsd-kind-icon">Secret<wbr>Update<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/setcertificateoptions.html" class="tsd-kind-icon">Set<wbr>Certificate<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/storageaccountattributes.html" class="tsd-kind-icon">Storage<wbr>Account<wbr>Attributes</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/storageaccountcreateparameters.html" class="tsd-kind-icon">Storage<wbr>Account<wbr>Create<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/storageaccountitem.html" class="tsd-kind-icon">Storage<wbr>Account<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/storageaccountregenertekeyparameters.html" class="tsd-kind-icon">Storage<wbr>Account<wbr>Regenerte<wbr>Key<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/storageaccountupdateparameters.html" class="tsd-kind-icon">Storage<wbr>Account<wbr>Update<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/storagebundle.html" class="tsd-kind-icon">Storage<wbr>Bundle</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/storagelistresult.html" class="tsd-kind-icon">Storage<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/storagerestoreparameters.html" class="tsd-kind-icon">Storage<wbr>Restore<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/subjectalternativenames.html" class="tsd-kind-icon">Subject<wbr>Alternative<wbr>Names</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/telemetryoptions.html" class="tsd-kind-icon">Telemetry<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/trigger.html" class="tsd-kind-icon">Trigger</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/updatecertificateoptions.html" class="tsd-kind-icon">Update<wbr>Certificate<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/x509certificateproperties.html" class="tsd-kind-icon">X509<wbr>Certificate<wbr>Properties</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#actiontype" class="tsd-kind-icon">Action<wbr>Type</a>
@@ -1003,6 +1298,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -1051,7 +1347,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="assets/js/main.js"></script>

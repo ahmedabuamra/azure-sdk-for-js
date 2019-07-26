@@ -62,16 +62,25 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h1 id="azure-abort-controller-library-for-js">Azure Abort Controller library for JS</h1>
+				<a href="#azure-abort-controller-library-for-js" id="azure-abort-controller-library-for-js" style="color: inherit; text-decoration: none;">
+					<h1>Azure Abort Controller library for JS</h1>
+				</a>
 				<p>The <code>@azure/abort-controller</code> package provides <code>AbortController</code> and <code>AbortSignal</code> classes. These classes are compatible
 					with the <a href="https://developer.mozilla.org/docs/Web/API/AbortController">AbortController</a> built into modern browsers
 					and the <code>AbortSignal</code> used by <a href="https://developer.mozilla.org/docs/Web/API/Fetch_API">fetch</a>.
 					Use the <code>AbortController</code> class to create an instance of the <code>AbortSignal</code> class that can be used to cancel an operation
 				in an Azure SDK that accept a parameter of type <code>AbortSignalLike</code>.</p>
-				<h2 id="getting-started">Getting started</h2>
-				<h3 id="installation">Installation</h3>
+				<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
+					<h2>Getting started</h2>
+				</a>
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h3>Installation</h3>
+				</a>
 				<p>Install this libray using npm as follows</p>
-				<pre><code><span class="hljs-selector-tag">npm</span> <span class="hljs-selector-tag">install</span> @<span class="hljs-keyword">azure</span>/<span class="hljs-keyword">abort</span>-<span class="hljs-keyword">controller</span></code></pre><h2 id="key-concepts">Key Concepts</h2>
+				<pre><code><span class="hljs-selector-tag">npm</span> <span class="hljs-selector-tag">install</span> @<span class="hljs-keyword">azure</span>/<span class="hljs-keyword">abort</span>-<span class="hljs-keyword">controller</span></code></pre>
+				<a href="#key-concepts" id="key-concepts" style="color: inherit; text-decoration: none;">
+					<h2>Key Concepts</h2>
+				</a>
 				<p>Use the <code>AbortController</code> to create an <code>AbortSignal</code> which can then be passed to Azure SDK operations to cancel
 					pending work. The <code>AbortSignal</code> can be accessed via the <code>signal</code> property on an instantiated <code>AbortController</code>.
 					An <code>AbortSignal</code> can also be returned directly from a static method, e.g. <code>AbortController.timeout(100)</code>.
@@ -84,10 +93,14 @@
 					aborts all linked signals.
 					This linkage is one-way, meaning that a parent signal can affect a linked signal, but not the other way around.
 				To link <code>AbortSignals</code> together, pass in the parent signals to the <code>AbortController</code> constructor.</p>
-				<h2 id="examples">Examples</h2>
+				<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+					<h2>Examples</h2>
+				</a>
 				<p>The below examples assume that <code>doAsyncWork</code> is a function that takes a bag of properties, one of which is
 				of the abort signal.</p>
-				<h3 id="example-1-basic-usage">Example 1 - basic usage</h3>
+				<a href="#example-1---basic-usage" id="example-1---basic-usage" style="color: inherit; text-decoration: none;">
+					<h3>Example 1 - basic usage</h3>
+				</a>
 				<pre><code class="language-js"><span class="hljs-keyword">import</span> { AbortController } <span class="hljs-keyword">from</span> <span class="hljs-string">"@azure/abort-controller"</span>;
 
 <span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> AbortController();
@@ -95,12 +108,16 @@ doAsyncWork({ <span class="hljs-attr">abortSignal</span>: controller.signal });
 
 <span class="hljs-comment">// at some point later</span>
 controller.abort();</code></pre>
-				<h3 id="example-2-aborting-with-timeout">Example 2 - Aborting with timeout</h3>
+				<a href="#example-2---aborting-with-timeout" id="example-2---aborting-with-timeout" style="color: inherit; text-decoration: none;">
+					<h3>Example 2 - Aborting with timeout</h3>
+				</a>
 				<pre><code class="language-js"><span class="hljs-keyword">import</span> { AbortController } <span class="hljs-keyword">from</span> <span class="hljs-string">"@azure/abort-controller"</span>;
 
 <span class="hljs-keyword">const</span> signal = AbortController.timeout(<span class="hljs-number">1000</span>);
 doAsyncWork({ <span class="hljs-attr">abortSignal</span>: signal });</code></pre>
-				<h3 id="example-3-aborting-sub-tasks">Example 3 - Aborting sub-tasks</h3>
+				<a href="#example-3---aborting-sub-tasks" id="example-3---aborting-sub-tasks" style="color: inherit; text-decoration: none;">
+					<h3>Example 3 - Aborting sub-tasks</h3>
+				</a>
 				<pre><code class="language-js"><span class="hljs-keyword">import</span> { AbortController } <span class="hljs-keyword">from</span> <span class="hljs-string">"@azure/abort-controller"</span>;
 
 <span class="hljs-keyword">const</span> allTasksController = <span class="hljs-keyword">new</span> AbortController();
@@ -110,7 +127,9 @@ doAsyncWork({ <span class="hljs-attr">abortSignal</span>: signal });</code></pre
 
 allTasksController.abort(); <span class="hljs-comment">// aborts allTasksSignal, subTask1, subTask2</span>
 subTask1.abort(); <span class="hljs-comment">// aborts only subTask1</span></code></pre>
-				<h3 id="example-4-aborting-with-parent-signal-or-timeout">Example 4 - Aborting with parent signal or timeout</h3>
+				<a href="#example-4---aborting-with-parent-signal-or-timeout" id="example-4---aborting-with-parent-signal-or-timeout" style="color: inherit; text-decoration: none;">
+					<h3>Example 4 - Aborting with parent signal or timeout</h3>
+				</a>
 				<pre><code class="language-js"><span class="hljs-keyword">import</span> { AbortController } <span class="hljs-keyword">from</span> <span class="hljs-string">"@azure/abort-controller"</span>;
 
 <span class="hljs-keyword">const</span> allTasksController = <span class="hljs-keyword">new</span> AbortController();
@@ -121,7 +140,9 @@ subTask1.abort(); <span class="hljs-comment">// aborts only subTask1</span></cod
 
 allTasksController.abort(); <span class="hljs-comment">// aborts allTasksSignal, subTask</span>
 subTask.abort(); <span class="hljs-comment">// aborts only subTask</span></code></pre>
-				<h2 id="contributing">Contributing</h2>
+				<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
+					<h2>Contributing</h2>
+				</a>
 				<p>This project welcomes contributions and suggestions. Most contributions require you to agree to a Contributor
 					License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your
 				contribution. For details, visit <a href="https://cla.microsoft.com">https://cla.microsoft.com</a>.</p>
@@ -176,6 +197,7 @@ subTask.abort(); <span class="hljs-comment">// aborts only subTask</span></code>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -224,7 +246,7 @@ subTask.abort(); <span class="hljs-comment">// aborts only subTask</span></code>
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="assets/js/main.js"></script>

@@ -62,20 +62,34 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h2 id="azure-batchserviceclient-sdk-for-javascript">Azure BatchServiceClient SDK for JavaScript</h2>
+				<a href="#azure-batchserviceclient-sdk-for-javascript" id="azure-batchserviceclient-sdk-for-javascript" style="color: inherit; text-decoration: none;">
+					<h2>Azure BatchServiceClient SDK for JavaScript</h2>
+				</a>
 				<p>This package contains an isomorphic SDK for BatchServiceClient.</p>
-				<h3 id="currently-supported-environments">Currently supported environments</h3>
+				<a href="#currently-supported-environments" id="currently-supported-environments" style="color: inherit; text-decoration: none;">
+					<h3>Currently supported environments</h3>
+				</a>
 				<ul>
 					<li>Node.js version 6.x.x or higher</li>
 					<li>Browser JavaScript</li>
 				</ul>
-				<h3 id="how-to-install">How to Install</h3>
+				<a href="#how-to-install" id="how-to-install" style="color: inherit; text-decoration: none;">
+					<h3>How to Install</h3>
+				</a>
 				<pre><code class="language-bash">npm install @azure/batch</code></pre>
-				<h3 id="how-to-use">How to use</h3>
-				<h4 id="nodejs-authentication-client-creation-and-list-application-as-an-example-written-in-typescript-">nodejs - Authentication, client creation and list application as an example written in TypeScript.</h4>
-				<h5 id="install-azure-ms-rest-nodeauth">Install @azure/ms-rest-nodeauth</h5>
+				<a href="#how-to-use" id="how-to-use" style="color: inherit; text-decoration: none;">
+					<h3>How to use</h3>
+				</a>
+				<a href="#nodejs---authentication-client-creation-and-list-application-as-an-example-written-in-typescript" id="nodejs---authentication-client-creation-and-list-application-as-an-example-written-in-typescript" style="color: inherit; text-decoration: none;">
+					<h4>nodejs - Authentication, client creation and list application as an example written in TypeScript.</h4>
+				</a>
+				<a href="#install-azurems-rest-nodeauth" id="install-azurems-rest-nodeauth" style="color: inherit; text-decoration: none;">
+					<h5>Install @azure/ms-rest-nodeauth</h5>
+				</a>
 				<pre><code class="language-bash">npm install @azure/ms-rest-nodeauth</code></pre>
-				<h5 id="authentication">Authentication</h5>
+				<a href="#authentication" id="authentication" style="color: inherit; text-decoration: none;">
+					<h5>Authentication</h5>
+				</a>
 				<ol>
 					<li>Use <code>AzureCliCredentials</code> exported from <code>@azure/ms-rest-nodeauth</code>.
 					<strong>Please make sure to install Azure CLI and login using <code>az login</code>.</strong></li>
@@ -125,7 +139,9 @@
     <span class="hljs-built_in">console</span>.log(err);
   }
 }</code></pre>
-				<h5 id="sample-code">Sample code</h5>
+				<a href="#sample-code" id="sample-code" style="color: inherit; text-decoration: none;">
+					<h5>Sample code</h5>
+				</a>
 				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { BatchServiceClient, BatchServiceModels, BatchSharedKeyCredentials } <span class="hljs-keyword">from</span> <span class="hljs-string">"@azure/batch"</span>;
 
 <span class="hljs-keyword">const</span> batchAccountName = process.env[<span class="hljs-string">"AZURE_BATCH_ACCOUNT_NAME"</span>] || <span class="hljs-string">""</span>;
@@ -159,7 +175,9 @@
 }
 
 main().catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"An error occurred: "</span>, err));</code></pre>
-				<h2 id="related-projects">Related projects</h2>
+				<a href="#related-projects" id="related-projects" style="color: inherit; text-decoration: none;">
+					<h2>Related projects</h2>
+				</a>
 				<ul>
 					<li><a href="https://github.com/Azure/azure-sdk-for-js">Microsoft Azure SDK for Javascript</a></li>
 				</ul>
@@ -213,274 +231,1180 @@ main().catch(<span class="hljs-function">(<span class="hljs-params">err</span>) 
 						<a href="classes/task.html" class="tsd-kind-icon">Task</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/accountlistnodeagentskusheaders.html" class="tsd-kind-icon">Account<wbr>List<wbr>Node<wbr>Agent<wbr>Skus<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/accountlistnodeagentskusnextoptionalparams.html" class="tsd-kind-icon">Account<wbr>List<wbr>Node<wbr>Agent<wbr>Skus<wbr>Next<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/accountlistnodeagentskusnextoptions.html" class="tsd-kind-icon">Account<wbr>List<wbr>Node<wbr>Agent<wbr>Skus<wbr>Next<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/accountlistnodeagentskusoptionalparams.html" class="tsd-kind-icon">Account<wbr>List<wbr>Node<wbr>Agent<wbr>Skus<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/accountlistnodeagentskusoptions.html" class="tsd-kind-icon">Account<wbr>List<wbr>Node<wbr>Agent<wbr>Skus<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/accountlistnodeagentskusresult.html" class="tsd-kind-icon">Account<wbr>List<wbr>Node<wbr>Agent<wbr>Skus<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/accountlistpoolnodecountsheaders.html" class="tsd-kind-icon">Account<wbr>List<wbr>Pool<wbr>Node<wbr>Counts<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/accountlistpoolnodecountsnextoptionalparams.html" class="tsd-kind-icon">Account<wbr>List<wbr>Pool<wbr>Node<wbr>Counts<wbr>Next<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/accountlistpoolnodecountsnextoptions.html" class="tsd-kind-icon">Account<wbr>List<wbr>Pool<wbr>Node<wbr>Counts<wbr>Next<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/accountlistpoolnodecountsoptionalparams.html" class="tsd-kind-icon">Account<wbr>List<wbr>Pool<wbr>Node<wbr>Counts<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/accountlistpoolnodecountsoptions.html" class="tsd-kind-icon">Account<wbr>List<wbr>Pool<wbr>Node<wbr>Counts<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/affinityinformation.html" class="tsd-kind-icon">Affinity<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/applicationgetheaders.html" class="tsd-kind-icon">Application<wbr>Get<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/applicationgetoptionalparams.html" class="tsd-kind-icon">Application<wbr>Get<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/applicationgetoptions.html" class="tsd-kind-icon">Application<wbr>Get<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/applicationlistheaders.html" class="tsd-kind-icon">Application<wbr>List<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/applicationlistnextoptionalparams.html" class="tsd-kind-icon">Application<wbr>List<wbr>Next<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/applicationlistnextoptions.html" class="tsd-kind-icon">Application<wbr>List<wbr>Next<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/applicationlistoptionalparams.html" class="tsd-kind-icon">Application<wbr>List<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/applicationlistoptions.html" class="tsd-kind-icon">Application<wbr>List<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/applicationlistresult.html" class="tsd-kind-icon">Application<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/applicationpackagereference.html" class="tsd-kind-icon">Application<wbr>Package<wbr>Reference</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/applicationsummary.html" class="tsd-kind-icon">Application<wbr>Summary</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/authenticationtokensettings.html" class="tsd-kind-icon">Authentication<wbr>Token<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/autopoolspecification.html" class="tsd-kind-icon">Auto<wbr>Pool<wbr>Specification</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/autoscalerun.html" class="tsd-kind-icon">Auto<wbr>Scale<wbr>Run</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/autoscalerunerror.html" class="tsd-kind-icon">Auto<wbr>Scale<wbr>Run<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/autouserspecification.html" class="tsd-kind-icon">Auto<wbr>User<wbr>Specification</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/batcherror.html" class="tsd-kind-icon">Batch<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/batcherrordetail.html" class="tsd-kind-icon">Batch<wbr>Error<wbr>Detail</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificate.html" class="tsd-kind-icon">Certificate</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificateaddheaders.html" class="tsd-kind-icon">Certificate<wbr>Add<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/certificateaddoptionalparams.html" class="tsd-kind-icon">Certificate<wbr>Add<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificateaddoptions.html" class="tsd-kind-icon">Certificate<wbr>Add<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificateaddparameter.html" class="tsd-kind-icon">Certificate<wbr>Add<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificatecanceldeletionheaders.html" class="tsd-kind-icon">Certificate<wbr>Cancel<wbr>Deletion<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/certificatecanceldeletionoptionalparams.html" class="tsd-kind-icon">Certificate<wbr>Cancel<wbr>Deletion<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificatecanceldeletionoptions.html" class="tsd-kind-icon">Certificate<wbr>Cancel<wbr>Deletion<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificatedeleteheaders.html" class="tsd-kind-icon">Certificate<wbr>Delete<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/certificatedeletemethodoptionalparams.html" class="tsd-kind-icon">Certificate<wbr>Delete<wbr>Method<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificatedeletemethodoptions.html" class="tsd-kind-icon">Certificate<wbr>Delete<wbr>Method<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificategetheaders.html" class="tsd-kind-icon">Certificate<wbr>Get<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/certificategetoptionalparams.html" class="tsd-kind-icon">Certificate<wbr>Get<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificategetoptions.html" class="tsd-kind-icon">Certificate<wbr>Get<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificatelistheaders.html" class="tsd-kind-icon">Certificate<wbr>List<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/certificatelistnextoptionalparams.html" class="tsd-kind-icon">Certificate<wbr>List<wbr>Next<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificatelistnextoptions.html" class="tsd-kind-icon">Certificate<wbr>List<wbr>Next<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/certificatelistoptionalparams.html" class="tsd-kind-icon">Certificate<wbr>List<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificatelistoptions.html" class="tsd-kind-icon">Certificate<wbr>List<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificatelistresult.html" class="tsd-kind-icon">Certificate<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/certificatereference.html" class="tsd-kind-icon">Certificate<wbr>Reference</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/cloudjob.html" class="tsd-kind-icon">Cloud<wbr>Job</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/cloudjoblistpreparationandreleasetaskstatusresult.html" class="tsd-kind-icon">Cloud<wbr>Job<wbr>List<wbr>Preparation<wbr>And<wbr>Release<wbr>Task<wbr>Status<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/cloudjoblistresult.html" class="tsd-kind-icon">Cloud<wbr>Job<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/cloudjobschedule.html" class="tsd-kind-icon">Cloud<wbr>Job<wbr>Schedule</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/cloudjobschedulelistresult.html" class="tsd-kind-icon">Cloud<wbr>Job<wbr>Schedule<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/cloudpool.html" class="tsd-kind-icon">Cloud<wbr>Pool</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/cloudpoollistresult.html" class="tsd-kind-icon">Cloud<wbr>Pool<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/cloudserviceconfiguration.html" class="tsd-kind-icon">Cloud<wbr>Service<wbr>Configuration</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/cloudtask.html" class="tsd-kind-icon">Cloud<wbr>Task</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/cloudtasklistresult.html" class="tsd-kind-icon">Cloud<wbr>Task<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/cloudtasklistsubtasksresult.html" class="tsd-kind-icon">Cloud<wbr>Task<wbr>List<wbr>Subtasks<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenode.html" class="tsd-kind-icon">Compute<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodeadduserheaders.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Add<wbr>User<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/computenodeadduseroptionalparams.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Add<wbr>User<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodeadduseroptions.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Add<wbr>User<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodedeleteuserheaders.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Delete<wbr>User<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/computenodedeleteuseroptionalparams.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Delete<wbr>User<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodedeleteuseroptions.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Delete<wbr>User<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodedisableschedulingheaders.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Disable<wbr>Scheduling<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/computenodedisableschedulingoptionalparams.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Disable<wbr>Scheduling<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodedisableschedulingoptions.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Disable<wbr>Scheduling<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodeenableschedulingheaders.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Enable<wbr>Scheduling<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/computenodeenableschedulingoptionalparams.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Enable<wbr>Scheduling<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodeenableschedulingoptions.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Enable<wbr>Scheduling<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodeendpointconfiguration.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Endpoint<wbr>Configuration</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodeerror.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodegetheaders.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Get<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/computenodegetoptionalparams.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Get<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodegetoptions.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Get<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodegetremotedesktopheaders.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Get<wbr>Remote<wbr>Desktop<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/computenodegetremotedesktopoptionalparams.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Get<wbr>Remote<wbr>Desktop<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodegetremotedesktopoptions.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Get<wbr>Remote<wbr>Desktop<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodegetremoteloginsettingsheaders.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Get<wbr>Remote<wbr>Login<wbr>Settings<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/computenodegetremoteloginsettingsoptionalparams.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Get<wbr>Remote<wbr>Login<wbr>Settings<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodegetremoteloginsettingsoptions.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Get<wbr>Remote<wbr>Login<wbr>Settings<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodegetremoteloginsettingsresult.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Get<wbr>Remote<wbr>Login<wbr>Settings<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodeinformation.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodelistheaders.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>List<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/computenodelistnextoptionalparams.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>List<wbr>Next<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodelistnextoptions.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>List<wbr>Next<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/computenodelistoptionalparams.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>List<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodelistoptions.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>List<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodelistresult.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenoderebootheaders.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Reboot<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/computenoderebootoptionalparams.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Reboot<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenoderebootoptions.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Reboot<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodereimageheaders.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Reimage<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/computenodereimageoptionalparams.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Reimage<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodereimageoptions.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Reimage<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodeupdateuserheaders.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Update<wbr>User<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/computenodeupdateuseroptionalparams.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Update<wbr>User<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodeupdateuseroptions.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Update<wbr>User<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodeuploadbatchservicelogsheaders.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Upload<wbr>Batch<wbr>Service<wbr>Logs<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/computenodeuploadbatchservicelogsoptionalparams.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Upload<wbr>Batch<wbr>Service<wbr>Logs<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodeuploadbatchservicelogsoptions.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>Upload<wbr>Batch<wbr>Service<wbr>Logs<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/computenodeuser.html" class="tsd-kind-icon">Compute<wbr>Node<wbr>User</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/containerconfiguration.html" class="tsd-kind-icon">Container<wbr>Configuration</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/containerregistry.html" class="tsd-kind-icon">Container<wbr>Registry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/datadisk.html" class="tsd-kind-icon">Data<wbr>Disk</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/deletecertificateerror.html" class="tsd-kind-icon">Delete<wbr>Certificate<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/environmentsetting.html" class="tsd-kind-icon">Environment<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/errormessage.html" class="tsd-kind-icon">Error<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/exitcodemapping.html" class="tsd-kind-icon">Exit<wbr>Code<wbr>Mapping</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/exitcoderangemapping.html" class="tsd-kind-icon">Exit<wbr>Code<wbr>Range<wbr>Mapping</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/exitconditions.html" class="tsd-kind-icon">Exit<wbr>Conditions</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/exitoptions.html" class="tsd-kind-icon">Exit<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/filedeletefromcomputenodeheaders.html" class="tsd-kind-icon">File<wbr>Delete<wbr>From<wbr>Compute<wbr>Node<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/filedeletefromcomputenodeoptionalparams.html" class="tsd-kind-icon">File<wbr>Delete<wbr>From<wbr>Compute<wbr>Node<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/filedeletefromcomputenodeoptions.html" class="tsd-kind-icon">File<wbr>Delete<wbr>From<wbr>Compute<wbr>Node<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/filedeletefromtaskheaders.html" class="tsd-kind-icon">File<wbr>Delete<wbr>From<wbr>Task<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/filedeletefromtaskoptionalparams.html" class="tsd-kind-icon">File<wbr>Delete<wbr>From<wbr>Task<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/filedeletefromtaskoptions.html" class="tsd-kind-icon">File<wbr>Delete<wbr>From<wbr>Task<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/filegetfromcomputenodeheaders.html" class="tsd-kind-icon">File<wbr>Get<wbr>From<wbr>Compute<wbr>Node<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/filegetfromcomputenodeoptionalparams.html" class="tsd-kind-icon">File<wbr>Get<wbr>From<wbr>Compute<wbr>Node<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/filegetfromcomputenodeoptions.html" class="tsd-kind-icon">File<wbr>Get<wbr>From<wbr>Compute<wbr>Node<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/filegetfromtaskheaders.html" class="tsd-kind-icon">File<wbr>Get<wbr>From<wbr>Task<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/filegetfromtaskoptionalparams.html" class="tsd-kind-icon">File<wbr>Get<wbr>From<wbr>Task<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/filegetfromtaskoptions.html" class="tsd-kind-icon">File<wbr>Get<wbr>From<wbr>Task<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/filegetpropertiesfromcomputenodeheaders.html" class="tsd-kind-icon">File<wbr>Get<wbr>Properties<wbr>From<wbr>Compute<wbr>Node<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/filegetpropertiesfromcomputenodeoptionalparams.html" class="tsd-kind-icon">File<wbr>Get<wbr>Properties<wbr>From<wbr>Compute<wbr>Node<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/filegetpropertiesfromcomputenodeoptions.html" class="tsd-kind-icon">File<wbr>Get<wbr>Properties<wbr>From<wbr>Compute<wbr>Node<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/filegetpropertiesfromtaskheaders.html" class="tsd-kind-icon">File<wbr>Get<wbr>Properties<wbr>From<wbr>Task<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/filegetpropertiesfromtaskoptionalparams.html" class="tsd-kind-icon">File<wbr>Get<wbr>Properties<wbr>From<wbr>Task<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/filegetpropertiesfromtaskoptions.html" class="tsd-kind-icon">File<wbr>Get<wbr>Properties<wbr>From<wbr>Task<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/filelistfromcomputenodeheaders.html" class="tsd-kind-icon">File<wbr>List<wbr>From<wbr>Compute<wbr>Node<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/filelistfromcomputenodenextoptionalparams.html" class="tsd-kind-icon">File<wbr>List<wbr>From<wbr>Compute<wbr>Node<wbr>Next<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/filelistfromcomputenodenextoptions.html" class="tsd-kind-icon">File<wbr>List<wbr>From<wbr>Compute<wbr>Node<wbr>Next<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/filelistfromcomputenodeoptionalparams.html" class="tsd-kind-icon">File<wbr>List<wbr>From<wbr>Compute<wbr>Node<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/filelistfromcomputenodeoptions.html" class="tsd-kind-icon">File<wbr>List<wbr>From<wbr>Compute<wbr>Node<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/filelistfromtaskheaders.html" class="tsd-kind-icon">File<wbr>List<wbr>From<wbr>Task<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/filelistfromtasknextoptionalparams.html" class="tsd-kind-icon">File<wbr>List<wbr>From<wbr>Task<wbr>Next<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/filelistfromtasknextoptions.html" class="tsd-kind-icon">File<wbr>List<wbr>From<wbr>Task<wbr>Next<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/filelistfromtaskoptionalparams.html" class="tsd-kind-icon">File<wbr>List<wbr>From<wbr>Task<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/filelistfromtaskoptions.html" class="tsd-kind-icon">File<wbr>List<wbr>From<wbr>Task<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/fileproperties.html" class="tsd-kind-icon">File<wbr>Properties</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/imagereference.html" class="tsd-kind-icon">Image<wbr>Reference</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/inboundendpoint.html" class="tsd-kind-icon">Inbound<wbr>Endpoint</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/inboundnatpool.html" class="tsd-kind-icon">InboundNATPool</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobaddheaders.html" class="tsd-kind-icon">Job<wbr>Add<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/jobaddoptionalparams.html" class="tsd-kind-icon">Job<wbr>Add<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobaddoptions.html" class="tsd-kind-icon">Job<wbr>Add<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobaddparameter.html" class="tsd-kind-icon">Job<wbr>Add<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobconstraints.html" class="tsd-kind-icon">Job<wbr>Constraints</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobdeleteheaders.html" class="tsd-kind-icon">Job<wbr>Delete<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/jobdeletemethodoptionalparams.html" class="tsd-kind-icon">Job<wbr>Delete<wbr>Method<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobdeletemethodoptions.html" class="tsd-kind-icon">Job<wbr>Delete<wbr>Method<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobdisableheaders.html" class="tsd-kind-icon">Job<wbr>Disable<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/jobdisableoptionalparams.html" class="tsd-kind-icon">Job<wbr>Disable<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobdisableoptions.html" class="tsd-kind-icon">Job<wbr>Disable<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobdisableparameter.html" class="tsd-kind-icon">Job<wbr>Disable<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobenableheaders.html" class="tsd-kind-icon">Job<wbr>Enable<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/jobenableoptionalparams.html" class="tsd-kind-icon">Job<wbr>Enable<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobenableoptions.html" class="tsd-kind-icon">Job<wbr>Enable<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobexecutioninformation.html" class="tsd-kind-icon">Job<wbr>Execution<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobgetalllifetimestatisticsheaders.html" class="tsd-kind-icon">Job<wbr>Get<wbr>All<wbr>Lifetime<wbr>Statistics<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/jobgetalllifetimestatisticsoptionalparams.html" class="tsd-kind-icon">Job<wbr>Get<wbr>All<wbr>Lifetime<wbr>Statistics<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobgetalllifetimestatisticsoptions.html" class="tsd-kind-icon">Job<wbr>Get<wbr>All<wbr>Lifetime<wbr>Statistics<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobgetheaders.html" class="tsd-kind-icon">Job<wbr>Get<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/jobgetoptionalparams.html" class="tsd-kind-icon">Job<wbr>Get<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobgetoptions.html" class="tsd-kind-icon">Job<wbr>Get<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobgettaskcountsheaders.html" class="tsd-kind-icon">Job<wbr>Get<wbr>Task<wbr>Counts<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/jobgettaskcountsoptionalparams.html" class="tsd-kind-icon">Job<wbr>Get<wbr>Task<wbr>Counts<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobgettaskcountsoptions.html" class="tsd-kind-icon">Job<wbr>Get<wbr>Task<wbr>Counts<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/joblistfromjobscheduleheaders.html" class="tsd-kind-icon">Job<wbr>List<wbr>From<wbr>Job<wbr>Schedule<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/joblistfromjobschedulenextoptionalparams.html" class="tsd-kind-icon">Job<wbr>List<wbr>From<wbr>Job<wbr>Schedule<wbr>Next<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/joblistfromjobschedulenextoptions.html" class="tsd-kind-icon">Job<wbr>List<wbr>From<wbr>Job<wbr>Schedule<wbr>Next<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/joblistfromjobscheduleoptionalparams.html" class="tsd-kind-icon">Job<wbr>List<wbr>From<wbr>Job<wbr>Schedule<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/joblistfromjobscheduleoptions.html" class="tsd-kind-icon">Job<wbr>List<wbr>From<wbr>Job<wbr>Schedule<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/joblistheaders.html" class="tsd-kind-icon">Job<wbr>List<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/joblistnextoptionalparams.html" class="tsd-kind-icon">Job<wbr>List<wbr>Next<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/joblistnextoptions.html" class="tsd-kind-icon">Job<wbr>List<wbr>Next<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/joblistoptionalparams.html" class="tsd-kind-icon">Job<wbr>List<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/joblistoptions.html" class="tsd-kind-icon">Job<wbr>List<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/joblistpreparationandreleasetaskstatusheaders.html" class="tsd-kind-icon">Job<wbr>List<wbr>Preparation<wbr>And<wbr>Release<wbr>Task<wbr>Status<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/joblistpreparationandreleasetaskstatusnextoptionalparams.html" class="tsd-kind-icon">Job<wbr>List<wbr>Preparation<wbr>And<wbr>Release<wbr>Task<wbr>Status<wbr>Next<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/joblistpreparationandreleasetaskstatusnextoptions.html" class="tsd-kind-icon">Job<wbr>List<wbr>Preparation<wbr>And<wbr>Release<wbr>Task<wbr>Status<wbr>Next<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/joblistpreparationandreleasetaskstatusoptionalparams.html" class="tsd-kind-icon">Job<wbr>List<wbr>Preparation<wbr>And<wbr>Release<wbr>Task<wbr>Status<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/joblistpreparationandreleasetaskstatusoptions.html" class="tsd-kind-icon">Job<wbr>List<wbr>Preparation<wbr>And<wbr>Release<wbr>Task<wbr>Status<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobmanagertask.html" class="tsd-kind-icon">Job<wbr>Manager<wbr>Task</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobnetworkconfiguration.html" class="tsd-kind-icon">Job<wbr>Network<wbr>Configuration</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobpatchheaders.html" class="tsd-kind-icon">Job<wbr>Patch<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/jobpatchoptionalparams.html" class="tsd-kind-icon">Job<wbr>Patch<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobpatchoptions.html" class="tsd-kind-icon">Job<wbr>Patch<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobpatchparameter.html" class="tsd-kind-icon">Job<wbr>Patch<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobpreparationandreleasetaskexecutioninformation.html" class="tsd-kind-icon">Job<wbr>Preparation<wbr>And<wbr>Release<wbr>Task<wbr>Execution<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobpreparationtask.html" class="tsd-kind-icon">Job<wbr>Preparation<wbr>Task</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobpreparationtaskexecutioninformation.html" class="tsd-kind-icon">Job<wbr>Preparation<wbr>Task<wbr>Execution<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobreleasetask.html" class="tsd-kind-icon">Job<wbr>Release<wbr>Task</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobreleasetaskexecutioninformation.html" class="tsd-kind-icon">Job<wbr>Release<wbr>Task<wbr>Execution<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobscheduleaddheaders.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Add<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/jobscheduleaddoptionalparams.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Add<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobscheduleaddoptions.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Add<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobscheduleaddparameter.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Add<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobscheduledeleteheaders.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Delete<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/jobscheduledeletemethodoptionalparams.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Delete<wbr>Method<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobscheduledeletemethodoptions.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Delete<wbr>Method<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobscheduledisableheaders.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Disable<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/jobscheduledisableoptionalparams.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Disable<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobscheduledisableoptions.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Disable<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobscheduleenableheaders.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Enable<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/jobscheduleenableoptionalparams.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Enable<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobscheduleenableoptions.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Enable<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobscheduleexecutioninformation.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Execution<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobscheduleexistsheaders.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Exists<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/jobscheduleexistsoptionalparams.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Exists<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobscheduleexistsoptions.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Exists<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobschedulegetheaders.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Get<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/jobschedulegetoptionalparams.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Get<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobschedulegetoptions.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Get<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobschedulelistheaders.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>List<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/jobschedulelistnextoptionalparams.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>List<wbr>Next<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobschedulelistnextoptions.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>List<wbr>Next<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/jobschedulelistoptionalparams.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>List<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobschedulelistoptions.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>List<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobschedulepatchheaders.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Patch<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/jobschedulepatchoptionalparams.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Patch<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobschedulepatchoptions.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Patch<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobschedulepatchparameter.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Patch<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobschedulestatistics.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Statistics</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobscheduleterminateheaders.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Terminate<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/jobscheduleterminateoptionalparams.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Terminate<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobscheduleterminateoptions.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Terminate<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobscheduleupdateheaders.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Update<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/jobscheduleupdateoptionalparams.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Update<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobscheduleupdateoptions.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Update<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobscheduleupdateparameter.html" class="tsd-kind-icon">Job<wbr>Schedule<wbr>Update<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobschedulingerror.html" class="tsd-kind-icon">Job<wbr>Scheduling<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobspecification.html" class="tsd-kind-icon">Job<wbr>Specification</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobstatistics.html" class="tsd-kind-icon">Job<wbr>Statistics</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobterminateheaders.html" class="tsd-kind-icon">Job<wbr>Terminate<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/jobterminateoptionalparams.html" class="tsd-kind-icon">Job<wbr>Terminate<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobterminateoptions.html" class="tsd-kind-icon">Job<wbr>Terminate<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobterminateparameter.html" class="tsd-kind-icon">Job<wbr>Terminate<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobupdateheaders.html" class="tsd-kind-icon">Job<wbr>Update<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/jobupdateoptionalparams.html" class="tsd-kind-icon">Job<wbr>Update<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobupdateoptions.html" class="tsd-kind-icon">Job<wbr>Update<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jobupdateparameter.html" class="tsd-kind-icon">Job<wbr>Update<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/linuxuserconfiguration.html" class="tsd-kind-icon">Linux<wbr>User<wbr>Configuration</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/metadataitem.html" class="tsd-kind-icon">Metadata<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/multiinstancesettings.html" class="tsd-kind-icon">Multi<wbr>Instance<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/namevaluepair.html" class="tsd-kind-icon">Name<wbr>Value<wbr>Pair</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/networkconfiguration.html" class="tsd-kind-icon">Network<wbr>Configuration</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/networksecuritygrouprule.html" class="tsd-kind-icon">Network<wbr>Security<wbr>Group<wbr>Rule</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/nodeagentinformation.html" class="tsd-kind-icon">Node<wbr>Agent<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/nodeagentsku.html" class="tsd-kind-icon">Node<wbr>Agent<wbr>Sku</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/nodecounts.html" class="tsd-kind-icon">Node<wbr>Counts</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/nodedisableschedulingparameter.html" class="tsd-kind-icon">Node<wbr>Disable<wbr>Scheduling<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/nodefile.html" class="tsd-kind-icon">Node<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/nodefilelistresult.html" class="tsd-kind-icon">Node<wbr>File<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/noderebootparameter.html" class="tsd-kind-icon">Node<wbr>Reboot<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/nodereimageparameter.html" class="tsd-kind-icon">Node<wbr>Reimage<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/noderemoveparameter.html" class="tsd-kind-icon">Node<wbr>Remove<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/nodeupdateuserparameter.html" class="tsd-kind-icon">Node<wbr>Update<wbr>User<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/outputfile.html" class="tsd-kind-icon">Output<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/outputfileblobcontainerdestination.html" class="tsd-kind-icon">Output<wbr>File<wbr>Blob<wbr>Container<wbr>Destination</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/outputfiledestination.html" class="tsd-kind-icon">Output<wbr>File<wbr>Destination</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/outputfileuploadoptions.html" class="tsd-kind-icon">Output<wbr>File<wbr>Upload<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/pooladdheaders.html" class="tsd-kind-icon">Pool<wbr>Add<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/pooladdoptionalparams.html" class="tsd-kind-icon">Pool<wbr>Add<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/pooladdoptions.html" class="tsd-kind-icon">Pool<wbr>Add<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/pooladdparameter.html" class="tsd-kind-icon">Pool<wbr>Add<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/pooldeleteheaders.html" class="tsd-kind-icon">Pool<wbr>Delete<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/pooldeletemethodoptionalparams.html" class="tsd-kind-icon">Pool<wbr>Delete<wbr>Method<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/pooldeletemethodoptions.html" class="tsd-kind-icon">Pool<wbr>Delete<wbr>Method<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/pooldisableautoscaleheaders.html" class="tsd-kind-icon">Pool<wbr>Disable<wbr>Auto<wbr>Scale<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/pooldisableautoscaleoptionalparams.html" class="tsd-kind-icon">Pool<wbr>Disable<wbr>Auto<wbr>Scale<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/pooldisableautoscaleoptions.html" class="tsd-kind-icon">Pool<wbr>Disable<wbr>Auto<wbr>Scale<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolenableautoscaleheaders.html" class="tsd-kind-icon">Pool<wbr>Enable<wbr>Auto<wbr>Scale<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/poolenableautoscaleoptionalparams.html" class="tsd-kind-icon">Pool<wbr>Enable<wbr>Auto<wbr>Scale<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolenableautoscaleoptions.html" class="tsd-kind-icon">Pool<wbr>Enable<wbr>Auto<wbr>Scale<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolenableautoscaleparameter.html" class="tsd-kind-icon">Pool<wbr>Enable<wbr>Auto<wbr>Scale<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolendpointconfiguration.html" class="tsd-kind-icon">Pool<wbr>Endpoint<wbr>Configuration</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolevaluateautoscaleheaders.html" class="tsd-kind-icon">Pool<wbr>Evaluate<wbr>Auto<wbr>Scale<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/poolevaluateautoscaleoptionalparams.html" class="tsd-kind-icon">Pool<wbr>Evaluate<wbr>Auto<wbr>Scale<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolevaluateautoscaleoptions.html" class="tsd-kind-icon">Pool<wbr>Evaluate<wbr>Auto<wbr>Scale<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolevaluateautoscaleparameter.html" class="tsd-kind-icon">Pool<wbr>Evaluate<wbr>Auto<wbr>Scale<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolexistsheaders.html" class="tsd-kind-icon">Pool<wbr>Exists<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/poolexistsoptionalparams.html" class="tsd-kind-icon">Pool<wbr>Exists<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolexistsoptions.html" class="tsd-kind-icon">Pool<wbr>Exists<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolgetalllifetimestatisticsheaders.html" class="tsd-kind-icon">Pool<wbr>Get<wbr>All<wbr>Lifetime<wbr>Statistics<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/poolgetalllifetimestatisticsoptionalparams.html" class="tsd-kind-icon">Pool<wbr>Get<wbr>All<wbr>Lifetime<wbr>Statistics<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolgetalllifetimestatisticsoptions.html" class="tsd-kind-icon">Pool<wbr>Get<wbr>All<wbr>Lifetime<wbr>Statistics<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolgetheaders.html" class="tsd-kind-icon">Pool<wbr>Get<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/poolgetoptionalparams.html" class="tsd-kind-icon">Pool<wbr>Get<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolgetoptions.html" class="tsd-kind-icon">Pool<wbr>Get<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolinformation.html" class="tsd-kind-icon">Pool<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poollistheaders.html" class="tsd-kind-icon">Pool<wbr>List<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/poollistnextoptionalparams.html" class="tsd-kind-icon">Pool<wbr>List<wbr>Next<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/poollistnextoptions.html" class="tsd-kind-icon">Pool<wbr>List<wbr>Next<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/poollistoptionalparams.html" class="tsd-kind-icon">Pool<wbr>List<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poollistoptions.html" class="tsd-kind-icon">Pool<wbr>List<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poollistusagemetricsheaders.html" class="tsd-kind-icon">Pool<wbr>List<wbr>Usage<wbr>Metrics<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/poollistusagemetricsnextoptionalparams.html" class="tsd-kind-icon">Pool<wbr>List<wbr>Usage<wbr>Metrics<wbr>Next<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/poollistusagemetricsnextoptions.html" class="tsd-kind-icon">Pool<wbr>List<wbr>Usage<wbr>Metrics<wbr>Next<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/poollistusagemetricsoptionalparams.html" class="tsd-kind-icon">Pool<wbr>List<wbr>Usage<wbr>Metrics<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poollistusagemetricsoptions.html" class="tsd-kind-icon">Pool<wbr>List<wbr>Usage<wbr>Metrics<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poollistusagemetricsresult.html" class="tsd-kind-icon">Pool<wbr>List<wbr>Usage<wbr>Metrics<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolnodecounts.html" class="tsd-kind-icon">Pool<wbr>Node<wbr>Counts</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolnodecountslistresult.html" class="tsd-kind-icon">Pool<wbr>Node<wbr>Counts<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolpatchheaders.html" class="tsd-kind-icon">Pool<wbr>Patch<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/poolpatchoptionalparams.html" class="tsd-kind-icon">Pool<wbr>Patch<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolpatchoptions.html" class="tsd-kind-icon">Pool<wbr>Patch<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolpatchparameter.html" class="tsd-kind-icon">Pool<wbr>Patch<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolremovenodesheaders.html" class="tsd-kind-icon">Pool<wbr>Remove<wbr>Nodes<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/poolremovenodesoptionalparams.html" class="tsd-kind-icon">Pool<wbr>Remove<wbr>Nodes<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolremovenodesoptions.html" class="tsd-kind-icon">Pool<wbr>Remove<wbr>Nodes<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolresizeheaders.html" class="tsd-kind-icon">Pool<wbr>Resize<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/poolresizeoptionalparams.html" class="tsd-kind-icon">Pool<wbr>Resize<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolresizeoptions.html" class="tsd-kind-icon">Pool<wbr>Resize<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolresizeparameter.html" class="tsd-kind-icon">Pool<wbr>Resize<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolspecification.html" class="tsd-kind-icon">Pool<wbr>Specification</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolstatistics.html" class="tsd-kind-icon">Pool<wbr>Statistics</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolstopresizeheaders.html" class="tsd-kind-icon">Pool<wbr>Stop<wbr>Resize<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/poolstopresizeoptionalparams.html" class="tsd-kind-icon">Pool<wbr>Stop<wbr>Resize<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolstopresizeoptions.html" class="tsd-kind-icon">Pool<wbr>Stop<wbr>Resize<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolupdatepropertiesheaders.html" class="tsd-kind-icon">Pool<wbr>Update<wbr>Properties<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/poolupdatepropertiesoptionalparams.html" class="tsd-kind-icon">Pool<wbr>Update<wbr>Properties<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolupdatepropertiesoptions.html" class="tsd-kind-icon">Pool<wbr>Update<wbr>Properties<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolupdatepropertiesparameter.html" class="tsd-kind-icon">Pool<wbr>Update<wbr>Properties<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolusagemetrics.html" class="tsd-kind-icon">Pool<wbr>Usage<wbr>Metrics</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/recentjob.html" class="tsd-kind-icon">Recent<wbr>Job</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/resizeerror.html" class="tsd-kind-icon">Resize<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/resourcefile.html" class="tsd-kind-icon">Resource<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/resourcestatistics.html" class="tsd-kind-icon">Resource<wbr>Statistics</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/schedule.html" class="tsd-kind-icon">Schedule</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/starttask.html" class="tsd-kind-icon">Start<wbr>Task</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/starttaskinformation.html" class="tsd-kind-icon">Start<wbr>Task<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/subtaskinformation.html" class="tsd-kind-icon">Subtask<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskaddcollectionheaders.html" class="tsd-kind-icon">Task<wbr>Add<wbr>Collection<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/taskaddcollectionoptionalparams.html" class="tsd-kind-icon">Task<wbr>Add<wbr>Collection<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskaddcollectionoptions.html" class="tsd-kind-icon">Task<wbr>Add<wbr>Collection<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskaddcollectionparameter.html" class="tsd-kind-icon">Task<wbr>Add<wbr>Collection<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskaddcollectionresult.html" class="tsd-kind-icon">Task<wbr>Add<wbr>Collection<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskaddheaders.html" class="tsd-kind-icon">Task<wbr>Add<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/taskaddoptionalparams.html" class="tsd-kind-icon">Task<wbr>Add<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskaddoptions.html" class="tsd-kind-icon">Task<wbr>Add<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskaddparameter.html" class="tsd-kind-icon">Task<wbr>Add<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskaddresult.html" class="tsd-kind-icon">Task<wbr>Add<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskconstraints.html" class="tsd-kind-icon">Task<wbr>Constraints</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskcontainerexecutioninformation.html" class="tsd-kind-icon">Task<wbr>Container<wbr>Execution<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskcontainersettings.html" class="tsd-kind-icon">Task<wbr>Container<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskcounts.html" class="tsd-kind-icon">Task<wbr>Counts</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskdeleteheaders.html" class="tsd-kind-icon">Task<wbr>Delete<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/taskdeletemethodoptionalparams.html" class="tsd-kind-icon">Task<wbr>Delete<wbr>Method<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskdeletemethodoptions.html" class="tsd-kind-icon">Task<wbr>Delete<wbr>Method<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskdependencies.html" class="tsd-kind-icon">Task<wbr>Dependencies</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskexecutioninformation.html" class="tsd-kind-icon">Task<wbr>Execution<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskfailureinformation.html" class="tsd-kind-icon">Task<wbr>Failure<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskgetheaders.html" class="tsd-kind-icon">Task<wbr>Get<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/taskgetoptionalparams.html" class="tsd-kind-icon">Task<wbr>Get<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskgetoptions.html" class="tsd-kind-icon">Task<wbr>Get<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskidrange.html" class="tsd-kind-icon">Task<wbr>IdRange</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskinformation.html" class="tsd-kind-icon">Task<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/tasklistheaders.html" class="tsd-kind-icon">Task<wbr>List<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/tasklistnextoptionalparams.html" class="tsd-kind-icon">Task<wbr>List<wbr>Next<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/tasklistnextoptions.html" class="tsd-kind-icon">Task<wbr>List<wbr>Next<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/tasklistoptionalparams.html" class="tsd-kind-icon">Task<wbr>List<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/tasklistoptions.html" class="tsd-kind-icon">Task<wbr>List<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/tasklistsubtasksheaders.html" class="tsd-kind-icon">Task<wbr>List<wbr>Subtasks<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/tasklistsubtasksoptionalparams.html" class="tsd-kind-icon">Task<wbr>List<wbr>Subtasks<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/tasklistsubtasksoptions.html" class="tsd-kind-icon">Task<wbr>List<wbr>Subtasks<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskreactivateheaders.html" class="tsd-kind-icon">Task<wbr>Reactivate<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/taskreactivateoptionalparams.html" class="tsd-kind-icon">Task<wbr>Reactivate<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskreactivateoptions.html" class="tsd-kind-icon">Task<wbr>Reactivate<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskschedulingpolicy.html" class="tsd-kind-icon">Task<wbr>Scheduling<wbr>Policy</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskstatistics.html" class="tsd-kind-icon">Task<wbr>Statistics</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskterminateheaders.html" class="tsd-kind-icon">Task<wbr>Terminate<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/taskterminateoptionalparams.html" class="tsd-kind-icon">Task<wbr>Terminate<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskterminateoptions.html" class="tsd-kind-icon">Task<wbr>Terminate<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskupdateheaders.html" class="tsd-kind-icon">Task<wbr>Update<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/taskupdateoptionalparams.html" class="tsd-kind-icon">Task<wbr>Update<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskupdateoptions.html" class="tsd-kind-icon">Task<wbr>Update<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskupdateparameter.html" class="tsd-kind-icon">Task<wbr>Update<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/uploadbatchservicelogsconfiguration.html" class="tsd-kind-icon">Upload<wbr>Batch<wbr>Service<wbr>Logs<wbr>Configuration</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/uploadbatchservicelogsresult.html" class="tsd-kind-icon">Upload<wbr>Batch<wbr>Service<wbr>Logs<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/usagestatistics.html" class="tsd-kind-icon">Usage<wbr>Statistics</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/useraccount.html" class="tsd-kind-icon">User<wbr>Account</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/useridentity.html" class="tsd-kind-icon">User<wbr>Identity</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/virtualmachineconfiguration.html" class="tsd-kind-icon">Virtual<wbr>Machine<wbr>Configuration</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/windowsconfiguration.html" class="tsd-kind-icon">Windows<wbr>Configuration</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/windowsuserconfiguration.html" class="tsd-kind-icon">Windows<wbr>User<wbr>Configuration</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#accessscope" class="tsd-kind-icon">Access<wbr>Scope</a>
@@ -3367,6 +4291,7 @@ main().catch(<span class="hljs-function">(<span class="hljs-params">err</span>) 
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -3415,7 +4340,7 @@ main().catch(<span class="hljs-function">(<span class="hljs-params">err</span>) 
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="assets/js/main.js"></script>

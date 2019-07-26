@@ -116,7 +116,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L19">operations/face.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L19">operations/face.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -147,14 +147,14 @@
 					<h3>detect<wbr>With<wbr>Stream</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">detect<wbr>With<wbr>Stream<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">msRest.HttpRequestBody</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Models.FaceDetectWithStreamOptionalParams</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Models.FaceDetectWithStreamResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">detect<wbr>With<wbr>Stream<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">msRest.HttpRequestBody</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#detectedface" class="tsd-signature-type">DetectedFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">detect<wbr>With<wbr>Stream<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">msRest.HttpRequestBody</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/facedetectwithstreamoptionalparams.html" class="tsd-signature-type">FaceDetectWithStreamOptionalParams</a>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#detectedface" class="tsd-signature-type">DetectedFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">detect<wbr>With<wbr>Stream<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">msRest.HttpRequestBody</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/detectedface.html" class="tsd-signature-type">DetectedFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">detect<wbr>With<wbr>Stream<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">msRest.HttpRequestBody</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/facedetectwithstreamoptionalparams.html" class="tsd-signature-type">FaceDetectWithStreamOptionalParams</a>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/detectedface.html" class="tsd-signature-type">DetectedFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L382">operations/face.ts:382</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L382">operations/face.ts:382</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -188,15 +188,39 @@
 										face size.</li>
 										<li>Different &#39;detectionModel&#39; values can be provided. To use and compare different detection
 											models, please refer to <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/face/face-api-how-to-topics/specify-detection-model">How to specify a detection
-											model</a>
-											| Model | Recommended use-case(s) |
-											| ---------- | -------- |
-											| &#39;detection_01&#39;: | The default detection model for <a href="/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236">Face -
-											Detect</a>. Recommend
-											for near frontal face detection. For scenarios with exceptionally large angle (head-pose) faces,
-											occluded faces or wrong image orientation, the faces in such cases may not be detected. |
-											| &#39;detection_02&#39;: | Detection model released in 2019 May with improved accuracy especially on
-										small, side and blurry faces. |</li>
+												model</a><table>
+												<thead>
+													<tr>
+														<th>Model</th>
+														<th>Recommended use-case(s)</th>
+													</tr>
+												</thead>
+												<tbody><tr>
+														<td>&#39;detection_01&#39;:</td>
+														<td>The default detection model for [Face -</td>
+													</tr>
+													<tr>
+														<td>Detect](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236). Recommend</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>for near frontal face detection. For scenarios with exceptionally large angle (head-pose) faces,</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>occluded faces or wrong image orientation, the faces in such cases may not be detected.</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>&#39;detection_02&#39;:</td>
+														<td>Detection model released in 2019 May with improved accuracy especially on</td>
+													</tr>
+													<tr>
+														<td>small, side and blurry faces.</td>
+														<td></td>
+													</tr>
+											</tbody></table>
+										</li>
 									</ul>
 								</div>
 								<ul>
@@ -206,14 +230,35 @@
 										please explicitly specify the model you need in this parameter. Once specified, the detected
 										faceIds will be associated with the specified recognition model. More details, please refer to
 										<a href="https://docs.microsoft.com/en-us/azure/cognitive-services/face/face-api-how-to-topics/specify-recognition-model">How to specify a recognition
-										model</a>
-										| Model | Recommended use-case(s) |
-										| ---------- | -------- |
-										| &#39;recognition_01&#39;: | The default recognition model for <a href="/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236">Face -
-										Detect</a>. All those
-										faceIds created before 2019 March are bonded with this recognition model. |
-										| &#39;recognition_02&#39;: | Recognition model released in 2019 March. &#39;recognition_02&#39; is recommended
-									since its overall accuracy is improved compared with &#39;recognition_01&#39;. |</li>
+											model</a><table>
+											<thead>
+												<tr>
+													<th>Model</th>
+													<th>Recommended use-case(s)</th>
+												</tr>
+											</thead>
+											<tbody><tr>
+													<td>&#39;recognition_01&#39;:</td>
+													<td>The default recognition model for [Face -</td>
+												</tr>
+												<tr>
+													<td>Detect](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236). All those</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>faceIds created before 2019 March are bonded with this recognition model.</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>&#39;recognition_02&#39;:</td>
+													<td>Recognition model released in 2019 March. &#39;recognition_02&#39; is recommended</td>
+												</tr>
+												<tr>
+													<td>since its overall accuracy is improved compared with &#39;recognition_01&#39;.</td>
+													<td></td>
+												</tr>
+										</tbody></table>
+									</li>
 								</ul>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -234,7 +279,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L387">operations/face.ts:387</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L387">operations/face.ts:387</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -248,7 +293,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#detectedface" class="tsd-signature-type">DetectedFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/detectedface.html" class="tsd-signature-type">DetectedFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The callback</p>
 									</div>
@@ -259,7 +304,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L393">operations/face.ts:393</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L393">operations/face.ts:393</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -279,7 +324,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#detectedface" class="tsd-signature-type">DetectedFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/detectedface.html" class="tsd-signature-type">DetectedFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The callback</p>
 									</div>
@@ -294,14 +339,14 @@
 					<h3>detect<wbr>With<wbr>Url</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">detect<wbr>With<wbr>Url<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Models.FaceDetectWithUrlOptionalParams</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Models.FaceDetectWithUrlResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">detect<wbr>With<wbr>Url<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#detectedface" class="tsd-signature-type">DetectedFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">detect<wbr>With<wbr>Url<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/facedetectwithurloptionalparams.html" class="tsd-signature-type">FaceDetectWithUrlOptionalParams</a>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#detectedface" class="tsd-signature-type">DetectedFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">detect<wbr>With<wbr>Url<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/detectedface.html" class="tsd-signature-type">DetectedFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">detect<wbr>With<wbr>Url<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/facedetectwithurloptionalparams.html" class="tsd-signature-type">FaceDetectWithUrlOptionalParams</a>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/detectedface.html" class="tsd-signature-type">DetectedFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L268">operations/face.ts:268</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L268">operations/face.ts:268</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -335,15 +380,39 @@
 										face size.</li>
 										<li>Different &#39;detectionModel&#39; values can be provided. To use and compare different detection
 											models, please refer to <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/face/face-api-how-to-topics/specify-detection-model">How to specify a detection
-											model</a>
-											| Model | Recommended use-case(s) |
-											| ---------- | -------- |
-											| &#39;detection_01&#39;: | The default detection model for <a href="/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236">Face -
-											Detect</a>. Recommend
-											for near frontal face detection. For scenarios with exceptionally large angle (head-pose) faces,
-											occluded faces or wrong image orientation, the faces in such cases may not be detected. |
-											| &#39;detection_02&#39;: | Detection model released in 2019 May with improved accuracy especially on
-										small, side and blurry faces. |</li>
+												model</a><table>
+												<thead>
+													<tr>
+														<th>Model</th>
+														<th>Recommended use-case(s)</th>
+													</tr>
+												</thead>
+												<tbody><tr>
+														<td>&#39;detection_01&#39;:</td>
+														<td>The default detection model for [Face -</td>
+													</tr>
+													<tr>
+														<td>Detect](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236). Recommend</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>for near frontal face detection. For scenarios with exceptionally large angle (head-pose) faces,</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>occluded faces or wrong image orientation, the faces in such cases may not be detected.</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>&#39;detection_02&#39;:</td>
+														<td>Detection model released in 2019 May with improved accuracy especially on</td>
+													</tr>
+													<tr>
+														<td>small, side and blurry faces.</td>
+														<td></td>
+													</tr>
+											</tbody></table>
+										</li>
 									</ul>
 								</div>
 								<ul>
@@ -353,14 +422,35 @@
 										please explicitly specify the model you need in this parameter. Once specified, the detected
 										faceIds will be associated with the specified recognition model. More details, please refer to
 										<a href="https://docs.microsoft.com/en-us/azure/cognitive-services/face/face-api-how-to-topics/specify-recognition-model">How to specify a recognition
-										model</a>
-										| Model | Recommended use-case(s) |
-										| ---------- | -------- |
-										| &#39;recognition_01&#39;: | The default recognition model for <a href="/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236">Face -
-										Detect</a>. All those
-										faceIds created before 2019 March are bonded with this recognition model. |
-										| &#39;recognition_02&#39;: | Recognition model released in 2019 March. &#39;recognition_02&#39; is recommended
-									since its overall accuracy is improved compared with &#39;recognition_01&#39;. |</li>
+											model</a><table>
+											<thead>
+												<tr>
+													<th>Model</th>
+													<th>Recommended use-case(s)</th>
+												</tr>
+											</thead>
+											<tbody><tr>
+													<td>&#39;recognition_01&#39;:</td>
+													<td>The default recognition model for [Face -</td>
+												</tr>
+												<tr>
+													<td>Detect](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236). All those</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>faceIds created before 2019 March are bonded with this recognition model.</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>&#39;recognition_02&#39;:</td>
+													<td>Recognition model released in 2019 March. &#39;recognition_02&#39; is recommended</td>
+												</tr>
+												<tr>
+													<td>since its overall accuracy is improved compared with &#39;recognition_01&#39;.</td>
+													<td></td>
+												</tr>
+										</tbody></table>
+									</li>
 								</ul>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -381,7 +471,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L273">operations/face.ts:273</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L273">operations/face.ts:273</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -395,7 +485,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#detectedface" class="tsd-signature-type">DetectedFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/detectedface.html" class="tsd-signature-type">DetectedFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The callback</p>
 									</div>
@@ -406,7 +496,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L279">operations/face.ts:279</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L279">operations/face.ts:279</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -426,7 +516,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#detectedface" class="tsd-signature-type">DetectedFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/detectedface.html" class="tsd-signature-type">DetectedFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The callback</p>
 									</div>
@@ -441,14 +531,14 @@
 					<h3>find<wbr>Similar</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">find<wbr>Similar<span class="tsd-signature-symbol">(</span>faceId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Models.FaceFindSimilarOptionalParams</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Models.FaceFindSimilarResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Similar<span class="tsd-signature-symbol">(</span>faceId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#similarface" class="tsd-signature-type">SimilarFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Similar<span class="tsd-signature-symbol">(</span>faceId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/facefindsimilaroptionalparams.html" class="tsd-signature-type">FaceFindSimilarOptionalParams</a>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#similarface" class="tsd-signature-type">SimilarFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Similar<span class="tsd-signature-symbol">(</span>faceId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/similarface.html" class="tsd-signature-type">SimilarFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Similar<span class="tsd-signature-symbol">(</span>faceId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/facefindsimilaroptionalparams.html" class="tsd-signature-type">FaceFindSimilarOptionalParams</a>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/similarface.html" class="tsd-signature-type">SimilarFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L52">operations/face.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L52">operations/face.ts:52</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -491,7 +581,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L58">operations/face.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L58">operations/face.ts:58</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -506,7 +596,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#similarface" class="tsd-signature-type">SimilarFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/similarface.html" class="tsd-signature-type">SimilarFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The callback</p>
 									</div>
@@ -517,7 +607,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L65">operations/face.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L65">operations/face.ts:65</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -538,7 +628,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#similarface" class="tsd-signature-type">SimilarFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/similarface.html" class="tsd-signature-type">SimilarFace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The callback</p>
 									</div>
@@ -553,14 +643,14 @@
 					<h3>group</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">group<span class="tsd-signature-symbol">(</span>faceIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">msRest.RequestOptionsBase</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Models.FaceGroupResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">group<span class="tsd-signature-symbol">(</span>faceIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#groupresult" class="tsd-signature-type">GroupResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">group<span class="tsd-signature-symbol">(</span>faceIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RequestOptionsBase</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#groupresult" class="tsd-signature-type">GroupResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">group<span class="tsd-signature-symbol">(</span>faceIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/groupresult.html" class="tsd-signature-type">GroupResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">group<span class="tsd-signature-symbol">(</span>faceIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RequestOptionsBase</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/groupresult.html" class="tsd-signature-type">GroupResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L93">operations/face.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L93">operations/face.ts:93</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -599,7 +689,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L98">operations/face.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L98">operations/face.ts:98</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -613,7 +703,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#groupresult" class="tsd-signature-type">GroupResult</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/groupresult.html" class="tsd-signature-type">GroupResult</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The callback</p>
 									</div>
@@ -624,7 +714,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L104">operations/face.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L104">operations/face.ts:104</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -644,7 +734,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#groupresult" class="tsd-signature-type">GroupResult</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/groupresult.html" class="tsd-signature-type">GroupResult</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The callback</p>
 									</div>
@@ -659,14 +749,14 @@
 					<h3>identify</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">identify<span class="tsd-signature-symbol">(</span>faceIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Models.FaceIdentifyOptionalParams</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Models.FaceIdentifyResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">identify<span class="tsd-signature-symbol">(</span>faceIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#identifyresult" class="tsd-signature-type">IdentifyResult</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">identify<span class="tsd-signature-symbol">(</span>faceIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/faceidentifyoptionalparams.html" class="tsd-signature-type">FaceIdentifyOptionalParams</a>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#identifyresult" class="tsd-signature-type">IdentifyResult</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">identify<span class="tsd-signature-symbol">(</span>faceIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/identifyresult.html" class="tsd-signature-type">IdentifyResult</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">identify<span class="tsd-signature-symbol">(</span>faceIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/faceidentifyoptionalparams.html" class="tsd-signature-type">FaceIdentifyOptionalParams</a>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/identifyresult.html" class="tsd-signature-type">IdentifyResult</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L148">operations/face.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L148">operations/face.ts:148</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -720,7 +810,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L154">operations/face.ts:154</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L154">operations/face.ts:154</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -735,7 +825,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#identifyresult" class="tsd-signature-type">IdentifyResult</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/identifyresult.html" class="tsd-signature-type">IdentifyResult</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The callback</p>
 									</div>
@@ -746,7 +836,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L161">operations/face.ts:161</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L161">operations/face.ts:161</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -767,7 +857,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#identifyresult" class="tsd-signature-type">IdentifyResult</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/identifyresult.html" class="tsd-signature-type">IdentifyResult</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The callback</p>
 									</div>
@@ -782,14 +872,14 @@
 					<h3>verify<wbr>Face<wbr>ToFace</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">verify<wbr>Face<wbr>ToFace<span class="tsd-signature-symbol">(</span>faceId1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, faceId2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">msRest.RequestOptionsBase</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Models.FaceVerifyFaceToFaceResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">verify<wbr>Face<wbr>ToFace<span class="tsd-signature-symbol">(</span>faceId1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, faceId2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#verifyresult" class="tsd-signature-type">VerifyResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">verify<wbr>Face<wbr>ToFace<span class="tsd-signature-symbol">(</span>faceId1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, faceId2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RequestOptionsBase</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#verifyresult" class="tsd-signature-type">VerifyResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">verify<wbr>Face<wbr>ToFace<span class="tsd-signature-symbol">(</span>faceId1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, faceId2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/verifyresult.html" class="tsd-signature-type">VerifyResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">verify<wbr>Face<wbr>ToFace<span class="tsd-signature-symbol">(</span>faceId1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, faceId2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RequestOptionsBase</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/verifyresult.html" class="tsd-signature-type">VerifyResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L186">operations/face.ts:186</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L186">operations/face.ts:186</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -830,7 +920,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L192">operations/face.ts:192</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L192">operations/face.ts:192</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -850,7 +940,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#verifyresult" class="tsd-signature-type">VerifyResult</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/verifyresult.html" class="tsd-signature-type">VerifyResult</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The callback</p>
 									</div>
@@ -861,7 +951,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L199">operations/face.ts:199</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L199">operations/face.ts:199</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -887,7 +977,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#verifyresult" class="tsd-signature-type">VerifyResult</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/verifyresult.html" class="tsd-signature-type">VerifyResult</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The callback</p>
 									</div>
@@ -902,14 +992,14 @@
 					<h3>verify<wbr>Face<wbr>ToPerson</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">verify<wbr>Face<wbr>ToPerson<span class="tsd-signature-symbol">(</span>faceId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, personId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Models.FaceVerifyFaceToPersonOptionalParams</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Models.FaceVerifyFaceToPersonResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">verify<wbr>Face<wbr>ToPerson<span class="tsd-signature-symbol">(</span>faceId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, personId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#verifyresult" class="tsd-signature-type">VerifyResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">verify<wbr>Face<wbr>ToPerson<span class="tsd-signature-symbol">(</span>faceId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, personId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/faceverifyfacetopersonoptionalparams.html" class="tsd-signature-type">FaceVerifyFaceToPersonOptionalParams</a>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#verifyresult" class="tsd-signature-type">VerifyResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">verify<wbr>Face<wbr>ToPerson<span class="tsd-signature-symbol">(</span>faceId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, personId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/verifyresult.html" class="tsd-signature-type">VerifyResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">verify<wbr>Face<wbr>ToPerson<span class="tsd-signature-symbol">(</span>faceId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, personId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/faceverifyfacetopersonoptionalparams.html" class="tsd-signature-type">FaceVerifyFaceToPersonOptionalParams</a>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/verifyresult.html" class="tsd-signature-type">VerifyResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L298">operations/face.ts:298</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L298">operations/face.ts:298</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -942,7 +1032,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L305">operations/face.ts:305</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L305">operations/face.ts:305</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -963,7 +1053,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#verifyresult" class="tsd-signature-type">VerifyResult</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/verifyresult.html" class="tsd-signature-type">VerifyResult</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The callback</p>
 									</div>
@@ -974,7 +1064,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0e833897e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L313">operations/face.ts:313</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fa164de65e/sdk/cognitiveservices/cognitiveservices-face/src/operations/face.ts#L313">operations/face.ts:313</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1001,7 +1091,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#verifyresult" class="tsd-signature-type">VerifyResult</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>callback: <span class="tsd-signature-type">ServiceCallback</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/verifyresult.html" class="tsd-signature-type">VerifyResult</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The callback</p>
 									</div>
@@ -1073,6 +1163,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -1121,7 +1212,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

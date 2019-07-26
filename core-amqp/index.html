@@ -62,17 +62,25 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h1 id="azure-core-amqp-client-library-for-amqp-operations">Azure Core AMQP client library for AMQP operations</h1>
+				<a href="#azure-core-amqp-client-library-for-amqp-operations" id="azure-core-amqp-client-library-for-amqp-operations" style="color: inherit; text-decoration: none;">
+					<h1>Azure Core AMQP client library for AMQP operations</h1>
+				</a>
 				<p>Azure Core AMQP is a library that provides common functionality for <strong>Azure</strong> Javascript
 					libraries that use <a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-protocol-guide">AMQP protocol</a>
 				like the ones for Azure Service Bus and Azure Event Hubs.</p>
-				<h2 id="getting-started">Getting started</h2>
-				<h3 id="installation">Installation</h3>
+				<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
+					<h2>Getting started</h2>
+				</a>
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h3>Installation</h3>
+				</a>
 				<p>Install this library using npm as follows:</p>
 				<pre><code class="language-bash">npm install @azure/core-amqp</code></pre>
 				<p><strong>Note</strong>: <a href="https://github.com/amqp/rhea-promise"><code>rhea-promise</code></a> is a peer dependency. You need to explicitly install this library as a dependency
 				in your application.</p>
-				<h2 id="key-concepts">Key concepts</h2>
+				<a href="#key-concepts" id="key-concepts" style="color: inherit; text-decoration: none;">
+					<h2>Key concepts</h2>
+				</a>
 				<p>Some of the key features of Azure Core AMQP library are:</p>
 				<ul>
 					<li><a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-protocol-guide#claims-based-authorization">Claims based Authorization</a></li>
@@ -81,7 +89,9 @@
 					<li>Error translation of AMQP error codes along with errors specific to Azure Service Bus and Azure Event Hubs.</li>
 					<li>RetryPolicy for retrying a given operation if a retryable error was encountered.</li>
 				</ul>
-				<h2 id="examples">Examples</h2>
+				<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+					<h2>Examples</h2>
+				</a>
 				<p><a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-protocol-guide#claims-based-authorization">Claims Based Authorization</a>
 					need to be done for every AMQP link that your application creates. The claims also has to be renewed periodically.
 				For more details on CBS, please see the <a href="https://www.oasis-open.org/committees/download.php/62097/amqp-cbs-v1.0-wd05.doc">CBS Specification</a>.</p>
@@ -91,7 +101,9 @@
 				<p>The examples below expect a connection string to a Azure Service Bus or Azure Event Hubs instance.
 					The entity path refers to an Event Hub name in case of Azure Event Hubs and a queue or a topic name
 				in case of Azure Service Bus.</p>
-				<h2 id="create-a-sender-link">Create a sender link</h2>
+				<a href="#create-a-sender-link" id="create-a-sender-link" style="color: inherit; text-decoration: none;">
+					<h2>Create a sender link</h2>
+				</a>
 				<p>In the below example, we first create a <code>ConnectionContext</code> which is used to carry out the claims
 					based authorization. Then, we create a sender link using the <code>ConnectionContext.connection</code> to
 				send a message.</p>
@@ -145,7 +157,9 @@
 }
 
 main().catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> <span class="hljs-built_in">console</span>.log(err));</code></pre>
-				<h2 id="create-a-receiver-link">Create a receiver link</h2>
+				<a href="#create-a-receiver-link" id="create-a-receiver-link" style="color: inherit; text-decoration: none;">
+					<h2>Create a receiver link</h2>
+				</a>
 				<p>In the below example, we first create a <code>ConnectionContext</code> which is used to carry out the claims
 					based authorization. Then, we create a receiver link using the <code>ConnectionContext.connection</code> to
 				receive messages for 30 seconds.</p>
@@ -212,7 +226,9 @@ main().catch(<span class="hljs-function">(<span class="hljs-params">err</span>) 
 }
 
 main().catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> <span class="hljs-built_in">console</span>.log(err));</code></pre>
-				<h2 id="troubleshooting">Troubleshooting</h2>
+				<a href="#troubleshooting" id="troubleshooting" style="color: inherit; text-decoration: none;">
+					<h2>Troubleshooting</h2>
+				</a>
 				<p>You can set the following environment variable to get the debug logs.</p>
 				<ul>
 					<li>Getting debug logs from the Event Hub SDK.</li>
@@ -230,7 +246,9 @@ main().catch(<span class="hljs-function">(<span class="hljs-params">err</span>) 
 					<li>If you are interested only in <strong>errors</strong>, then you can set the <code>DEBUG</code> environment variable as follows:</li>
 				</ul>
 				<pre><code class="language-bash"><span class="hljs-built_in">export</span> DEBUG=azure-core-amqp:error,rhea-promise:error,rhea:events,rhea:frames,rhea:io,rhea:flow</code></pre>
-				<h4 id="logging-to-a-file">Logging to a file</h4>
+				<a href="#logging-to-a-file" id="logging-to-a-file" style="color: inherit; text-decoration: none;">
+					<h4>Logging to a file</h4>
+				</a>
 				<ul>
 					<li>Set the <code>DEBUG</code> environment variable as shown above and then run your test script as follows:<ul>
 							<li>Logging statements from you test script go to <code>out.log</code> and logging statement from the sdk go to <code>debug.log</code>.<pre><code class="language-bash">node your-test-script.js &gt; out.log 2&gt;debug.log</code></pre>
@@ -242,9 +260,13 @@ main().catch(<span class="hljs-function">(<span class="hljs-params">err</span>) 
 						</ul>
 					</li>
 				</ul>
-				<h1 id="next-steps">Next steps</h1>
+				<a href="#next-steps" id="next-steps" style="color: inherit; text-decoration: none;">
+					<h1>Next steps</h1>
+				</a>
 				<p>Please take a look at the <a href="https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/core/core-amqp/samples">samples</a> directory for detailed samples.</p>
-				<h1 id="contributing">Contributing</h1>
+				<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
+					<h1>Contributing</h1>
+				</a>
 				<p>This project welcomes contributions and suggestions. Most contributions require you to agree to a
 					Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
 				the rights to use your contribution. For details, visit <a href="https://cla.microsoft.com">https://cla.microsoft.com</a>.</p>
@@ -686,6 +708,7 @@ main().catch(<span class="hljs-function">(<span class="hljs-params">err</span>) 
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -734,7 +757,7 @@ main().catch(<span class="hljs-function">(<span class="hljs-params">err</span>) 
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="assets/js/main.js"></script>

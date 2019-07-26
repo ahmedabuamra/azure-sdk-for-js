@@ -62,24 +62,34 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h1 id="azure-event-hubs-client-library-for-javascript">Azure Event Hubs client library for Javascript</h1>
+				<a href="#azure-event-hubs-client-library-for-javascript" id="azure-event-hubs-client-library-for-javascript" style="color: inherit; text-decoration: none;">
+					<h1>Azure Event Hubs client library for Javascript</h1>
+				</a>
 				<p>Azure Event Hubs is a highly scalable publish-subscribe service that can ingest millions of events per second and stream them to multiple consumers. This lets you process and analyze the massive amounts of data produced by your connected devices and applications. If you would like to know more about Azure Event Hubs, you may wish to review: <a href="https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-about">What is Event Hubs</a>?</p>
 				<p>The Azure Event Hubs client library allows you to send and receive events in your Node.js application.</p>
 				<p><a href="https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/eventhub/event-hubs">Source code</a> | <a href="https://www.npmjs.com/package/@azure/event-hubs">Package (npm)</a> | <a href="https://azure.github.io/azure-sdk-for-js/event-hubs/index.html">API Reference Documentation</a> | <a href="https://azure.microsoft.com/en-us/services/event-hubs/">Product documentation</a> | <a href="https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/eventhub/event-hubs/samples">Samples</a></p>
 				<p><strong>NOTE</strong>: If you are using version 2.1.0 or lower, then please use the below links instead</p>
 				<p><a href="https://github.com/Azure/azure-sdk-for-js/tree/%40azure/event-hubs_2.1.0/sdk/eventhub/event-hubs">Source code for v2.1.0</a> | <a href="https://www.npmjs.com/package/@azure/event-hubs/v/2.1.0">Package for v2.1.0 (npm)</a> | <a href="https://github.com/Azure/azure-sdk-for-js/tree/%40azure/event-hubs_2.1.0/sdk/eventhub/event-hubs/samples">Samples for v2.1.0</a></p>
-				<h2 id="getting-started">Getting Started</h2>
-				<h3 id="install-the-package">Install the package</h3>
+				<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
+					<h2>Getting Started</h2>
+				</a>
+				<a href="#install-the-package" id="install-the-package" style="color: inherit; text-decoration: none;">
+					<h3>Install the package</h3>
+				</a>
 				<p>Install the Azure Event Hubs client library using npm</p>
 				<p><code>npm install @azure/event-hubs@5.0.0-preview.1</code></p>
 				<p><strong>Prerequisites</strong>: You must have an <a href="https://azure.microsoft.com/free/">Azure subscription</a> and a
 					<a href="https://docs.microsoft.com/en-us/azure/event-hubs/">Event Hubs Namespace</a> to use this package.
 				If you are using this package in a Node.js application, then use Node.js 8.x or higher.</p>
-				<h3 id="configure-typescript">Configure Typescript</h3>
+				<a href="#configure-typescript" id="configure-typescript" style="color: inherit; text-decoration: none;">
+					<h3>Configure Typescript</h3>
+				</a>
 				<p>TypeScript users need to have Node type definitions installed:</p>
 				<pre><code class="language-bash">npm install @types/node</code></pre>
 				<p>You also need to enable <code>compilerOptions.allowSyntheticDefaultImports</code> in your tsconfig.json. Note that if you have enabled <code>compilerOptions.esModuleInterop</code>, <code>allowSyntheticDefaultImports</code> is enabled by default. See <a href="https://www.typescriptlang.org/docs/handbook/compiler-options.html">TypeScript&#39;s compiler options handbook</a> for more information.</p>
-				<h3 id="key-concepts">Key concepts</h3>
+				<a href="#key-concepts" id="key-concepts" style="color: inherit; text-decoration: none;">
+					<h3>Key concepts</h3>
+				</a>
 				<ul>
 					<li><p>An <strong>Event Hub client</strong> is the primary interface for developers interacting with the Event Hubs client library, allowing for inspection of Event Hub metadata and providing a guided experience towards specific Event Hub operations such as the creation of producers and consumers.</p>
 					</li>
@@ -93,7 +103,9 @@
 					</li>
 				</ul>
 				<p>For more concepts and deeper discussion, see: <a href="https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-features">Event Hubs Features</a></p>
-				<h3 id="authenticate-the-client">Authenticate the client</h3>
+				<a href="#authenticate-the-client" id="authenticate-the-client" style="color: inherit; text-decoration: none;">
+					<h3>Authenticate the client</h3>
+				</a>
 				<p>Interaction with Event Hubs starts with an instance of the <a href="https://azure.github.io/azure-sdk-for-js/event-hubs/classes/eventhubclient.html#constructor">EventHubClient</a> class. You can instantiate
 				this class using one of the below</p>
 				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> EventHubClient(<span class="hljs-string">"my-connection-string"</span>, <span class="hljs-string">"my-event-hub"</span>);</code></pre>
@@ -111,7 +123,9 @@
 				<ul>
 					<li>This constructor takes the host name and entity name of your Event Hub instance and credential that implements the TokenCredential interface. There are implementations of the <code>TokenCredential</code> interface available in the <a href="https://www.npmjs.com/package/@azure/identity">@azure/identity</a> package. The host name is of the format <code>&lt;yournamespace&gt;.servicebus.windows.net</code>.</li>
 				</ul>
-				<h3 id="examples">Examples</h3>
+				<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+					<h3>Examples</h3>
+				</a>
 				<p>The following sections provide code snippets that cover some of the common tasks using Azure Event Hubs</p>
 				<ul>
 					<li><a href="#inspect-an-event-hub">Inspect an Event Hub</a></li>
@@ -119,13 +133,17 @@
 					<li><a href="#consume-events-from-an-event-hub">Consume events from an Event Hub</a></li>
 					<li><a href="#use-eventHubClient-to-work-with-IotHub">Use EventHubClient to work with IotHub</a></li>
 				</ul>
-				<h3 id="inspect-an-event-hub">Inspect an Event Hub</h3>
+				<a href="#inspect-an-event-hub" id="inspect-an-event-hub" style="color: inherit; text-decoration: none;">
+					<h3>Inspect an Event Hub</h3>
+				</a>
 				<p>Many Event Hub operations take place within the scope of a specific partition.
 					Because partitions are owned by the Event Hub, their names are assigned at the time of creation.
 				To understand what partitions are available, you query the Event Hub using the client.</p>
 				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> EventHubCLient(<span class="hljs-string">"connectionString"</span>, <span class="hljs-string">"eventHubName"</span>);
 <span class="hljs-keyword">const</span> partitionIds = <span class="hljs-keyword">await</span> client.getPartitionIds();</code></pre>
-				<h3 id="publish-events-to-an-event-hub">Publish events to an Event Hub</h3>
+				<a href="#publish-events-to-an-event-hub" id="publish-events-to-an-event-hub" style="color: inherit; text-decoration: none;">
+					<h3>Publish events to an Event Hub</h3>
+				</a>
 				<p>In order to publish events, you&#39;ll need to create an <code>EventHubProducer</code>. Producers may be dedicated to a specific partition, or allow the Event Hubs service to decide which partition events should be published to. It is recommended to use automatic routing when the publishing of events needs to be highly available or when event data should be distributed evenly among the partitions. In the our example, we will take advantage of automatic routing.</p>
 				<p>You can also use the <a href="https://azure.github.io/azure-sdk-for-js/event-hubs/classes/eventhubproducer.html#send">send</a> method to send multiple events using a single call.</p>
 				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> EventHubClient(<span class="hljs-string">"connectionString"</span>, <span class="hljs-string">"eventHubName"</span>);
@@ -138,7 +156,9 @@
 				All events that use the same partition key will be sent to the same partition.</p>
 				<p><strong>Note</strong>: When working with Azure Stream Analytics, the body of the event being sent should be a JSON object as well.
 				For example: <code>body: { &quot;message&quot;: &quot;Hello World&quot; }</code></p>
-				<h3 id="consume-events-from-an-event-hub">Consume events from an Event Hub</h3>
+				<a href="#consume-events-from-an-event-hub" id="consume-events-from-an-event-hub" style="color: inherit; text-decoration: none;">
+					<h3>Consume events from an Event Hub</h3>
+				</a>
 				<p>In order to consume events, you&#39;ll need to create an <code>EventHubConsumer</code> for a specific partition and consumer group combination. When an Event Hub is created, it starts with a default consumer group that can be used to get started. A consumer also needs to specify where in the event stream to begin receiving events; in our example, we will focus on reading new events as they are published.</p>
 				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> EventHubClient(<span class="hljs-string">"connectionString"</span>, <span class="hljs-string">"eventHubName"</span>);
 <span class="hljs-keyword">const</span> consumer = client.createConsumer(
@@ -154,12 +174,16 @@
 					<li><a href="#register-event-handler">Register event handler</a></li>
 					<li><a href="#use-async-iterator">Use async iterator</a></li>
 				</ul>
-				<h4 id="get-an-array-of-events">Get an array of events</h4>
+				<a href="#get-an-array-of-events" id="get-an-array-of-events" style="color: inherit; text-decoration: none;">
+					<h4>Get an array of events</h4>
+				</a>
 				<p>Use the <a href="https://azure.github.io/azure-sdk-for-js/event-hubs/classes/eventhubconsumer.html#receivebatch">receiveBatch</a> function which returns a promise that resolves to an array of events.</p>
 				<p>This function takes an optional parameter called <code>abortSignal</code> to cancel current operation.</p>
 				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> maxMessageCount = <span class="hljs-number">10</span>;
 <span class="hljs-keyword">const</span> myEvents = <span class="hljs-keyword">await</span> consumer.receiveBatch(maxMessageCount);</code></pre>
-				<h4 id="register-event-handler">Register event handler</h4>
+				<a href="#register-event-handler" id="register-event-handler" style="color: inherit; text-decoration: none;">
+					<h4>Register event handler</h4>
+				</a>
 				<p>Use the <a href="https://azure.github.io/azure-sdk-for-js/event-hubs/classes/eventhubconsumer.html#receive">receive</a> to set up event handlers and have it running as long as you need.</p>
 				<p>This function takes an optional parameter called <code>abortSignal</code> to cancel current operation.</p>
 				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> myEventHandler = <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> {
@@ -172,13 +196,17 @@
 
 <span class="hljs-comment">// When ready to stop receiving</span>
 <span class="hljs-keyword">await</span> receiveHandler.stop();</code></pre>
-				<h4 id="use-async-iterator">Use async iterator</h4>
+				<a href="#use-async-iterator" id="use-async-iterator" style="color: inherit; text-decoration: none;">
+					<h4>Use async iterator</h4>
+				</a>
 				<p>Use the <a href="https://azure.github.io/azure-sdk-for-js/event-hubs/classes/eventhubconsumer.html#geteventiterator">getMessageIterator</a> to get an async iterator over events.</p>
 				<p>This function takes an optional <a href="https://azure.github.io/azure-sdk-for-js/event-hubs/interfaces/eventiteratoroptions.html">EventIteratorOptions</a> parameter that includes <code>abortSignal</code> to cancel the current operation.</p>
 				<pre><code class="language-javascript"><span class="hljs-keyword">for</span> <span class="hljs-keyword">await</span> (<span class="hljs-keyword">const</span> events <span class="hljs-keyword">of</span> consumer.getEventIterator()){
   <span class="hljs-comment">// your code here</span>
 }</code></pre>
-				<h3 id="use-eventhubclient-to-work-with-iothub">Use EventHubClient to work with IotHub</h3>
+				<a href="#use-eventhubclient-to-work-with-iothub" id="use-eventhubclient-to-work-with-iothub" style="color: inherit; text-decoration: none;">
+					<h3>Use EventHubClient to work with IotHub</h3>
+				</a>
 				<p>You can use <code>EventHubClient</code> to work with IotHub as well. This is useful for receiving telemetry data of IotHub from the linked EventHub.
 				Most likely the associated connection string will not have send claims. Hence getting HubRuntimeInfo or PartitionRuntimeInfo and receiving events would be the possible operations.</p>
 				<ul>
@@ -188,10 +216,16 @@
 <span class="hljs-keyword">await</span> client.getProperties();
 <span class="hljs-keyword">await</span> client.getPartitionProperties(<span class="hljs-string">"partitionId"</span>);</code></pre>
 				<p><strong>Notes:</strong> For scalable and efficient receiving, please take a look at <a href="https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/eventhub/event-processor-host">azure-event-processor-host</a>. The Event Processor host, internally uses the streaming receiver to receive events.</p>
-				<h2 id="troubleshooting">Troubleshooting</h2>
-				<h3 id="amqp-dependencies">AMQP Dependencies</h3>
+				<a href="#troubleshooting" id="troubleshooting" style="color: inherit; text-decoration: none;">
+					<h2>Troubleshooting</h2>
+				</a>
+				<a href="#amqp-dependencies" id="amqp-dependencies" style="color: inherit; text-decoration: none;">
+					<h3>AMQP Dependencies</h3>
+				</a>
 				<p>The Event Hubs library depends on the <a href="https://github.com/amqp/rhea-promise">rhea-promise</a> library for managing connections, sending and receiving events over the <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-complete-v1.0-os.pdf">AMQP</a> protocol.</p>
-				<h3 id="enable-logs">Enable logs</h3>
+				<a href="#enable-logs" id="enable-logs" style="color: inherit; text-decoration: none;">
+					<h3>Enable logs</h3>
+				</a>
 				<p>You can set the following environment variable to get the debug logs when using this library.</p>
 				<ul>
 					<li>Getting debug logs from the Event Hubs SDK</li>
@@ -209,13 +243,17 @@
 					<li>If you are interested only in <strong>errors</strong>, then you can set the <code>DEBUG</code> environment variable as follows:</li>
 				</ul>
 				<pre><code class="language-bash"><span class="hljs-built_in">export</span> DEBUG=azure:event-hubs:error,azure-amqp-common:error,rhea-promise:error,rhea:events,rhea:frames,rhea:io,rhea:flow</code></pre>
-				<h3 id="logging-to-a-file">Logging to a file</h3>
+				<a href="#logging-to-a-file" id="logging-to-a-file" style="color: inherit; text-decoration: none;">
+					<h3>Logging to a file</h3>
+				</a>
 				<ul>
 					<li><p>Set the <code>DEBUG</code> environment variable as shown above and then run your test script as follows:</p>
 						<ul>
-							<li>Logging statements from your test script go to <code>out.log</code> and logging statements from the sdk go to <code>debug.log</code>.<pre><code class="language-bash">node your-test-script.js &gt; out.log 2&gt;debug.log</code></pre>
+							<li><p>Logging statements from your test script go to <code>out.log</code> and logging statements from the sdk go to <code>debug.log</code>.</p>
+								<pre><code class="language-bash">node your-test-script.js &gt; out.log 2&gt;debug.log</code></pre>
 							</li>
-							<li>Logging statements from your test script and the sdk go to the same file <code>out.log</code> by redirecting stderr to stdout (&amp;1), and then redirect stdout to a file:<pre><code class="language-bash">node your-test-script.js &gt;out.log 2&gt;&amp;1</code></pre>
+							<li><p>Logging statements from your test script and the sdk go to the same file <code>out.log</code> by redirecting stderr to stdout (&amp;1), and then redirect stdout to a file:</p>
+								<pre><code class="language-bash">node your-test-script.js &gt;out.log 2&gt;&amp;1</code></pre>
 							</li>
 							<li><p>Logging statements from your test script and the sdk go to the same file <code>out.log</code>.</p>
 								<pre><code class="language-bash">  node your-test-script.js &amp;&gt; out.log</code></pre>
@@ -223,11 +261,15 @@
 						</ul>
 					</li>
 				</ul>
-				<h2 id="next-steps">Next Steps</h2>
+				<a href="#next-steps" id="next-steps" style="color: inherit; text-decoration: none;">
+					<h2>Next Steps</h2>
+				</a>
 				<p>Please take a look at the <a href="https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/eventhub/event-hubs/samples">samples</a>
 					directory for detailed examples on how to use this library to send and receive events to/from
 				<a href="https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-about">Event Hubs</a>.</p>
-				<h2 id="contributing">Contributing</h2>
+				<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
+					<h2>Contributing</h2>
+				</a>
 				<p>If you&#39;d like to contribute to this library, please read the <a href="../../../CONTRIBUTING.md">contributing guide</a> to learn more about how to build and test the code.</p>
 				<p><img src="https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-js/sdk/eventhub/event-hubs/README.png" alt="Impressions"></p>
 			</div>
@@ -322,6 +364,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -370,7 +413,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="assets/js/main.js"></script>

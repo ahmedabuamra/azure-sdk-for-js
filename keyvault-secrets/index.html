@@ -62,7 +62,9 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h1 id="azure-keyvault-secrets-client-library-for-js">Azure KeyVault Secrets client library for JS</h1>
+				<a href="#azure-keyvault-secrets-client-library-for-js" id="azure-keyvault-secrets-client-library-for-js" style="color: inherit; text-decoration: none;">
+					<h1>Azure KeyVault Secrets client library for JS</h1>
+				</a>
 				<p>Azure KeyVault is a service that allows you to encrypt authentication
 					keys, storage account keys, data encryption keys, .pfx files, and
 					passwords by using keys that are protected by hardware security
@@ -81,22 +83,32 @@
 					<li>Get all deleted secrets.</li>
 				</ul>
 				<p><a href="https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/keyvault/keyvault-secrets">Source code</a> | <a href="https://www.npmjs.com/package/@azure/keyvault-secrets">Package (npm)</a> | <a href="https://azure.github.io/azure-sdk-for-js/keyvault-secrets">API Reference Documentation</a> | <a href="https://azure.microsoft.com/en-us/services/key-vault/">Product documentation</a> | <a href="https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/keyvault/keyvault-secrets/samples">Samples</a></p>
-				<h2 id="getting-started">Getting started</h2>
-				<h3 id="install-the-package">Install the package</h3>
+				<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
+					<h2>Getting started</h2>
+				</a>
+				<a href="#install-the-package" id="install-the-package" style="color: inherit; text-decoration: none;">
+					<h3>Install the package</h3>
+				</a>
 				<p>Install the Azure Event KeyVault Secrets client library using npm</p>
 				<p><code>npm install @azure/keyvault-secrets</code></p>
 				<p><strong>Prerequisites</strong>: You must have an <a href="https://azure.microsoft.com/free/">Azure subscription</a> and a
 					<a href="https://docs.microsoft.com/en-us/azure/key-vault/quick-create-portal">KeyVault resource</a> to use this package.
 				If you are using this package in a Node.js application, then use Node.js 6.x or higher.</p>
-				<h3 id="configure-typescript">Configure Typescript</h3>
+				<a href="#configure-typescript" id="configure-typescript" style="color: inherit; text-decoration: none;">
+					<h3>Configure Typescript</h3>
+				</a>
 				<p>TypeScript users need to have Node type definitions installed:</p>
 				<pre><code class="language-bash">npm install @types/node</code></pre>
 				<p>You also need to enable <code>compilerOptions.allowSyntheticDefaultImports</code> in your tsconfig.json. Note that if you have enabled <code>compilerOptions.esModuleInterop</code>, <code>allowSyntheticDefaultImports</code> is enabled by default. See <a href="https://www.typescriptlang.org/docs/handbook/compiler-options.html">TypeScript&#39;s compiler options handbook</a> for more information.</p>
-				<h3 id="configuring-your-key-vault">Configuring your Key Vault</h3>
+				<a href="#configuring-your-key-vault" id="configuring-your-key-vault" style="color: inherit; text-decoration: none;">
+					<h3>Configuring your Key Vault</h3>
+				</a>
 				<p>Use the <a href="https://shell.azure.com/bash">Azure Cloud Shell</a> snippet below to create/get client secret credentials.</p>
 				<ul>
-					<li>Create a service principal and configure its access to Azure resources:<pre><code class="language-Bash">az ad sp create-for-rbac -n &lt;your-application-name&gt; --skip-assignment</code></pre>
-						Output:<pre><code class="language-json">{
+					<li><p>Create a service principal and configure its access to Azure resources:</p>
+						<pre><code class="language-Bash">az ad sp create-for-rbac -n &lt;your-application-name&gt; --skip-assignment</code></pre>
+						<p>Output:</p>
+						<pre><code class="language-json">{
   <span class="hljs-attr">"appId"</span>: <span class="hljs-string">"generated-app-ID"</span>,
   <span class="hljs-attr">"displayName"</span>: <span class="hljs-string">"dummy-app-name"</span>,
   <span class="hljs-attr">"name"</span>: <span class="hljs-string">"http://dummy-app-name"</span>,
@@ -120,7 +132,9 @@
 						<pre><code class="language-Bash">az keyvault show --name &lt;your-key-vault-name&gt;</code></pre>
 					</li>
 				</ul>
-				<h3 id="authenticate-the-client">Authenticate the client</h3>
+				<a href="#authenticate-the-client" id="authenticate-the-client" style="color: inherit; text-decoration: none;">
+					<h3>Authenticate the client</h3>
+				</a>
 				<p>To use the key vault from TypeScript/JavaScript, you need to first authenticate with the key vault service. To authenticate, first we import the identity and SecretsClient, which will connect to the key vault.</p>
 				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { EnvironmentCredential } <span class="hljs-keyword">from</span> <span class="hljs-string">"@azure/identity"</span>;
 <span class="hljs-keyword">import</span> { SecretsClient } <span class="hljs-keyword">from</span> <span class="hljs-string">"@azure/keyvault-secrets"</span>;</code></pre>
@@ -137,48 +151,76 @@
 
 <span class="hljs-comment">// Lastly, create our secrets client and connect to the service</span>
 <span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> SecretsClient(url, credential);</code></pre>
-				<h2 id="key-concepts">Key concepts</h2>
-				<h3 id="creating-secrets-and-secret-versions">Creating secrets and secret versions</h3>
+				<a href="#key-concepts" id="key-concepts" style="color: inherit; text-decoration: none;">
+					<h2>Key concepts</h2>
+				</a>
+				<a href="#creating-secrets-and-secret-versions" id="creating-secrets-and-secret-versions" style="color: inherit; text-decoration: none;">
+					<h3>Creating secrets and secret versions</h3>
+				</a>
 				<p>Azure Key Vault allows you to create secrets that are stored in the key vault. When a secret is first created, it is given a name and a value. This name acts as a way to reach the secret later.</p>
 				<p>Secrets in the key vault can have multiple versions of the same secret. These are called versions of that secret.</p>
-				<h3 id="getting-secrets-from-the-key-vault">Getting secrets from the key vault</h3>
+				<a href="#getting-secrets-from-the-key-vault" id="getting-secrets-from-the-key-vault" style="color: inherit; text-decoration: none;">
+					<h3>Getting secrets from the key vault</h3>
+				</a>
 				<p>The simplest way to read secrets back from the vault is to get a secret by name. This will retrieve the most recent version of the secret. You can optionally get a different version of the secret if you also know the version you want.</p>
 				<p>Key vaults also support listing the secrets they have, as well as listing the all the versions of the given secret.</p>
-				<h3 id="updating-secret-attributes">Updating secret attributes</h3>
+				<a href="#updating-secret-attributes" id="updating-secret-attributes" style="color: inherit; text-decoration: none;">
+					<h3>Updating secret attributes</h3>
+				</a>
 				<p>Once a secret is created, it is possible to update attributes of the secret. For example, if a secret needs to be temporarily unavailable, the <code>enabled</code> attribute can be set to false for a time.</p>
-				<h3 id="working-with-deleted-secrets">Working with deleted secrets</h3>
+				<a href="#working-with-deleted-secrets" id="working-with-deleted-secrets" style="color: inherit; text-decoration: none;">
+					<h3>Working with deleted secrets</h3>
+				</a>
 				<p>Key vaults allow deleting secrets so that they are no longer available.</p>
 				<p>In key vaults with &#39;soft delete&#39; enabled, secrets are not immediately removed but instead marked simply as &#39;deleted&#39;. These deleted secrets can be listed, purged, and recovered.</p>
-				<h2 id="examples">Examples</h2>
+				<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+					<h2>Examples</h2>
+				</a>
 				<p>The following sections provide code snippets that cover some of the common tasks using Azure KeyVault Secrets.</p>
 				<p>Once you have authenticated and created an instance of an <code>SecretsClient</code> class (see &quot;Authenticate the client&quot; above), you can create, read, update, and delete secrets:</p>
-				<h3 id="create-a-secret">Create a secret</h3>
+				<a href="#create-a-secret" id="create-a-secret" style="color: inherit; text-decoration: none;">
+					<h3>Create a secret</h3>
+				</a>
 				<p><code>setSecret</code> creates a secret to be stored in the Azure Key Vault. If a secret with the same name already exists, then a new version of the secret is created.</p>
 				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> secretName = <span class="hljs-string">"MySecretName"</span>;
 <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> client.setSecret(secretName, <span class="hljs-string">"MySecretValue"</span>);</code></pre>
-				<h3 id="get-a-secret">Get a secret</h3>
+				<a href="#get-a-secret" id="get-a-secret" style="color: inherit; text-decoration: none;">
+					<h3>Get a secret</h3>
+				</a>
 				<p><code>getSecret</code> retrieves a secret previously stored in the Key Vault.</p>
 				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> getResult = <span class="hljs-keyword">await</span> client.getSecret(secretName);
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"getResult: "</span>, getResult);</code></pre>
-				<h3 id="list-all-versions-of-a-secret">List all versions of a secret</h3>
+				<a href="#list-all-versions-of-a-secret" id="list-all-versions-of-a-secret" style="color: inherit; text-decoration: none;">
+					<h3>List all versions of a secret</h3>
+				</a>
 				<p><code>listSecretVersions</code> will list versions of the given secret.</p>
 				<pre><code class="language-javascript"><span class="hljs-keyword">for</span> <span class="hljs-keyword">await</span> (<span class="hljs-keyword">let</span> version <span class="hljs-keyword">of</span> client.listSecretVersions(secretName)) {
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"version: "</span>, version);
 }</code></pre>
-				<h3 id="list-all-secrets">List all secrets</h3>
+				<a href="#list-all-secrets" id="list-all-secrets" style="color: inherit; text-decoration: none;">
+					<h3>List all secrets</h3>
+				</a>
 				<p><code>listSecrets</code> will list all secrets in the Key Vault.</p>
 				<pre><code class="language-javascript"><span class="hljs-keyword">for</span> <span class="hljs-keyword">await</span> (<span class="hljs-keyword">let</span> listedSecret <span class="hljs-keyword">of</span> client.listSecrets()) {
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"secret: "</span>, listedSecret);
 }</code></pre>
-				<h3 id="update-the-attributes-of-a-secret">Update the attributes of a secret</h3>
+				<a href="#update-the-attributes-of-a-secret" id="update-the-attributes-of-a-secret" style="color: inherit; text-decoration: none;">
+					<h3>Update the attributes of a secret</h3>
+				</a>
 				<p><code>updateSecretAttributes</code> updates the attributes of a secret.</p>
 				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> result = getSecret(secretName);
 <span class="hljs-keyword">await</span> client.updateSecretAttributes(secretName, result.version, { <span class="hljs-attr">enabled</span>: <span class="hljs-literal">false</span> });</code></pre>
-				<h3 id="delete-a-secret">Delete a secret</h3>
+				<a href="#delete-a-secret" id="delete-a-secret" style="color: inherit; text-decoration: none;">
+					<h3>Delete a secret</h3>
+				</a>
 				<p><code>deleteSecret</code> deletes a secret previously stored in the Key Vault. When <a href="https://docs.microsoft.com/en-us/azure/key-vault/key-vault-ovw-soft-delete">soft-delete</a> is not enabled for the Key Vault, this operation permanently deletes the deletes.</p>
 				<pre><code class="language-javascript"><span class="hljs-keyword">await</span> client.deleteSecret(secretName);</code></pre>
-				<h2 id="troubleshooting">Troubleshooting</h2>
-				<h3 id="enable-logs">Enable logs</h3>
+				<a href="#troubleshooting" id="troubleshooting" style="color: inherit; text-decoration: none;">
+					<h2>Troubleshooting</h2>
+				</a>
+				<a href="#enable-logs" id="enable-logs" style="color: inherit; text-decoration: none;">
+					<h3>Enable logs</h3>
+				</a>
 				<p>You can set the following environment variable to get the debug logs when using this library.</p>
 				<ul>
 					<li>Getting debug logs from the KeyVault Secrets SDK</li>
@@ -196,13 +238,17 @@
 					<li>If you are interested only in <strong>errors</strong>, then you can set the <code>DEBUG</code> environment variable as follows:</li>
 				</ul>
 				<pre><code class="language-bash"><span class="hljs-built_in">export</span> DEBUG=azure:keyvault-secrets:error,azure-amqp-common:error,rhea-promise:error,rhea:events,rhea:frames,rhea:io,rhea:flow</code></pre>
-				<h3 id="logging-to-a-file">Logging to a file</h3>
+				<a href="#logging-to-a-file" id="logging-to-a-file" style="color: inherit; text-decoration: none;">
+					<h3>Logging to a file</h3>
+				</a>
 				<ul>
 					<li><p>Set the <code>DEBUG</code> environment variable as shown above and then run your test script as follows:</p>
 						<ul>
-							<li>Logging statements from your test script go to <code>out.log</code> and logging statements from the sdk go to <code>debug.log</code>.<pre><code class="language-bash">node your-test-script.js &gt; out.log 2&gt;debug.log</code></pre>
+							<li><p>Logging statements from your test script go to <code>out.log</code> and logging statements from the sdk go to <code>debug.log</code>.</p>
+								<pre><code class="language-bash">node your-test-script.js &gt; out.log 2&gt;debug.log</code></pre>
 							</li>
-							<li>Logging statements from your test script and the sdk go to the same file <code>out.log</code> by redirecting stderr to stdout (&amp;1), and then redirect stdout to a file:<pre><code class="language-bash">node your-test-script.js &gt;out.log 2&gt;&amp;1</code></pre>
+							<li><p>Logging statements from your test script and the sdk go to the same file <code>out.log</code> by redirecting stderr to stdout (&amp;1), and then redirect stdout to a file:</p>
+								<pre><code class="language-bash">node your-test-script.js &gt;out.log 2&gt;&amp;1</code></pre>
 							</li>
 							<li><p>Logging statements from your test script and the sdk go to the same file <code>out.log</code>.</p>
 								<pre><code class="language-bash">  node your-test-script.js &amp;&gt; out.log</code></pre>
@@ -210,7 +256,9 @@
 						</ul>
 					</li>
 				</ul>
-				<h2 id="next-steps">Next steps</h2>
+				<a href="#next-steps" id="next-steps" style="color: inherit; text-decoration: none;">
+					<h2>Next steps</h2>
+				</a>
 				<p>Please take a look at the
 					<a href="https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/keyvault/keyvault-secrets/samples">samples</a>
 				directory for detailed examples on how to use this library.</p>
@@ -220,7 +268,9 @@
 					<li><a href="https://github.com/Azure/azure-sdk-for-js/blob/master/sdk/keyvault/keyvault-secrets/samples/backupAndRestore.ts">backupAndRestore.ts</a> - Backup a secret and restore it after it has been deleted.</li>
 					<li><a href="https://github.com/Azure/azure-sdk-for-js/blob/master/sdk/keyvault/keyvault-secrets/samples/deleteAndRecover.ts">deleteAndRecover.ts</a> - Deletes a secret and recovers it after. <strong>Note:</strong> this assumes <a href="https://docs.microsoft.com/en-us/azure/key-vault/key-vault-ovw-soft-delete">soft-delete</a> is enabled for the key vault.</li>
 				</ul>
-				<h2 id="contributing">Contributing</h2>
+				<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
+					<h2>Contributing</h2>
+				</a>
 				<p>This project welcomes contributions and suggestions. Most contributions require you to agree to a
 					Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
 				the rights to use your contribution. For details, visit <a href="https://cla.microsoft.com.">https://cla.microsoft.com.</a></p>
@@ -285,6 +335,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -333,7 +384,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="assets/js/main.js"></script>

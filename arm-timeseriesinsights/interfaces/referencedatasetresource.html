@@ -66,18 +66,12 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>interface</dt>
-						<dd><p>An interface representing ReferenceDataSetResource.
-								A reference data set provides metadata about the events in an environment.
-								Metadata in the reference data set will be joined with events as they are
-								read from event sources. The metadata that makes up the reference data set
-							is uploaded or modified through the Time Series Insights data plane APIs.</p>
-						</dd>
-						<dt>extends</dt>
-						<dd><p>TrackedResource</p>
-						</dd>
-					</dl>
+					<div class="lead">
+						<p>A reference data set provides metadata about the events in an environment. Metadata in the
+							reference data set will be joined with events as they are read from event sources. The metadata
+							that makes up the reference data set is uploaded or modified through the Time Series Insights
+						data plane APIs.</p>
+					</div>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -122,17 +116,14 @@
 					<div class="tsd-signature tsd-kind-icon">creation<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/717ccc4797/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L1134">models/index.ts:1134</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L899">models/index.ts:899</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{Date} [creationTime] The time the resource was created.
-									<strong>NOTE: This property will not be serialized. It can only be populated by
-								the server.</strong></p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>The time the resource was created.
+							<strong>NOTE: This property will not be serialized. It can only be populated by the server.</strong></p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -141,21 +132,17 @@
 					<div class="tsd-signature tsd-kind-icon">data<wbr>String<wbr>Comparison<wbr>Behavior<span class="tsd-signature-symbol">:</span> <a href="../globals.html#datastringcomparisonbehavior" class="tsd-signature-type">DataStringComparisonBehavior</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/717ccc4797/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L1122">models/index.ts:1122</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L889">models/index.ts:889</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{DataStringComparisonBehavior} [dataStringComparisonBehavior] The
-									reference data set key comparison behavior can be set using this property.
-									By default, the value is &#39;Ordinal&#39; - which means case sensitive key
-									comparison will be performed while joining reference data with events or
-									while adding new reference data. When &#39;OrdinalIgnoreCase&#39; is set, case
-									insensitive comparison will be used. Possible values include: &#39;Ordinal&#39;,
-								&#39;OrdinalIgnoreCase&#39;</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>The reference data set key comparison behavior can be set using this property. By default, the
+								value is &#39;Ordinal&#39; - which means case sensitive key comparison will be performed while joining
+								reference data with events or while adding new reference data. When &#39;OrdinalIgnoreCase&#39; is
+								set, case insensitive comparison will be used. Possible values include: &#39;Ordinal&#39;,
+							&#39;OrdinalIgnoreCase&#39;</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -165,17 +152,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="resource.html">Resource</a>.<a href="resource.html#id">id</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/717ccc4797/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L91">models/index.ts:91</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L64">models/index.ts:64</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [id] Resource Id
-									<strong>NOTE: This property will not be serialized. It can only be populated by
-								the server.</strong></p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Resource Id
+							<strong>NOTE: This property will not be serialized. It can only be populated by the server.</strong></p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -184,16 +168,13 @@
 					<div class="tsd-signature tsd-kind-icon">key<wbr>Properties<span class="tsd-signature-symbol">:</span> <a href="referencedatasetkeyproperty.html" class="tsd-signature-type">ReferenceDataSetKeyProperty</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/717ccc4797/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L1112">models/index.ts:1112</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L881">models/index.ts:881</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{ReferenceDataSetKeyProperty[]} keyProperties The list of key
-								properties for the reference data set.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>The list of key properties for the reference data set.</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -203,15 +184,13 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="trackedresource.html">TrackedResource</a>.<a href="trackedresource.html#location">location</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/717ccc4797/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L117">models/index.ts:117</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L84">models/index.ts:84</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} location Resource location</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Resource location</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -221,17 +200,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="resource.html">Resource</a>.<a href="resource.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/717ccc4797/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L97">models/index.ts:97</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L69">models/index.ts:69</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [name] Resource name
-									<strong>NOTE: This property will not be serialized. It can only be populated by
-								the server.</strong></p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Resource name
+							<strong>NOTE: This property will not be serialized. It can only be populated by the server.</strong></p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -240,17 +216,14 @@
 					<div class="tsd-signature tsd-kind-icon">provisioning<wbr>State<span class="tsd-signature-symbol">:</span> <a href="../globals.html#provisioningstate" class="tsd-signature-type">ProvisioningState</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/717ccc4797/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L1128">models/index.ts:1128</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L894">models/index.ts:894</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{ProvisioningState} [provisioningState] Provisioning state of the
-									resource. Possible values include: &#39;Accepted&#39;, &#39;Creating&#39;, &#39;Updating&#39;,
-								&#39;Succeeded&#39;, &#39;Failed&#39;, &#39;Deleting&#39;</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Provisioning state of the resource. Possible values include: &#39;Accepted&#39;, &#39;Creating&#39;,
+							&#39;Updating&#39;, &#39;Succeeded&#39;, &#39;Failed&#39;, &#39;Deleting&#39;</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -260,15 +233,13 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="trackedresource.html">TrackedResource</a>.<a href="trackedresource.html#tags">tags</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/717ccc4797/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L121">models/index.ts:121</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L88">models/index.ts:88</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{{ [propertyName: string]: string }} [tags] Resource tags</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Resource tags</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -278,17 +249,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="resource.html">Resource</a>.<a href="resource.html#type">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/717ccc4797/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L103">models/index.ts:103</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L74">models/index.ts:74</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [type] Resource type
-									<strong>NOTE: This property will not be serialized. It can only be populated by
-								the server.</strong></p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Resource type
+							<strong>NOTE: This property will not be serialized. It can only be populated by the server.</strong></p>
+						</div>
 					</div>
 				</section>
 			</section>

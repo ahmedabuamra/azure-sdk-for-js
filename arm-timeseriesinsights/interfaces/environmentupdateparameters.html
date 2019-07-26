@@ -66,12 +66,9 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>interface</dt>
-						<dd><p>An interface representing EnvironmentUpdateParameters.
-							Parameters supplied to the Update Environment operation.</p>
-						</dd>
-					</dl>
+					<div class="lead">
+						<p>Parameters supplied to the Update Environment operation.</p>
+					</div>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -107,17 +104,14 @@
 					<div class="tsd-signature tsd-kind-icon">data<wbr>Retention<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/717ccc4797/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L260">models/index.ts:260</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L196">models/index.ts:196</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [dataRetentionTime] ISO8601 timespan specifying the
-									minimum number of days the environment&#39;s events will be available for
-								query.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>ISO8601 timespan specifying the minimum number of days the environment&#39;s events will be
+							available for query.</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -126,16 +120,13 @@
 					<div class="tsd-signature tsd-kind-icon">partition<wbr>Key<wbr>Properties<span class="tsd-signature-symbol">:</span> <a href="partitionkeyproperty.html" class="tsd-signature-type">PartitionKeyProperty</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/717ccc4797/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L275">models/index.ts:275</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L208">models/index.ts:208</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{PartitionKeyProperty[]} [partitionKeyProperties] The list of
-								event properties which will be used to partition data in the environment.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>The list of event properties which will be used to partition data in the environment.</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -144,15 +135,13 @@
 					<div class="tsd-signature tsd-kind-icon">sku<span class="tsd-signature-symbol">:</span> <a href="../globals.html#sku" class="tsd-signature-type">Sku</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/717ccc4797/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L249">models/index.ts:249</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L187">models/index.ts:187</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{Sku} [sku] The sku of the environment.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>The sku of the environment.</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -161,21 +150,17 @@
 					<div class="tsd-signature tsd-kind-icon">storage<wbr>Limit<wbr>Exceeded<wbr>Behavior<span class="tsd-signature-symbol">:</span> <a href="../globals.html#storagelimitexceededbehavior" class="tsd-signature-type">StorageLimitExceededBehavior</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/717ccc4797/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L270">models/index.ts:270</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L204">models/index.ts:204</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{StorageLimitExceededBehavior} [storageLimitExceededBehavior] The
-									behavior the Time Series Insights service should take when the
-									environment&#39;s capacity has been exceeded. If &quot;PauseIngress&quot; is specified,
-									new events will not be read from the event source. If &quot;PurgeOldData&quot; is
-									specified, new events will continue to be read and old events will be
-									deleted from the environment. The default behavior is PurgeOldData.
-								Possible values include: &#39;PurgeOldData&#39;, &#39;PauseIngress&#39;</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>The behavior the Time Series Insights service should take when the environment&#39;s capacity has
+								been exceeded. If &quot;PauseIngress&quot; is specified, new events will not be read from the event
+								source. If &quot;PurgeOldData&quot; is specified, new events will continue to be read and old events
+								will be deleted from the environment. The default behavior is PurgeOldData. Possible values
+							include: &#39;PurgeOldData&#39;, &#39;PauseIngress&#39;</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -184,16 +169,13 @@
 					<div class="tsd-signature tsd-kind-icon">tags<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/717ccc4797/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L254">models/index.ts:254</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/timeseriesinsights/arm-timeseriesinsights/src/models/index.ts#L191">models/index.ts:191</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{{ [propertyName: string]: string }} [tags] Key-value pairs of
-								additional properties for the environment.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Key-value pairs of additional properties for the environment.</p>
+						</div>
 					</div>
 				</section>
 			</section>

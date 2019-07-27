@@ -66,12 +66,9 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>interface</dt>
-						<dd><p>An interface representing AzureDataLakeStoreOutputDataSource.
-							Describes an Azure Data Lake Store output data source.</p>
-						</dd>
-					</dl>
+					<div class="lead">
+						<p>Describes an Azure Data Lake Store output data source.</p>
+					</div>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -111,16 +108,13 @@
 					<div class="tsd-signature tsd-kind-icon">account<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/streamanalytics/arm-streamanalytics/src/models/index.ts#L957">models/index.ts:957</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/streamanalytics/arm-streamanalytics/src/models/index.ts#L746">models/index.ts:746</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [accountName] The name of the Azure Data Lake Store
-								account. Required on PUT (CreateOrReplace) requests.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>The name of the Azure Data Lake Store account. Required on PUT (CreateOrReplace) requests.</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -129,17 +123,14 @@
 					<div class="tsd-signature tsd-kind-icon">date<wbr>Format<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/streamanalytics/arm-streamanalytics/src/models/index.ts#L973">models/index.ts:973</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/streamanalytics/arm-streamanalytics/src/models/index.ts#L761">models/index.ts:761</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [dateFormat] The date format. Wherever {date} appears in
-									filePathPrefix, the value of this property is used as the date format
-								instead.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>The date format. Wherever {date} appears in filePathPrefix, the value of this property is used
+							as the date format instead.</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -148,16 +139,14 @@
 					<div class="tsd-signature tsd-kind-icon">file<wbr>Path<wbr>Prefix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/streamanalytics/arm-streamanalytics/src/models/index.ts#L967">models/index.ts:967</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/streamanalytics/arm-streamanalytics/src/models/index.ts#L756">models/index.ts:756</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [filePathPrefix] The location of the file to which the
-								output should be written to. Required on PUT (CreateOrReplace) requests.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>The location of the file to which the output should be written to. Required on PUT
+							(CreateOrReplace) requests.</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -166,21 +155,17 @@
 					<div class="tsd-signature tsd-kind-icon">refresh<wbr>Token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/streamanalytics/arm-streamanalytics/src/models/index.ts#L940">models/index.ts:940</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/streamanalytics/arm-streamanalytics/src/models/index.ts#L732">models/index.ts:732</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [refreshToken] A refresh token that can be used to obtain
-									a valid access token that can then be used to authenticate with the data
-									source. A valid refresh token is currently only obtainable via the Azure
-									Portal. It is recommended to put a dummy string value here when creating
-									the data source and then going to the Azure Portal to authenticate the
-									data source which will update this property with a valid refresh token.
-								Required on PUT (CreateOrReplace) requests.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>A refresh token that can be used to obtain a valid access token that can then be used to
+								authenticate with the data source. A valid refresh token is currently only obtainable via the
+								Azure Portal. It is recommended to put a dummy string value here when creating the data source
+								and then going to the Azure Portal to authenticate the data source which will update this
+							property with a valid refresh token. Required on PUT (CreateOrReplace) requests.</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -189,16 +174,14 @@
 					<div class="tsd-signature tsd-kind-icon">tenant<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/streamanalytics/arm-streamanalytics/src/models/index.ts#L962">models/index.ts:962</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/streamanalytics/arm-streamanalytics/src/models/index.ts#L751">models/index.ts:751</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [tenantId] The tenant id of the user used to obtain the
-								refresh token. Required on PUT (CreateOrReplace) requests.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>The tenant id of the user used to obtain the refresh token. Required on PUT (CreateOrReplace)
+							requests.</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -207,17 +190,14 @@
 					<div class="tsd-signature tsd-kind-icon">time<wbr>Format<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/streamanalytics/arm-streamanalytics/src/models/index.ts#L979">models/index.ts:979</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/streamanalytics/arm-streamanalytics/src/models/index.ts#L766">models/index.ts:766</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [timeFormat] The time format. Wherever {time} appears in
-									filePathPrefix, the value of this property is used as the time format
-								instead.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>The time format. Wherever {time} appears in filePathPrefix, the value of this property is used
+							as the time format instead.</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -226,17 +206,14 @@
 					<div class="tsd-signature tsd-kind-icon">token<wbr>User<wbr>Display<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/streamanalytics/arm-streamanalytics/src/models/index.ts#L952">models/index.ts:952</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/streamanalytics/arm-streamanalytics/src/models/index.ts#L742">models/index.ts:742</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [tokenUserDisplayName] The user display name of the user
-									that was used to obtain the refresh token. Use this property to help
-								remember which user was used to obtain the refresh token.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>The user display name of the user that was used to obtain the refresh token. Use this property
+							to help remember which user was used to obtain the refresh token.</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -245,17 +222,14 @@
 					<div class="tsd-signature tsd-kind-icon">token<wbr>User<wbr>Principal<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/streamanalytics/arm-streamanalytics/src/models/index.ts#L946">models/index.ts:946</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/streamanalytics/arm-streamanalytics/src/models/index.ts#L737">models/index.ts:737</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [tokenUserPrincipalName] The user principal name (UPN) of
-									the user that was used to obtain the refresh token. Use this property to
-								help remember which user was used to obtain the refresh token.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>The user principal name (UPN) of the user that was used to obtain the refresh token. Use this
+							property to help remember which user was used to obtain the refresh token.</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -264,15 +238,13 @@
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Microsoft.DataLake/Accounts"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/streamanalytics/arm-streamanalytics/src/models/index.ts#L930">models/index.ts:930</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/streamanalytics/arm-streamanalytics/src/models/index.ts#L724">models/index.ts:724</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} type Polymorphic Discriminator</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Polymorphic Discriminator</p>
+						</div>
 					</div>
 				</section>
 			</section>

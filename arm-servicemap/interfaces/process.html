@@ -66,19 +66,15 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>interface</dt>
-						<dd><p>An interface representing Process.
-								A process resource represents a process running on a machine. The process
-								may be actively <em>monitored</em>, i.e., a Dependency Agent is running on its
-								machine, or <em>discovered</em>, i.e., its existence was inferred by observing the
-								data stream from monitored machines. A process resource represents a pool of
-								actual operating system resources that share command lines and metadata. As
-								the process pool evolves over time, prior versions of the process resource
-								are preserved and available for access. A process is live during an interval
-							of time, if that process is executing during (parts) of that interval</p>
-						</dd>
-					</dl>
+					<div class="lead">
+						<p>A process resource represents a process running on a machine. The process may be actively
+							<em>monitored</em>, i.e., a Dependency Agent is running on its machine, or <em>discovered</em>, i.e., its
+							existence was inferred by observing the data stream from monitored machines. A process resource
+							represents a pool of actual operating system resources that share command lines and metadata. As
+							the process pool evolves over time, prior versions of the process resource are preserved and
+							available for access. A process is live during an interval of time, if that process is executing
+						during (parts) of that interval</p>
+					</div>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -127,17 +123,14 @@
 					<div class="tsd-signature tsd-kind-icon">acceptor<wbr>Of<span class="tsd-signature-symbol">:</span> <a href="../globals.html#resourcereferenceunion" class="tsd-signature-type">ResourceReferenceUnion</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/service-map/arm-servicemap/src/models/index.ts#L875">models/index.ts:875</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/service-map/arm-servicemap/src/models/index.ts#L730">models/index.ts:730</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{ResourceReferenceUnion} [acceptorOf] Present only for a
-									discovered process acting as a server. References the port on which the
-								discovered process is accepting.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Present only for a discovered process acting as a server. References the port on which the
+							discovered process is accepting.</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -146,17 +139,14 @@
 					<div class="tsd-signature tsd-kind-icon">client<wbr>Of<span class="tsd-signature-symbol">:</span> <a href="../globals.html#resourcereferenceunion" class="tsd-signature-type">ResourceReferenceUnion</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/service-map/arm-servicemap/src/models/index.ts#L869">models/index.ts:869</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/service-map/arm-servicemap/src/models/index.ts#L725">models/index.ts:725</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{ResourceReferenceUnion} [clientOf] Present only for a discovered
-									process acting as a client of a monitored process/machine/port. References
-								the monitored process/machine/port that this process is a client of.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Present only for a discovered process acting as a client of a monitored process/machine/port.
+							References the monitored process/machine/port that this process is a client of.</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -165,16 +155,13 @@
 					<div class="tsd-signature tsd-kind-icon">details<span class="tsd-signature-symbol">:</span> <a href="../globals.html#processdetails" class="tsd-signature-type">ProcessDetails</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/service-map/arm-servicemap/src/models/index.ts#L858">models/index.ts:858</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/service-map/arm-servicemap/src/models/index.ts#L716">models/index.ts:716</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{ProcessDetails} [details] Process metadata (command line, product
-								name, etc.).</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Process metadata (command line, product name, etc.).</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -183,15 +170,13 @@
 					<div class="tsd-signature tsd-kind-icon">display<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/service-map/arm-servicemap/src/models/index.ts#L838">models/index.ts:838</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/service-map/arm-servicemap/src/models/index.ts#L698">models/index.ts:698</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [displayName] Name to use for display purposes</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Name to use for display purposes</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -200,15 +185,13 @@
 					<div class="tsd-signature tsd-kind-icon">etag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/service-map/arm-servicemap/src/models/index.ts#L815">models/index.ts:815</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/service-map/arm-servicemap/src/models/index.ts#L677">models/index.ts:677</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [etag] Resource ETAG.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Resource ETAG.</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -217,15 +200,13 @@
 					<div class="tsd-signature tsd-kind-icon">executable<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/service-map/arm-servicemap/src/models/index.ts#L834">models/index.ts:834</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/service-map/arm-servicemap/src/models/index.ts#L694">models/index.ts:694</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [executableName] The name of the process executable</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>The name of the process executable</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -234,16 +215,14 @@
 					<div class="tsd-signature tsd-kind-icon">group<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/service-map/arm-servicemap/src/models/index.ts#L853">models/index.ts:853</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/service-map/arm-servicemap/src/models/index.ts#L712">models/index.ts:712</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [group] The name of the product or suite of the process.
-								The group is determined by its executable name, command line, etc.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>The name of the product or suite of the process. The group is determined by its executable
+							name, command line, etc.</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -252,16 +231,13 @@
 					<div class="tsd-signature tsd-kind-icon">hosting<span class="tsd-signature-symbol">:</span> <a href="../globals.html#processhostingconfigurationunion" class="tsd-signature-type">ProcessHostingConfigurationUnion</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/service-map/arm-servicemap/src/models/index.ts#L880">models/index.ts:880</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/service-map/arm-servicemap/src/models/index.ts#L734">models/index.ts:734</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{ProcessHostingConfigurationUnion} [hosting] Information about the
-								hosting environment</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Information about the hosting environment</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -270,17 +246,14 @@
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/service-map/arm-servicemap/src/models/index.ts#L799">models/index.ts:799</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/service-map/arm-servicemap/src/models/index.ts#L663">models/index.ts:663</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [id] Resource identifier.
-									<strong>NOTE: This property will not be serialized. It can only be populated by
-								the server.</strong></p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Resource identifier.
+							<strong>NOTE: This property will not be serialized. It can only be populated by the server.</strong></p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -289,15 +262,13 @@
 					<div class="tsd-signature tsd-kind-icon">kind<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"process"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/service-map/arm-servicemap/src/models/index.ts#L793">models/index.ts:793</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/service-map/arm-servicemap/src/models/index.ts#L658">models/index.ts:658</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} kind Polymorphic Discriminator</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Polymorphic Discriminator</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -306,15 +277,13 @@
 					<div class="tsd-signature tsd-kind-icon">machine<span class="tsd-signature-symbol">:</span> <a href="../globals.html#resourcereferenceunion" class="tsd-signature-type">ResourceReferenceUnion</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/service-map/arm-servicemap/src/models/index.ts#L830">models/index.ts:830</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/service-map/arm-servicemap/src/models/index.ts#L690">models/index.ts:690</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{ResourceReferenceUnion} [machine] Machine hosting this process.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Machine hosting this process.</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -323,17 +292,14 @@
 					<div class="tsd-signature tsd-kind-icon">monitoring<wbr>State<span class="tsd-signature-symbol">:</span> <a href="../globals.html#monitoringstate" class="tsd-signature-type">MonitoringState</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/service-map/arm-servicemap/src/models/index.ts#L826">models/index.ts:826</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/service-map/arm-servicemap/src/models/index.ts#L686">models/index.ts:686</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{MonitoringState} [monitoringState] Specifies whether the process
-									is actively monitored or discovered. Possible values include: &#39;monitored&#39;,
-								&#39;discovered&#39;</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Specifies whether the process is actively monitored or discovered. Possible values include:
+							&#39;monitored&#39;, &#39;discovered&#39;</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -342,17 +308,14 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/service-map/arm-servicemap/src/models/index.ts#L811">models/index.ts:811</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/service-map/arm-servicemap/src/models/index.ts#L673">models/index.ts:673</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [name] Resource name.
-									<strong>NOTE: This property will not be serialized. It can only be populated by
-								the server.</strong></p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Resource name.
+							<strong>NOTE: This property will not be serialized. It can only be populated by the server.</strong></p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -361,17 +324,14 @@
 					<div class="tsd-signature tsd-kind-icon">role<span class="tsd-signature-symbol">:</span> <a href="../globals.html#processrole" class="tsd-signature-type">ProcessRole</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/service-map/arm-servicemap/src/models/index.ts#L848">models/index.ts:848</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/service-map/arm-servicemap/src/models/index.ts#L707">models/index.ts:707</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{ProcessRole} [role] The inferred role of this process based on
-									its name, command line, etc. Possible values include: &#39;webServer&#39;,
-								&#39;appServer&#39;, &#39;databaseServer&#39;, &#39;ldapServer&#39;, &#39;smbServer&#39;</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>The inferred role of this process based on its name, command line, etc. Possible values
+							include: &#39;webServer&#39;, &#39;appServer&#39;, &#39;databaseServer&#39;, &#39;ldapServer&#39;, &#39;smbServer&#39;</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -380,15 +340,13 @@
 					<div class="tsd-signature tsd-kind-icon">start<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/service-map/arm-servicemap/src/models/index.ts#L842">models/index.ts:842</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/service-map/arm-servicemap/src/models/index.ts#L702">models/index.ts:702</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{Date} [startTime] UTC date and time when the process started</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>UTC date and time when the process started</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -397,16 +355,13 @@
 					<div class="tsd-signature tsd-kind-icon">timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/service-map/arm-servicemap/src/models/index.ts#L820">models/index.ts:820</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/service-map/arm-servicemap/src/models/index.ts#L681">models/index.ts:681</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{Date} [timestamp] UTC date and time when this process resource
-								was updated in the system</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>UTC date and time when this process resource was updated in the system</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -415,17 +370,14 @@
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/service-map/arm-servicemap/src/models/index.ts#L805">models/index.ts:805</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/service-map/arm-servicemap/src/models/index.ts#L668">models/index.ts:668</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [type] Resource type.
-									<strong>NOTE: This property will not be serialized. It can only be populated by
-								the server.</strong></p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Resource type.
+							<strong>NOTE: This property will not be serialized. It can only be populated by the server.</strong></p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -434,16 +386,13 @@
 					<div class="tsd-signature tsd-kind-icon">user<span class="tsd-signature-symbol">:</span> <a href="../globals.html#processuser" class="tsd-signature-type">ProcessUser</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/a0d9d6e04d/sdk/service-map/arm-servicemap/src/models/index.ts#L863">models/index.ts:863</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5da0a0769a/sdk/service-map/arm-servicemap/src/models/index.ts#L720">models/index.ts:720</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{ProcessUser} [user] Information about the account under which the
-								process is executing.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Information about the account under which the process is executing.</p>
+						</div>
 					</div>
 				</section>
 			</section>

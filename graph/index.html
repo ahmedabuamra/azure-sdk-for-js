@@ -96,8 +96,10 @@
 <span class="hljs-keyword">import</span> { GraphRbacManagementClient, GraphRbacManagementModels, GraphRbacManagementMappers } <span class="hljs-keyword">from</span> <span class="hljs-string">"@azure/graph"</span>;
 <span class="hljs-keyword">const</span> subscriptionId = process.env[<span class="hljs-string">"AZURE_SUBSCRIPTION_ID"</span>];
 
-msRestNodeAuth.interactiveLogin().then(<span class="hljs-function">(<span class="hljs-params">creds</span>) =&gt;</span> {
-  <span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> GraphRbacManagementClient(creds, subscriptionId);
+msRestNodeAuth.interactiveLogin({{ tokenAudience: <span class="hljs-string">"https://graph.windows.net"</span> }}).then(<span class="hljs-function">(<span class="hljs-params">creds</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> GraphRbacManagementClient(creds, subscriptionId, {
+    baseUri: <span class="hljs-string">"https://graph.windows.net"</span>
+  });
   client.signedInUser.get().then(<span class="hljs-function">(<span class="hljs-params">result</span>) =&gt;</span> {
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"The result is:"</span>);
     <span class="hljs-built_in">console</span>.log(result);
@@ -136,7 +138,9 @@ msRestNodeAuth.interactiveLogin().then(<span class="hljs-function">(<span class=
         <span class="hljs-comment">// may cause redirects</span>
         authManager.login();
       }
-      <span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> Azure.Graph.GraphRbacManagementClient(res.creds, subscriptionId);
+      <span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> Azure.Graph.GraphRbacManagementClient(res.creds, subscriptionId, {
+        <span class="hljs-attr">baseUri</span>: <span class="hljs-string">"https://graph.windows.net"</span>
+      });
       client.signedInUser.get().then(<span class="hljs-function">(<span class="hljs-params">result</span>) =&gt;</span> {
         <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"The result is:"</span>);
         <span class="hljs-built_in">console</span>.log(result);
@@ -189,6 +193,9 @@ msRestNodeAuth.interactiveLogin().then(<span class="hljs-function">(<span class=
 						<a href="classes/oauth2.html" class="tsd-kind-icon">OAuth2</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/oauth2permissiongrantoperations.html" class="tsd-kind-icon">OAuth2<wbr>Permission<wbr>Grant<wbr>Operations</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/objects.html" class="tsd-kind-icon">Objects</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -211,6 +218,9 @@ msRestNodeAuth.interactiveLogin().then(<span class="hljs-function">(<span class=
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/application.html" class="tsd-kind-icon">Application</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/applicationbase.html" class="tsd-kind-icon">Application<wbr>Base</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/applicationcreateparameters.html" class="tsd-kind-icon">Application<wbr>Create<wbr>Parameters</a>
@@ -276,6 +286,9 @@ msRestNodeAuth.interactiveLogin().then(<span class="hljs-function">(<span class=
 						<a href="interfaces/groupslistoptionalparams.html" class="tsd-kind-icon">Groups<wbr>List<wbr>Optional<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/informationalurl.html" class="tsd-kind-icon">Informational<wbr>Url</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/keycredential.html" class="tsd-kind-icon">Key<wbr>Credential</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -285,10 +298,25 @@ msRestNodeAuth.interactiveLogin().then(<span class="hljs-function">(<span class=
 						<a href="interfaces/keycredentialsupdateparameters.html" class="tsd-kind-icon">Key<wbr>Credentials<wbr>Update<wbr>Parameters</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/oauth2getoptionalparams.html" class="tsd-kind-icon">OAuth2<wbr>Get<wbr>Optional<wbr>Params</a>
+						<a href="interfaces/oauth2permission.html" class="tsd-kind-icon">OAuth2<wbr>Permission</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/oauth2grantoptionalparams.html" class="tsd-kind-icon">OAuth2<wbr>Grant<wbr>Optional<wbr>Params</a>
+						<a href="interfaces/oauth2permissiongrant.html" class="tsd-kind-icon">OAuth2<wbr>Permission<wbr>Grant</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/oauth2permissiongrantcreateoptionalparams.html" class="tsd-kind-icon">OAuth2<wbr>Permission<wbr>Grant<wbr>Create<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/oauth2permissiongrantlistoptionalparams.html" class="tsd-kind-icon">OAuth2<wbr>Permission<wbr>Grant<wbr>List<wbr>Optional<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/oauth2permissiongrantlistresult.html" class="tsd-kind-icon">OAuth2<wbr>Permission<wbr>Grant<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/optionalclaim.html" class="tsd-kind-icon">Optional<wbr>Claim</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/optionalclaims.html" class="tsd-kind-icon">Optional<wbr>Claims</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/passwordcredential.html" class="tsd-kind-icon">Password<wbr>Credential</a>
@@ -303,7 +331,13 @@ msRestNodeAuth.interactiveLogin().then(<span class="hljs-function">(<span class=
 						<a href="interfaces/passwordprofile.html" class="tsd-kind-icon">Password<wbr>Profile</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/permissions.html" class="tsd-kind-icon">Permissions</a>
+						<a href="interfaces/preauthorizedapplication.html" class="tsd-kind-icon">Pre<wbr>Authorized<wbr>Application</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/preauthorizedapplicationextension.html" class="tsd-kind-icon">Pre<wbr>Authorized<wbr>Application<wbr>Extension</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/preauthorizedapplicationpermission.html" class="tsd-kind-icon">Pre<wbr>Authorized<wbr>Application<wbr>Permission</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/requiredresourceaccess.html" class="tsd-kind-icon">Required<wbr>Resource<wbr>Access</a>
@@ -315,10 +349,16 @@ msRestNodeAuth.interactiveLogin().then(<span class="hljs-function">(<span class=
 						<a href="interfaces/serviceprincipal.html" class="tsd-kind-icon">Service<wbr>Principal</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/serviceprincipalbase.html" class="tsd-kind-icon">Service<wbr>Principal<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/serviceprincipalcreateparameters.html" class="tsd-kind-icon">Service<wbr>Principal<wbr>Create<wbr>Parameters</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/serviceprincipallistresult.html" class="tsd-kind-icon">Service<wbr>Principal<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/serviceprincipalobjectresult.html" class="tsd-kind-icon">Service<wbr>Principal<wbr>Object<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/serviceprincipalupdateparameters.html" class="tsd-kind-icon">Service<wbr>Principal<wbr>Update<wbr>Parameters</a>
@@ -360,6 +400,9 @@ msRestNodeAuth.interactiveLogin().then(<span class="hljs-function">(<span class=
 						<a href="globals.html#applicationsgetresponse" class="tsd-kind-icon">Applications<wbr>Get<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#applicationsgetserviceprincipalsidbyappidresponse" class="tsd-kind-icon">Applications<wbr>Get<wbr>Service<wbr>Principals<wbr>IdBy<wbr>App<wbr>IdResponse</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#applicationslistkeycredentialsresponse" class="tsd-kind-icon">Applications<wbr>List<wbr>Key<wbr>Credentials<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
@@ -376,6 +419,9 @@ msRestNodeAuth.interactiveLogin().then(<span class="hljs-function">(<span class=
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#applicationslistresponse" class="tsd-kind-icon">Applications<wbr>List<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#consenttype" class="tsd-kind-icon">Consent<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#deletedapplicationslistnextresponse" class="tsd-kind-icon">Deleted<wbr>Applications<wbr>List<wbr>Next<wbr>Response</a>
@@ -426,10 +472,13 @@ msRestNodeAuth.interactiveLogin().then(<span class="hljs-function">(<span class=
 						<a href="globals.html#groupslistresponse" class="tsd-kind-icon">Groups<wbr>List<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="globals.html#oauth2getresponse" class="tsd-kind-icon">OAuth2<wbr>Get<wbr>Response</a>
+						<a href="globals.html#oauth2permissiongrantcreateresponse" class="tsd-kind-icon">OAuth2<wbr>Permission<wbr>Grant<wbr>Create<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="globals.html#oauth2grantresponse" class="tsd-kind-icon">OAuth2<wbr>Grant<wbr>Response</a>
+						<a href="globals.html#oauth2permissiongrantlistnextresponse" class="tsd-kind-icon">OAuth2<wbr>Permission<wbr>Grant<wbr>List<wbr>Next<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#oauth2permissiongrantlistresponse" class="tsd-kind-icon">OAuth2<wbr>Permission<wbr>Grant<wbr>List<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#objectsgetobjectsbyobjectidsnextresponse" class="tsd-kind-icon">Objects<wbr>Get<wbr>Objects<wbr>ByObject<wbr>Ids<wbr>Next<wbr>Response</a>
@@ -507,6 +556,9 @@ msRestNodeAuth.interactiveLogin().then(<span class="hljs-function">(<span class=
 						<a href="globals.html#application" class="tsd-kind-icon">Application</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#applicationbase" class="tsd-kind-icon">Application<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
 						<a href="globals.html#applicationcreateparameters" class="tsd-kind-icon">Application<wbr>Create<wbr>Parameters</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
@@ -555,6 +607,9 @@ msRestNodeAuth.interactiveLogin().then(<span class="hljs-function">(<span class=
 						<a href="globals.html#grouplistresult" class="tsd-kind-icon">Group<wbr>List<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#informationalurl" class="tsd-kind-icon">Informational<wbr>Url</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
 						<a href="globals.html#keycredential" class="tsd-kind-icon">Key<wbr>Credential</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
@@ -562,6 +617,21 @@ msRestNodeAuth.interactiveLogin().then(<span class="hljs-function">(<span class=
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="globals.html#keycredentialsupdateparameters" class="tsd-kind-icon">Key<wbr>Credentials<wbr>Update<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#oauth2permission" class="tsd-kind-icon">OAuth2<wbr>Permission</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#oauth2permissiongrant" class="tsd-kind-icon">OAuth2<wbr>Permission<wbr>Grant</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#oauth2permissiongrantlistresult" class="tsd-kind-icon">OAuth2<wbr>Permission<wbr>Grant<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#optionalclaim" class="tsd-kind-icon">Optional<wbr>Claim</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#optionalclaims" class="tsd-kind-icon">Optional<wbr>Claims</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="globals.html#passwordcredential" class="tsd-kind-icon">Password<wbr>Credential</a>
@@ -576,7 +646,13 @@ msRestNodeAuth.interactiveLogin().then(<span class="hljs-function">(<span class=
 						<a href="globals.html#passwordprofile" class="tsd-kind-icon">Password<wbr>Profile</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
-						<a href="globals.html#permissions" class="tsd-kind-icon">Permissions</a>
+						<a href="globals.html#preauthorizedapplication" class="tsd-kind-icon">Pre<wbr>Authorized<wbr>Application</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#preauthorizedapplicationextension" class="tsd-kind-icon">Pre<wbr>Authorized<wbr>Application<wbr>Extension</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#preauthorizedapplicationpermission" class="tsd-kind-icon">Pre<wbr>Authorized<wbr>Application<wbr>Permission</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="globals.html#requiredresourceaccess" class="tsd-kind-icon">Required<wbr>Resource<wbr>Access</a>
@@ -588,10 +664,16 @@ msRestNodeAuth.interactiveLogin().then(<span class="hljs-function">(<span class=
 						<a href="globals.html#serviceprincipal" class="tsd-kind-icon">Service<wbr>Principal</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#serviceprincipalbase" class="tsd-kind-icon">Service<wbr>Principal<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
 						<a href="globals.html#serviceprincipalcreateparameters" class="tsd-kind-icon">Service<wbr>Principal<wbr>Create<wbr>Parameters</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="globals.html#serviceprincipallistresult" class="tsd-kind-icon">Service<wbr>Principal<wbr>List<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#serviceprincipalobjectresult" class="tsd-kind-icon">Service<wbr>Principal<wbr>Object<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="globals.html#serviceprincipalupdateparameters" class="tsd-kind-icon">Service<wbr>Principal<wbr>Update<wbr>Parameters</a>
@@ -625,6 +707,9 @@ msRestNodeAuth.interactiveLogin().then(<span class="hljs-function">(<span class=
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="globals.html#apiversion" class="tsd-kind-icon">api<wbr>Version</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#applicationid" class="tsd-kind-icon">applicationID</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="globals.html#applicationobjectid" class="tsd-kind-icon">application<wbr>Object<wbr>Id</a>

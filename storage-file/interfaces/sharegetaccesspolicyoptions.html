@@ -104,21 +104,20 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="abortsignal" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> abort<wbr>Signal</h3>
-					<div class="tsd-signature tsd-kind-icon">abort<wbr>Signal<span class="tsd-signature-symbol">:</span> <a href="../classes/aborter.html" class="tsd-signature-type">Aborter</a></div>
+					<div class="tsd-signature tsd-kind-icon">abort<wbr>Signal<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">AbortSignalLike</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/b386444dd6/sdk/storage/storage-file/src/ShareClient.ts#L137">ShareClient.ts:137</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c617b01128/sdk/storage/storage-file/src/ShareClient.ts#L131">ShareClient.ts:131</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Aborter instance to cancel request. It can be created with Aborter.none
-								or Aborter.timeout(). Go to documents of <a href="../classes/aborter.html">Aborter</a> for more examples
-							about request cancellation.</p>
+							<p>An implementation of the <code>AbortSignalLike</code> interface to signal the request to cancel the operation.
+							For example, use the &commat;azure/abort-controller to create an <code>AbortSignal</code>.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>type</dt>
-							<dd><p>{Aborter}</p>
+							<dd><p>{AbortSignalLike}</p>
 							</dd>
 							<dt>memberof</dt>
 							<dd><p>ShareGetAccessPolicyOptions</p>

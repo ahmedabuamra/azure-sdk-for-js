@@ -81,6 +81,12 @@
 					</li>
 				</ul>
 			</section>
+			<section class="tsd-panel">
+				<h3>Implemented by</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../classes/inmemorypartitionmanager.html" class="tsd-signature-type">InMemoryPartitionManager</a></li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -89,8 +95,8 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="partitionmanager.html#claimownerships" class="tsd-kind-icon">claim<wbr>Ownerships</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="partitionmanager.html#createcheckpoint" class="tsd-kind-icon">create<wbr>Checkpoint</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="partitionmanager.html#listownerships" class="tsd-kind-icon">list<wbr>Ownerships</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="partitionmanager.html#updatecheckpoint" class="tsd-kind-icon">update<wbr>Checkpoint</a></li>
 							</ul>
 						</section>
 					</div>
@@ -108,39 +114,26 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/6bc44fa48e/sdk/eventhub/event-hubs/src/eventProcessor.ts#L84">eventProcessor.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/e9d98bcd17/sdk/eventhub/event-hubs/src/eventProcessor.ts#L127">eventProcessor.ts:127</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called to claim ownership of a list of partitions. This will return the list of partitions that were owned
+									successfully.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>partitionOwnerships: <a href="partitionownership.html" class="tsd-signature-type">PartitionOwnership</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The list of partition ownerships this instance is claiming to own.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="partitionownership.html" class="tsd-signature-type">PartitionOwnership</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="createcheckpoint" class="tsd-anchor"></a>
-					<h3>create<wbr>Checkpoint</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Checkpoint<span class="tsd-signature-symbol">(</span>checkpoint<span class="tsd-signature-symbol">: </span><a href="checkpoint.html" class="tsd-signature-type">Checkpoint</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/6bc44fa48e/sdk/eventhub/event-hubs/src/eventProcessor.ts#L85">eventProcessor.ts:85</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>checkpoint: <a href="checkpoint.html" class="tsd-signature-type">Checkpoint</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A list of partitions this instance successfully claimed ownership.</p>
 						</li>
 					</ul>
 				</section>
@@ -154,19 +147,64 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/6bc44fa48e/sdk/eventhub/event-hubs/src/eventProcessor.ts#L83">eventProcessor.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/e9d98bcd17/sdk/eventhub/event-hubs/src/eventProcessor.ts#L119">eventProcessor.ts:119</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called to get the list of all existing partition ownership from the underlying data store. Could return empty
+									results if there are is no existing ownership information.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>eventHubName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The event hub name.</p>
+									</div>
 								</li>
 								<li>
 									<h5>consumerGroupName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The consumer group name.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="partitionownership.html" class="tsd-signature-type">PartitionOwnership</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A list of partition ownership details of all the partitions that have/had an owner.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="updatecheckpoint" class="tsd-anchor"></a>
+					<h3>update<wbr>Checkpoint</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Checkpoint<span class="tsd-signature-symbol">(</span>checkpoint<span class="tsd-signature-symbol">: </span><a href="checkpoint.html" class="tsd-signature-type">Checkpoint</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/e9d98bcd17/sdk/eventhub/event-hubs/src/eventProcessor.ts#L134">eventProcessor.ts:134</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Updates the checkpoint in the data store for a partition.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>checkpoint: <a href="checkpoint.html" class="tsd-signature-type">Checkpoint</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The checkpoint.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The new eTag on successful update.</p>
 						</li>
 					</ul>
 				</section>
@@ -205,6 +243,9 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="../classes/eventprocessor.html" class="tsd-kind-icon">Event<wbr>Processor</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/inmemorypartitionmanager.html" class="tsd-kind-icon">In<wbr>Memory<wbr>Partition<wbr>Manager</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="../classes/partitionpump.html" class="tsd-kind-icon">Partition<wbr>Pump</a>
@@ -251,10 +292,10 @@
 								<a href="partitionmanager.html#claimownerships" class="tsd-kind-icon">claim<wbr>Ownerships</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="partitionmanager.html#createcheckpoint" class="tsd-kind-icon">create<wbr>Checkpoint</a>
+								<a href="partitionmanager.html#listownerships" class="tsd-kind-icon">list<wbr>Ownerships</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="partitionmanager.html#listownerships" class="tsd-kind-icon">list<wbr>Ownerships</a>
+								<a href="partitionmanager.html#updatecheckpoint" class="tsd-kind-icon">update<wbr>Checkpoint</a>
 							</li>
 						</ul>
 					</li>

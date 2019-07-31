@@ -87,11 +87,11 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="partitionownership.html#etag" class="tsd-kind-icon">ETag</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="partitionownership.html#consumergroupname" class="tsd-kind-icon">consumer<wbr>Group<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="partitionownership.html#etag" class="tsd-kind-icon">e<wbr>Tag</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="partitionownership.html#eventhubname" class="tsd-kind-icon">event<wbr>Hub<wbr>Name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="partitionownership.html#instanceid" class="tsd-kind-icon">instance<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="partitionownership.html#lastmodifiedtime" class="tsd-kind-icon">last<wbr>Modified<wbr>Time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="partitionownership.html#lastmodifiedtimeinms" class="tsd-kind-icon">last<wbr>Modified<wbr>Time<wbr>InMS</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="partitionownership.html#offset" class="tsd-kind-icon">offset</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="partitionownership.html#ownerlevel" class="tsd-kind-icon">owner<wbr>Level</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="partitionownership.html#partitionid" class="tsd-kind-icon">partition<wbr>Id</a></li>
@@ -104,24 +104,38 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="etag" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ETag</h3>
-					<div class="tsd-signature tsd-kind-icon">ETag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/6bc44fa48e/sdk/eventhub/event-hubs/src/eventProcessor.ts#L67">eventProcessor.ts:67</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="consumergroupname" class="tsd-anchor"></a>
 					<h3>consumer<wbr>Group<wbr>Name</h3>
 					<div class="tsd-signature tsd-kind-icon">consumer<wbr>Group<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/6bc44fa48e/sdk/eventhub/event-hubs/src/eventProcessor.ts#L60">eventProcessor.ts:60</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/e9d98bcd17/sdk/eventhub/event-hubs/src/eventProcessor.ts#L66">eventProcessor.ts:66</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>property</dt>
+							<dd><p>The consumer group name</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="etag" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> e<wbr>Tag</h3>
+					<div class="tsd-signature tsd-kind-icon">e<wbr>Tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/e9d98bcd17/sdk/eventhub/event-hubs/src/eventProcessor.ts#L95">eventProcessor.ts:95</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>property</dt>
+							<dd><p>The unique identifier for the operation.</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="eventhubname" class="tsd-anchor"></a>
@@ -129,9 +143,16 @@
 					<div class="tsd-signature tsd-kind-icon">event<wbr>Hub<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/6bc44fa48e/sdk/eventhub/event-hubs/src/eventProcessor.ts#L59">eventProcessor.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/e9d98bcd17/sdk/eventhub/event-hubs/src/eventProcessor.ts#L62">eventProcessor.ts:62</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>property</dt>
+							<dd><p>The event hub name</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="instanceid" class="tsd-anchor"></a>
@@ -139,19 +160,33 @@
 					<div class="tsd-signature tsd-kind-icon">instance<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/6bc44fa48e/sdk/eventhub/event-hubs/src/eventProcessor.ts#L61">eventProcessor.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/e9d98bcd17/sdk/eventhub/event-hubs/src/eventProcessor.ts#L70">eventProcessor.ts:70</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>property</dt>
+							<dd><p>The unique instance identifier</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="lastmodifiedtime" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> last<wbr>Modified<wbr>Time</h3>
-					<div class="tsd-signature tsd-kind-icon">last<wbr>Modified<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<a name="lastmodifiedtimeinms" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> last<wbr>Modified<wbr>Time<wbr>InMS</h3>
+					<div class="tsd-signature tsd-kind-icon">last<wbr>Modified<wbr>Time<wbr>InMS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/6bc44fa48e/sdk/eventhub/event-hubs/src/eventProcessor.ts#L66">eventProcessor.ts:66</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/e9d98bcd17/sdk/eventhub/event-hubs/src/eventProcessor.ts#L91">eventProcessor.ts:91</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>property</dt>
+							<dd><p>The last modified time.</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="offset" class="tsd-anchor"></a>
@@ -159,9 +194,16 @@
 					<div class="tsd-signature tsd-kind-icon">offset<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/6bc44fa48e/sdk/eventhub/event-hubs/src/eventProcessor.ts#L64">eventProcessor.ts:64</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/e9d98bcd17/sdk/eventhub/event-hubs/src/eventProcessor.ts#L83">eventProcessor.ts:83</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>property</dt>
+							<dd><p>The offset of the event.</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="ownerlevel" class="tsd-anchor"></a>
@@ -169,9 +211,16 @@
 					<div class="tsd-signature tsd-kind-icon">owner<wbr>Level<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/6bc44fa48e/sdk/eventhub/event-hubs/src/eventProcessor.ts#L63">eventProcessor.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/e9d98bcd17/sdk/eventhub/event-hubs/src/eventProcessor.ts#L79">eventProcessor.ts:79</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>property</dt>
+							<dd><p>The owner level</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="partitionid" class="tsd-anchor"></a>
@@ -179,9 +228,16 @@
 					<div class="tsd-signature tsd-kind-icon">partition<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/6bc44fa48e/sdk/eventhub/event-hubs/src/eventProcessor.ts#L62">eventProcessor.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/e9d98bcd17/sdk/eventhub/event-hubs/src/eventProcessor.ts#L74">eventProcessor.ts:74</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>property</dt>
+							<dd><p>The identifier of the Event Hub partition</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="sequencenumber" class="tsd-anchor"></a>
@@ -189,9 +245,16 @@
 					<div class="tsd-signature tsd-kind-icon">sequence<wbr>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/6bc44fa48e/sdk/eventhub/event-hubs/src/eventProcessor.ts#L65">eventProcessor.ts:65</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/e9d98bcd17/sdk/eventhub/event-hubs/src/eventProcessor.ts#L87">eventProcessor.ts:87</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>property</dt>
+							<dd><p>The sequence number of the event.</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -228,6 +291,9 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="../classes/eventprocessor.html" class="tsd-kind-icon">Event<wbr>Processor</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/inmemorypartitionmanager.html" class="tsd-kind-icon">In<wbr>Memory<wbr>Partition<wbr>Manager</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="../classes/partitionpump.html" class="tsd-kind-icon">Partition<wbr>Pump</a>
@@ -274,10 +340,10 @@
 						<a href="partitionownership.html" class="tsd-kind-icon">Partition<wbr>Ownership</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="partitionownership.html#etag" class="tsd-kind-icon">ETag</a>
+								<a href="partitionownership.html#consumergroupname" class="tsd-kind-icon">consumer<wbr>Group<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="partitionownership.html#consumergroupname" class="tsd-kind-icon">consumer<wbr>Group<wbr>Name</a>
+								<a href="partitionownership.html#etag" class="tsd-kind-icon">e<wbr>Tag</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="partitionownership.html#eventhubname" class="tsd-kind-icon">event<wbr>Hub<wbr>Name</a>
@@ -286,7 +352,7 @@
 								<a href="partitionownership.html#instanceid" class="tsd-kind-icon">instance<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="partitionownership.html#lastmodifiedtime" class="tsd-kind-icon">last<wbr>Modified<wbr>Time</a>
+								<a href="partitionownership.html#lastmodifiedtimeinms" class="tsd-kind-icon">last<wbr>Modified<wbr>Time<wbr>InMS</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="partitionownership.html#offset" class="tsd-kind-icon">offset</a>

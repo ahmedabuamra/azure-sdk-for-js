@@ -83,6 +83,12 @@
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="partitionpump.html#isreceiving" class="tsd-kind-icon">is<wbr>Receiving</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="partitionpump.html#start" class="tsd-kind-icon">start</a></li>
@@ -104,7 +110,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/3447e8918a/sdk/eventhub/event-hubs/src/partitionPump.ts#L19">partitionPump.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/6bc44fa48e/sdk/eventhub/event-hubs/src/partitionPump.ts#L19">partitionPump.ts:19</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -128,26 +134,40 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="start" class="tsd-anchor"></a>
-					<h3>start</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">(</span>partitionId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="isreceiving" class="tsd-anchor"></a>
+					<h3>is<wbr>Receiving</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isReceiving<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/3447e8918a/sdk/eventhub/event-hubs/src/partitionPump.ts#L35">partitionPump.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/6bc44fa48e/sdk/eventhub/event-hubs/src/partitionPump.ts#L35">partitionPump.ts:35</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>partitionId: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="start" class="tsd-anchor"></a>
+					<h3>start</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/6bc44fa48e/sdk/eventhub/event-hubs/src/partitionPump.ts#L39">partitionPump.ts:39</a></li>
+								</ul>
+							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -156,19 +176,19 @@
 					<a name="stop" class="tsd-anchor"></a>
 					<h3>stop</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">stop<span class="tsd-signature-symbol">(</span>reason<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">stop<span class="tsd-signature-symbol">(</span>reason<span class="tsd-signature-symbol">: </span><a href="../enums/closereason.html" class="tsd-signature-type">CloseReason</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/3447e8918a/sdk/eventhub/event-hubs/src/partitionPump.ts#L74">partitionPump.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/6bc44fa48e/sdk/eventhub/event-hubs/src/partitionPump.ts#L85">partitionPump.ts:85</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>reason: <span class="tsd-signature-type">string</span></h5>
+									<h5>reason: <a href="../enums/closereason.html" class="tsd-signature-type">CloseReason</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -187,6 +207,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="../enums/closereason.html" class="tsd-kind-icon">Close<wbr>Reason</a>
+					</li>
 					<li class=" tsd-kind-class">
 						<a href="checkpointmanager.html" class="tsd-kind-icon">Checkpoint<wbr>Manager</a>
 					</li>
@@ -215,6 +238,9 @@
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="partitionpump.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="partitionpump.html#isreceiving" class="tsd-kind-icon">is<wbr>Receiving</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="partitionpump.html#start" class="tsd-kind-icon">start</a>
@@ -291,6 +317,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#onmessage" class="tsd-kind-icon">On<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#cancellabledelay" class="tsd-kind-icon">cancellable<wbr>Delay</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="../globals.html#getretryattempttimeoutinms" class="tsd-kind-icon">get<wbr>Retry<wbr>Attempt<wbr>Timeout<wbr>InMs</a>

@@ -68,6 +68,7 @@
 						<section class="tsd-index-section ">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-class"><a href="classes/cryptographyclient.html" class="tsd-kind-icon">Cryptography<wbr>Client</a></li>
 								<li class="tsd-kind-class"><a href="classes/keysclient.html" class="tsd-kind-icon">Keys<wbr>Client</a></li>
 							</ul>
 						</section>
@@ -77,16 +78,73 @@
 								<li class="tsd-kind-interface"><a href="interfaces/createeckeyoptions.html" class="tsd-kind-icon">Create<wbr>EcKey<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/createkeyoptions.html" class="tsd-kind-icon">Create<wbr>Key<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/creatersakeyoptions.html" class="tsd-kind-icon">Create<wbr>Rsa<wbr>Key<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/decryptoptions.html" class="tsd-kind-icon">Decrypt<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/decryptresult.html" class="tsd-kind-icon">Decrypt<wbr>Result</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/deletedkey.html" class="tsd-kind-icon">Deleted<wbr>Key</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/encryptoptions.html" class="tsd-kind-icon">Encrypt<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/encryptresult.html" class="tsd-kind-icon">Encrypt<wbr>Result</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/getkeyoptions.html" class="tsd-kind-icon">Get<wbr>Key<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/importkeyoptions.html" class="tsd-kind-icon">Import<wbr>Key<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/key.html" class="tsd-kind-icon">Key</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/keyattributes.html" class="tsd-kind-icon">Key<wbr>Attributes</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/listkeysoptions.html" class="tsd-kind-icon">List<wbr>Keys<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/requestoptions.html" class="tsd-kind-icon">Request<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/signresult.html" class="tsd-kind-icon">Sign<wbr>Result</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/unwrapresult.html" class="tsd-kind-icon">Unwrap<wbr>Result</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/updatekeyoptions.html" class="tsd-kind-icon">Update<wbr>Key<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/verifyresult.html" class="tsd-kind-icon">Verify<wbr>Result</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/wrapresult.html" class="tsd-kind-icon">Wrap<wbr>Result</a></li>
 							</ul>
 						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias"><a href="globals.html#keysignaturealgorithm" class="tsd-kind-icon">Key<wbr>Signature<wbr>Algorithm</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#keywrapalgorithm" class="tsd-kind-icon">Key<wbr>Wrap<wbr>Algorithm</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="keysignaturealgorithm" class="tsd-anchor"></a>
+					<h3>Key<wbr>Signature<wbr>Algorithm</h3>
+					<div class="tsd-signature tsd-kind-icon">Key<wbr>Signature<wbr>Algorithm<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"PS256"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"PS384"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"PS512"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"RS256"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"RS384"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"RS512"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"ES256"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"ES384"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"ES512"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"ES256K"</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/47b7b7cce7f/sdk/keyvault/keyvault-keys/src/cryptographyClient.ts#L594">cryptographyClient.ts:594</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines values for JsonWebKeySignatureAlgorithm.
+								Possible values include: &#39;PS256&#39;, &#39;PS384&#39;, &#39;PS512&#39;, &#39;RS256&#39;, &#39;RS384&#39;, &#39;RS512&#39;,
+							&#39;ES256&#39;, &#39;ES384&#39;, &#39;ES512&#39;, &#39;ES256K&#39;</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>readonly</dt>
+							<dd></dd>
+							<dt>enum</dt>
+							<dd><p>{string}</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="keywrapalgorithm" class="tsd-anchor"></a>
+					<h3>Key<wbr>Wrap<wbr>Algorithm</h3>
+					<div class="tsd-signature tsd-kind-icon">Key<wbr>Wrap<wbr>Algorithm<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"RSA-OAEP"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"RSA-OAEP-256"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"RSA1_5"</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/47b7b7cce7f/sdk/keyvault/keyvault-keys/src/cryptographyClient.ts#L585">cryptographyClient.ts:585</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Allow algorithms for key wrapping/unwrapping</p>
+						</div>
 					</div>
 				</section>
 			</section>
@@ -102,6 +160,9 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class">
+						<a href="classes/cryptographyclient.html" class="tsd-kind-icon">Cryptography<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/keysclient.html" class="tsd-kind-icon">Keys<wbr>Client</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -114,7 +175,19 @@
 						<a href="interfaces/creatersakeyoptions.html" class="tsd-kind-icon">Create<wbr>Rsa<wbr>Key<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/decryptoptions.html" class="tsd-kind-icon">Decrypt<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/decryptresult.html" class="tsd-kind-icon">Decrypt<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/deletedkey.html" class="tsd-kind-icon">Deleted<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/encryptoptions.html" class="tsd-kind-icon">Encrypt<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/encryptresult.html" class="tsd-kind-icon">Encrypt<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/getkeyoptions.html" class="tsd-kind-icon">Get<wbr>Key<wbr>Options</a>
@@ -135,7 +208,25 @@
 						<a href="interfaces/requestoptions.html" class="tsd-kind-icon">Request<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/signresult.html" class="tsd-kind-icon">Sign<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/unwrapresult.html" class="tsd-kind-icon">Unwrap<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/updatekeyoptions.html" class="tsd-kind-icon">Update<wbr>Key<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/verifyresult.html" class="tsd-kind-icon">Verify<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/wrapresult.html" class="tsd-kind-icon">Wrap<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#keysignaturealgorithm" class="tsd-kind-icon">Key<wbr>Signature<wbr>Algorithm</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#keywrapalgorithm" class="tsd-kind-icon">Key<wbr>Wrap<wbr>Algorithm</a>
 					</li>
 				</ul>
 			</nav>

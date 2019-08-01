@@ -96,8 +96,8 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="inmemorypartitionmanager.html#claimownerships" class="tsd-kind-icon">claim<wbr>Ownerships</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="inmemorypartitionmanager.html#listownerships" class="tsd-kind-icon">list<wbr>Ownerships</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="inmemorypartitionmanager.html#claimownership" class="tsd-kind-icon">claim<wbr>Ownership</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="inmemorypartitionmanager.html#listownership" class="tsd-kind-icon">list<wbr>Ownership</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="inmemorypartitionmanager.html#updatecheckpoint" class="tsd-kind-icon">update<wbr>Checkpoint</a></li>
 							</ul>
 						</section>
@@ -107,17 +107,17 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="claimownerships" class="tsd-anchor"></a>
-					<h3>claim<wbr>Ownerships</h3>
+					<a name="claimownership" class="tsd-anchor"></a>
+					<h3>claim<wbr>Ownership</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">claim<wbr>Ownerships<span class="tsd-signature-symbol">(</span>partitionOwnerships<span class="tsd-signature-symbol">: </span><a href="../interfaces/partitionownership.html" class="tsd-signature-type">PartitionOwnership</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/partitionownership.html" class="tsd-signature-type">PartitionOwnership</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">claim<wbr>Ownership<span class="tsd-signature-symbol">(</span>partitionOwnership<span class="tsd-signature-symbol">: </span><a href="../interfaces/partitionownership.html" class="tsd-signature-type">PartitionOwnership</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/partitionownership.html" class="tsd-signature-type">PartitionOwnership</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/partitionmanager.html">PartitionManager</a>.<a href="../interfaces/partitionmanager.html#claimownerships">claimOwnerships</a></p>
+								<p>Implementation of <a href="../interfaces/partitionmanager.html">PartitionManager</a>.<a href="../interfaces/partitionmanager.html#claimownership">claimOwnership</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/97b684e0541/sdk/eventhub/event-hubs/src/inMemoryPartitionManager.ts#L37">inMemoryPartitionManager.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/f1c472c8013/sdk/eventhub/event-hubs/src/inMemoryPartitionManager.ts#L37">inMemoryPartitionManager.ts:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -129,9 +129,9 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>partitionOwnerships: <a href="../interfaces/partitionownership.html" class="tsd-signature-type">PartitionOwnership</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>partitionOwnership: <a href="../interfaces/partitionownership.html" class="tsd-signature-type">PartitionOwnership</a><span class="tsd-signature-symbol">[]</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The list of partition ownerships this instance is claiming to own.</p>
+										<p>The list of partition ownership this instance is claiming to own.</p>
 									</div>
 								</li>
 							</ul>
@@ -141,17 +141,17 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="listownerships" class="tsd-anchor"></a>
-					<h3>list<wbr>Ownerships</h3>
+					<a name="listownership" class="tsd-anchor"></a>
+					<h3>list<wbr>Ownership</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">list<wbr>Ownerships<span class="tsd-signature-symbol">(</span>eventHubName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, consumerGroupName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/partitionownership.html" class="tsd-signature-type">PartitionOwnership</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">list<wbr>Ownership<span class="tsd-signature-symbol">(</span>eventHubName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, consumerGroupName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/partitionownership.html" class="tsd-signature-type">PartitionOwnership</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/partitionmanager.html">PartitionManager</a>.<a href="../interfaces/partitionmanager.html#listownerships">listOwnerships</a></p>
+								<p>Implementation of <a href="../interfaces/partitionmanager.html">PartitionManager</a>.<a href="../interfaces/partitionmanager.html#listownership">listOwnership</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/97b684e0541/sdk/eventhub/event-hubs/src/inMemoryPartitionManager.ts#L23">inMemoryPartitionManager.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/f1c472c8013/sdk/eventhub/event-hubs/src/inMemoryPartitionManager.ts#L23">inMemoryPartitionManager.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -184,14 +184,14 @@
 					<a name="updatecheckpoint" class="tsd-anchor"></a>
 					<h3>update<wbr>Checkpoint</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Checkpoint<span class="tsd-signature-symbol">(</span>checkpoint<span class="tsd-signature-symbol">: </span><a href="../interfaces/checkpoint.html" class="tsd-signature-type">Checkpoint</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Checkpoint<span class="tsd-signature-symbol">(</span>checkpoint<span class="tsd-signature-symbol">: </span><a href="../interfaces/checkpoint.html" class="tsd-signature-type">Checkpoint</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/partitionmanager.html">PartitionManager</a>.<a href="../interfaces/partitionmanager.html#updatecheckpoint">updateCheckpoint</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/97b684e0541/sdk/eventhub/event-hubs/src/inMemoryPartitionManager.ts#L53">inMemoryPartitionManager.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/f1c472c8013/sdk/eventhub/event-hubs/src/inMemoryPartitionManager.ts#L53">inMemoryPartitionManager.ts:53</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -208,8 +208,8 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>Promise<void></p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The new eTag on successful update</p>
 						</li>
 					</ul>
 				</section>
@@ -255,10 +255,10 @@
 						<a href="inmemorypartitionmanager.html" class="tsd-kind-icon">In<wbr>Memory<wbr>Partition<wbr>Manager</a>
 						<ul>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="inmemorypartitionmanager.html#claimownerships" class="tsd-kind-icon">claim<wbr>Ownerships</a>
+								<a href="inmemorypartitionmanager.html#claimownership" class="tsd-kind-icon">claim<wbr>Ownership</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="inmemorypartitionmanager.html#listownerships" class="tsd-kind-icon">list<wbr>Ownerships</a>
+								<a href="inmemorypartitionmanager.html#listownership" class="tsd-kind-icon">list<wbr>Ownership</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="inmemorypartitionmanager.html#updatecheckpoint" class="tsd-kind-icon">update<wbr>Checkpoint</a>

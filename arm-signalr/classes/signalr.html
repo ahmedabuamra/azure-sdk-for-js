@@ -95,6 +95,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="signalr.html#begincreateorupdate" class="tsd-kind-icon">begin<wbr>Create<wbr>OrUpdate</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="signalr.html#begindeletemethod" class="tsd-kind-icon">begin<wbr>Delete<wbr>Method</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="signalr.html#beginregeneratekey" class="tsd-kind-icon">begin<wbr>Regenerate<wbr>Key</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="signalr.html#beginrestart" class="tsd-kind-icon">begin<wbr>Restart</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="signalr.html#beginupdate" class="tsd-kind-icon">begin<wbr>Update</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="signalr.html#checknameavailability" class="tsd-kind-icon">check<wbr>Name<wbr>Availability</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="signalr.html#createorupdate" class="tsd-kind-icon">create<wbr>OrUpdate</a></li>
@@ -106,6 +107,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="signalr.html#listbysubscriptionnext" class="tsd-kind-icon">list<wbr>BySubscription<wbr>Next</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="signalr.html#listkeys" class="tsd-kind-icon">list<wbr>Keys</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="signalr.html#regeneratekey" class="tsd-kind-icon">regenerate<wbr>Key</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="signalr.html#restart" class="tsd-kind-icon">restart</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="signalr.html#update" class="tsd-kind-icon">update</a></li>
 							</ul>
 						</section>
@@ -124,7 +126,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L20">operations/signalR.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L20">operations/signalR.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -160,7 +162,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L264">operations/signalR.ts:264</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L277">operations/signalR.ts:277</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -202,7 +204,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L283">operations/signalR.ts:283</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L296">operations/signalR.ts:296</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -244,7 +246,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L245">operations/signalR.ts:245</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L258">operations/signalR.ts:258</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -278,6 +280,48 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="beginrestart" class="tsd-anchor"></a>
+					<h3>begin<wbr>Restart</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">begin<wbr>Restart<span class="tsd-signature-symbol">(</span>resourceGroupName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resourceName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">msRest.RequestOptionsBase</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">LROPoller</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L334">operations/signalR.ts:334</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Operation to restart a SignalR service.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>resourceGroupName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the resource group that contains the resource. You can
+										obtain this value from the Azure Resource Manager API or the portal.</p>
+									</div>
+								</li>
+								<li>
+									<h5>resourceName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the SignalR resource.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">msRest.RequestOptionsBase</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">LROPoller</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise&lt;msRestAzure.LROPoller&gt;</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="beginupdate" class="tsd-anchor"></a>
 					<h3>begin<wbr>Update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -287,7 +331,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L302">operations/signalR.ts:302</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L315">operations/signalR.ts:315</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -331,7 +375,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L36">operations/signalR.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L36">operations/signalR.ts:36</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -357,7 +401,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L41">operations/signalR.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L41">operations/signalR.ts:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -382,7 +426,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L47">operations/signalR.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L47">operations/signalR.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -422,7 +466,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L205">operations/signalR.ts:205</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L205">operations/signalR.ts:205</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -464,7 +508,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L218">operations/signalR.ts:218</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L218">operations/signalR.ts:218</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -508,7 +552,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L170">operations/signalR.ts:170</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L170">operations/signalR.ts:170</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -541,7 +585,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L177">operations/signalR.ts:177</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L177">operations/signalR.ts:177</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -573,7 +617,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L185">operations/signalR.ts:185</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L185">operations/signalR.ts:185</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -622,7 +666,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L89">operations/signalR.ts:89</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L89">operations/signalR.ts:89</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -649,7 +693,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L95">operations/signalR.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L95">operations/signalR.ts:95</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -675,7 +719,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L102">operations/signalR.ts:102</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L102">operations/signalR.ts:102</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -718,7 +762,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L347">operations/signalR.ts:347</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L379">operations/signalR.ts:379</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -744,7 +788,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L352">operations/signalR.ts:352</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L384">operations/signalR.ts:384</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -769,7 +813,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L358">operations/signalR.ts:358</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L390">operations/signalR.ts:390</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -811,7 +855,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L63">operations/signalR.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L63">operations/signalR.ts:63</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -831,7 +875,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L67">operations/signalR.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L67">operations/signalR.ts:67</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -850,7 +894,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L72">operations/signalR.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L72">operations/signalR.ts:72</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -886,7 +930,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L319">operations/signalR.ts:319</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L351">operations/signalR.ts:351</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -912,7 +956,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L324">operations/signalR.ts:324</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L356">operations/signalR.ts:356</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -937,7 +981,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L330">operations/signalR.ts:330</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L362">operations/signalR.ts:362</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -979,7 +1023,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L121">operations/signalR.ts:121</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L121">operations/signalR.ts:121</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1012,7 +1056,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L128">operations/signalR.ts:128</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L128">operations/signalR.ts:128</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1044,7 +1088,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L136">operations/signalR.ts:136</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L136">operations/signalR.ts:136</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1091,7 +1135,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L157">operations/signalR.ts:157</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L157">operations/signalR.ts:157</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1125,6 +1169,48 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="restart" class="tsd-anchor"></a>
+					<h3>restart</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">restart<span class="tsd-signature-symbol">(</span>resourceGroupName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resourceName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">msRest.RequestOptionsBase</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RestResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L244">operations/signalR.ts:244</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Operation to restart a SignalR service.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>resourceGroupName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the resource group that contains the resource. You can
+										obtain this value from the Azure Resource Manager API or the portal.</p>
+									</div>
+								</li>
+								<li>
+									<h5>resourceName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the SignalR resource.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">msRest.RequestOptionsBase</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RestResponse</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise&lt;msRest.RestResponse&gt;</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="update" class="tsd-anchor"></a>
 					<h3>update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -1134,7 +1220,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/operations/signalR.ts#L231">operations/signalR.ts:231</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/operations/signalR.ts#L231">operations/signalR.ts:231</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1196,6 +1282,9 @@
 								<a href="signalr.html#beginregeneratekey" class="tsd-kind-icon">begin<wbr>Regenerate<wbr>Key</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="signalr.html#beginrestart" class="tsd-kind-icon">begin<wbr>Restart</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="signalr.html#beginupdate" class="tsd-kind-icon">begin<wbr>Update</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -1227,6 +1316,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="signalr.html#regeneratekey" class="tsd-kind-icon">regenerate<wbr>Key</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="signalr.html#restart" class="tsd-kind-icon">restart</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="signalr.html#update" class="tsd-kind-icon">update</a>

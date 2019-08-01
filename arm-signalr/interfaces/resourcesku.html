@@ -66,12 +66,9 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>interface</dt>
-						<dd><p>An interface representing ResourceSku.
-							The billing information of the resource.(e.g. basic vs. standard)</p>
-						</dd>
-					</dl>
+					<div class="lead">
+						<p>The billing information of the SignalR resource.</p>
+					</div>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -107,18 +104,16 @@
 					<div class="tsd-signature tsd-kind-icon">capacity<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/models/index.ts#L259">models/index.ts:259</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/models/index.ts#L211">models/index.ts:211</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{number} [capacity] Optional, integer. If the SKU supports scale
-									out/in then the capacity integer should be included. If scale out/in is
-									not
-								possible for the resource this may be omitted.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Optional, integer. The unit count of SignalR resource. 1 by default.</p>
+						</div>
+						<p>If present, following values are allowed:
+							Free: 1
+						Standard: 1,2,5,10,20,50,100</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -127,16 +122,13 @@
 					<div class="tsd-signature tsd-kind-icon">family<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/models/index.ts#L252">models/index.ts:252</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/models/index.ts#L203">models/index.ts:203</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [family] Optional, string. If the service has different
-								generations of hardware, for the same SKU, then that can be captured here.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Optional string. For future use.</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -145,16 +137,14 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/models/index.ts#L235">models/index.ts:235</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/models/index.ts#L188">models/index.ts:188</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} name The name of the SKU. This is typically a letter +
-								number code, such as A0 or P3.  Required (if sku is specified)</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>The name of the SKU. Required.</p>
+						</div>
+						<p>Allowed values: Standard_S1, Free_F1</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -163,17 +153,13 @@
 					<div class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/models/index.ts#L247">models/index.ts:247</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/models/index.ts#L199">models/index.ts:199</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [size] Optional, string. When the name field is the
-									combination of tier and some other value, this would be the standalone
-								code.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Optional string. For future use.</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -182,17 +168,15 @@
 					<div class="tsd-signature tsd-kind-icon">tier<span class="tsd-signature-symbol">:</span> <a href="../globals.html#signalrskutier" class="tsd-signature-type">SignalRSkuTier</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/models/index.ts#L241">models/index.ts:241</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/models/index.ts#L195">models/index.ts:195</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{SignalRSkuTier} [tier] Optional tier of this particular SKU.
-									<code>Basic</code> is deprecated, use <code>Standard</code> instead for Basic tier. Possible
-								values include: &#39;Free&#39;, &#39;Basic&#39;, &#39;Standard&#39;, &#39;Premium&#39;</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Optional tier of this particular SKU. &#39;Standard&#39; or &#39;Free&#39;.</p>
+						</div>
+						<p><code>Basic</code> is deprecated, use <code>Standard</code> instead. Possible values include: &#39;Free&#39;, &#39;Basic&#39;,
+						&#39;Standard&#39;, &#39;Premium&#39;</p>
 					</div>
 				</section>
 			</section>

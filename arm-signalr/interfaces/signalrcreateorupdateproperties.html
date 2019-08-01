@@ -66,12 +66,9 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>interface</dt>
-						<dd><p>An interface representing SignalRCreateOrUpdateProperties.
-							Settings used to provision or configure the resource.</p>
-						</dd>
-					</dl>
+					<div class="lead">
+						<p>Settings used to provision or configure the resource.</p>
+					</div>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -89,6 +86,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="signalrcreateorupdateproperties.html#cors" class="tsd-kind-icon">cors</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="signalrcreateorupdateproperties.html#features" class="tsd-kind-icon">features</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="signalrcreateorupdateproperties.html#hostnameprefix" class="tsd-kind-icon">host<wbr>Name<wbr>Prefix</a></li>
 							</ul>
 						</section>
@@ -98,23 +97,55 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="cors" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> cors</h3>
+					<div class="tsd-signature tsd-kind-icon">cors<span class="tsd-signature-symbol">:</span> <a href="signalrcorssettings.html" class="tsd-signature-type">SignalRCorsSettings</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/models/index.ts#L361">models/index.ts:361</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Cross-Origin Resource Sharing (CORS) settings.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="features" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> features</h3>
+					<div class="tsd-signature tsd-kind-icon">features<span class="tsd-signature-symbol">:</span> <a href="signalrfeature.html" class="tsd-signature-type">SignalRFeature</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/models/index.ts#L357">models/index.ts:357</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>List of SignalR featureFlags. e.g. ServiceMode.</p>
+						</div>
+						<p>FeatureFlags that are not included in the parameters for the update operation will not be
+							modified.
+							And the response will only include featureFlags that are explicitly set.
+							When a featureFlag is not explicitly set, SignalR service will use its globally default value.
+							But keep in mind, the default value doesn&#39;t mean &quot;false&quot;. It varies in terms of different
+						FeatureFlags.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="hostnameprefix" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> host<wbr>Name<wbr>Prefix</h3>
 					<div class="tsd-signature tsd-kind-icon">host<wbr>Name<wbr>Prefix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/fb46946b1c4/sdk/signalr/arm-signalr/src/models/index.ts#L386">models/index.ts:386</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c38c94eff6b/sdk/signalr/arm-signalr/src/models/index.ts#L346">models/index.ts:346</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} [hostNamePrefix] Prefix for the hostName of the SignalR
-									service. Retained for future use.
-									The hostname will be of format:
-								&lt;hostNamePrefix&gt;.service.signalr.net.</p>
-							</dd>
-						</dl>
+						<div class="lead">
+							<p>Prefix for the hostName of the SignalR service. Retained for future use.
+							The hostname will be of format: &lt;hostNamePrefix&gt;.service.signalr.net.</p>
+						</div>
 					</div>
 				</section>
 			</section>
@@ -134,6 +165,12 @@
 					<li class="current tsd-kind-interface">
 						<a href="signalrcreateorupdateproperties.html" class="tsd-kind-icon">SignalRCreate<wbr>OrUpdate<wbr>Properties</a>
 						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="signalrcreateorupdateproperties.html#cors" class="tsd-kind-icon">cors</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="signalrcreateorupdateproperties.html#features" class="tsd-kind-icon">features</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="signalrcreateorupdateproperties.html#hostnameprefix" class="tsd-kind-icon">host<wbr>Name<wbr>Prefix</a>
 							</li>

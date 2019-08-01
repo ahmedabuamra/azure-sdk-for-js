@@ -109,21 +109,20 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="abortsignal" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> abort<wbr>Signal</h3>
-					<div class="tsd-signature tsd-kind-icon">abort<wbr>Signal<span class="tsd-signature-symbol">:</span> <a href="../classes/aborter.html" class="tsd-signature-type">Aborter</a></div>
+					<div class="tsd-signature tsd-kind-icon">abort<wbr>Signal<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">AbortSignalLike</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c617b01128/sdk/storage/storage-blob/src/BlobClient.ts#L489">BlobClient.ts:489</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/bd1b376ee92/sdk/storage/storage-blob/src/BlobClient.ts#L473">BlobClient.ts:473</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Aborter instance to cancel request. It can be created with Aborter.none
-								or Aborter.timeout(). Go to documents of <a href="../classes/aborter.html">Aborter</a> for more examples
-							about request cancellation.</p>
+							<p>An implementation of the <code>AbortSignalLike</code> interface to signal the request to cancel the operation.
+							For example, use the &commat;azure/abort-controller to create an <code>AbortSignal</code>.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>type</dt>
-							<dd><p>{Aborter}</p>
+							<dd><p>{AbortSignalLike}</p>
 							</dd>
 							<dt>memberof</dt>
 							<dd><p>DownloadFromBlobOptions</p>
@@ -137,7 +136,7 @@
 					<div class="tsd-signature tsd-kind-icon">blob<wbr>Access<wbr>Conditions<span class="tsd-signature-symbol">:</span> <a href="blobaccessconditions.html" class="tsd-signature-type">BlobAccessConditions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c617b01128/sdk/storage/storage-blob/src/BlobClient.ts#L532">BlobClient.ts:532</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/bd1b376ee92/sdk/storage/storage-blob/src/BlobClient.ts#L516">BlobClient.ts:516</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -160,7 +159,7 @@
 					<div class="tsd-signature tsd-kind-icon">block<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c617b01128/sdk/storage/storage-blob/src/BlobClient.ts#L499">BlobClient.ts:499</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/bd1b376ee92/sdk/storage/storage-blob/src/BlobClient.ts#L483">BlobClient.ts:483</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -185,7 +184,7 @@
 					<div class="tsd-signature tsd-kind-icon">max<wbr>Retry<wbr>Requests<wbr>Per<wbr>Block<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c617b01128/sdk/storage/storage-blob/src/BlobClient.ts#L517">BlobClient.ts:517</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/bd1b376ee92/sdk/storage/storage-blob/src/BlobClient.ts#L501">BlobClient.ts:501</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -215,7 +214,7 @@
 					<div class="tsd-signature tsd-kind-icon">parallelism<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c617b01128/sdk/storage/storage-blob/src/BlobClient.ts#L540">BlobClient.ts:540</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/bd1b376ee92/sdk/storage/storage-blob/src/BlobClient.ts#L524">BlobClient.ts:524</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -238,7 +237,7 @@
 					<div class="tsd-signature tsd-kind-icon">progress<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/c617b01128/sdk/storage/storage-blob/src/BlobClient.ts#L524">BlobClient.ts:524</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/bd1b376ee92/sdk/storage/storage-blob/src/BlobClient.ts#L508">BlobClient.ts:508</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">

@@ -146,14 +146,13 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="storageclient.html">StorageClient</a>.<a href="storageclient.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/ContainerClient.ts#L443">ContainerClient.ts:443</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/ContainerClient.ts#L443">ContainerClient.ts:443</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>ONLY AVAILABLE IN NODE.JS RUNTIME.</p>
+									<p>Creates an instance of ContainerClient.</p>
 								</div>
-								<p>Creates an instance of ContainerClient.</p>
 								<dl class="tsd-comment-tags">
 									<dt>memberof</dt>
 									<dd><p>ContainerClient</p>
@@ -166,7 +165,12 @@
 									<h5>connectionString: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>Connection string for an Azure storage account.</p>
+											<p>Account connection string or a SAS connection string of an Azure storage account.
+												[ Note - Account connection string can only be used in NODE.JS runtime. ]
+												Account connection string example -
+												<code>DefaultEndpointsProtocol=https;AccountName=myaccount;AccountKey=accountKey;EndpointSuffix=core.windows.net</code>
+												SAS connection string example -
+											<code>BlobEndpoint=https://myaccount.blob.core.windows.net/;QueueEndpoint=https://myaccount.queue.core.windows.net/;FileEndpoint=https://myaccount.file.core.windows.net/;TableEndpoint=https://myaccount.table.core.windows.net/;SharedAccessSignature=sasString</code></p>
 										</div>
 									</div>
 								</li>
@@ -188,7 +192,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="storageclient.html">StorageClient</a>.<a href="storageclient.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/ContainerClient.ts#L455">ContainerClient.ts:455</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/ContainerClient.ts#L459">ContainerClient.ts:459</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -198,7 +202,6 @@
 										Encoded URL string will NOT be escaped twice, only special characters in URL path will be escaped.
 									If a blob name includes ? or %, blob name must be encoded in the URL.</p>
 								</div>
-								<p>Creates an instance of ContainerClient.</p>
 								<dl class="tsd-comment-tags">
 									<dt>memberof</dt>
 									<dd><p>ContainerClient</p>
@@ -242,7 +245,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="storageclient.html">StorageClient</a>.<a href="storageclient.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/ContainerClient.ts#L480">ContainerClient.ts:480</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/ContainerClient.ts#L484">ContainerClient.ts:484</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -252,7 +255,6 @@
 										Encoded URL string will NOT be escaped twice, only special characters in URL path will be escaped.
 									If a blob name includes ? or %, blob name must be encoded in the URL.</p>
 								</div>
-								<p>Creates an instance of ContainerClient.</p>
 								<dl class="tsd-comment-tags">
 									<dt>memberof</dt>
 									<dd><p>ContainerClient</p>
@@ -300,7 +302,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="storageclient.html">StorageClient</a>.<a href="storageclient.html#storageclientcontext">storageClientContext</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/StorageClient.ts#L41">StorageClient.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/StorageClient.ts#L41">StorageClient.ts:41</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -325,7 +327,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="storageclient.html">StorageClient</a>.<a href="storageclient.html#url">url</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/StorageClient.ts#L21">StorageClient.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/StorageClient.ts#L21">StorageClient.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -355,7 +357,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/ContainerClient.ts#L559">ContainerClient.ts:559</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/ContainerClient.ts#L573">ContainerClient.ts:573</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -392,7 +394,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/ContainerClient.ts#L658">ContainerClient.ts:658</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/ContainerClient.ts#L672">ContainerClient.ts:672</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -429,7 +431,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/ContainerClient.ts#L902">ContainerClient.ts:902</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/ContainerClient.ts#L916">ContainerClient.ts:916</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -472,7 +474,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/ContainerClient.ts#L760">ContainerClient.ts:760</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/ContainerClient.ts#L774">ContainerClient.ts:774</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -511,7 +513,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/ContainerClient.ts#L590">ContainerClient.ts:590</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/ContainerClient.ts#L604">ContainerClient.ts:604</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -547,7 +549,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/ContainerClient.ts#L579">ContainerClient.ts:579</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/ContainerClient.ts#L593">ContainerClient.ts:593</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -584,7 +586,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/ContainerClient.ts#L604">ContainerClient.ts:604</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/ContainerClient.ts#L618">ContainerClient.ts:618</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -620,7 +622,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/ContainerClient.ts#L849">ContainerClient.ts:849</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/ContainerClient.ts#L863">ContainerClient.ts:863</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -654,7 +656,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/ContainerClient.ts#L618">ContainerClient.ts:618</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/ContainerClient.ts#L632">ContainerClient.ts:632</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -690,7 +692,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/ContainerClient.ts#L634">ContainerClient.ts:634</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/ContainerClient.ts#L648">ContainerClient.ts:648</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -727,7 +729,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/ContainerClient.ts#L1221">ContainerClient.ts:1221</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/ContainerClient.ts#L1235">ContainerClient.ts:1235</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -829,7 +831,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/ContainerClient.ts#L1059">ContainerClient.ts:1059</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/ContainerClient.ts#L1073">ContainerClient.ts:1073</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -910,7 +912,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/ContainerClient.ts#L814">ContainerClient.ts:814</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/ContainerClient.ts#L828">ContainerClient.ts:828</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -956,7 +958,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/ContainerClient.ts#L708">ContainerClient.ts:708</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/ContainerClient.ts#L722">ContainerClient.ts:722</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -997,7 +999,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/ContainerClient.ts#L876">ContainerClient.ts:876</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/ContainerClient.ts#L890">ContainerClient.ts:890</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

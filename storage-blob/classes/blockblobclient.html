@@ -159,14 +159,13 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="blobclient.html">BlobClient</a>.<a href="blobclient.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlockBlobClient.ts#L389">BlockBlobClient.ts:389</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlockBlobClient.ts#L389">BlockBlobClient.ts:389</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>ONLY AVAILABLE IN NODE.JS RUNTIME.</p>
+									<p>Creates an instance of BlockBlobClient.</p>
 								</div>
-								<p>Creates an instance of BlockBlobClient.</p>
 								<dl class="tsd-comment-tags">
 									<dt>memberof</dt>
 									<dd><p>BlockBlobClient</p>
@@ -179,7 +178,12 @@
 									<h5>connectionString: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>Connection string for an Azure storage account.</p>
+											<p>Account connection string or a SAS connection string of an Azure storage account.
+												[ Note - Account connection string can only be used in NODE.JS runtime. ]
+												Account connection string example -
+												<code>DefaultEndpointsProtocol=https;AccountName=myaccount;AccountKey=accountKey;EndpointSuffix=core.windows.net</code>
+												SAS connection string example -
+											<code>BlobEndpoint=https://myaccount.blob.core.windows.net/;QueueEndpoint=https://myaccount.queue.core.windows.net/;FileEndpoint=https://myaccount.file.core.windows.net/;TableEndpoint=https://myaccount.table.core.windows.net/;SharedAccessSignature=sasString</code></p>
 										</div>
 									</div>
 								</li>
@@ -209,7 +213,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="blobclient.html">BlobClient</a>.<a href="blobclient.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlockBlobClient.ts#L407">BlockBlobClient.ts:407</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlockBlobClient.ts#L411">BlockBlobClient.ts:411</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -219,7 +223,6 @@
 										Encoded URL string will NOT be escaped twice, only special characters in URL path will be escaped.
 									If a blob name includes ? or %, blob name must be encoded in the URL.</p>
 								</div>
-								<p>Creates an instance of BlockBlobClient.</p>
 								<dl class="tsd-comment-tags">
 									<dt>memberof</dt>
 									<dd><p>BlockBlobClient</p>
@@ -261,7 +264,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="blobclient.html">BlobClient</a>.<a href="blobclient.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlockBlobClient.ts#L430">BlockBlobClient.ts:430</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlockBlobClient.ts#L434">BlockBlobClient.ts:434</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -271,7 +274,6 @@
 										Encoded URL string will NOT be escaped twice, only special characters in URL path will be escaped.
 									If a blob name includes ? or %, blob name must be encoded in the URL.</p>
 								</div>
-								<p>Creates an instance of BlockBlobClient.</p>
 								<dl class="tsd-comment-tags">
 									<dt>memberof</dt>
 									<dd><p>BlockBlobClient</p>
@@ -319,7 +321,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="storageclient.html">StorageClient</a>.<a href="storageclient.html#storageclientcontext">storageClientContext</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/StorageClient.ts#L41">StorageClient.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/StorageClient.ts#L41">StorageClient.ts:41</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -344,7 +346,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="storageclient.html">StorageClient</a>.<a href="storageclient.html#url">url</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/StorageClient.ts#L21">StorageClient.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/StorageClient.ts#L21">StorageClient.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -375,7 +377,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="blobclient.html">BlobClient</a>.<a href="blobclient.html#abortcopyfromurl">abortCopyFromURL</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlobClient.ts#L997">BlobClient.ts:997</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlobClient.ts#L1017">BlobClient.ts:1017</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -418,7 +420,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlockBlobClient.ts#L642">BlockBlobClient.ts:642</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlockBlobClient.ts#L662">BlockBlobClient.ts:662</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -466,7 +468,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="blobclient.html">BlobClient</a>.<a href="blobclient.html#createsnapshot">createSnapshot</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlobClient.ts#L937">BlobClient.ts:937</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlobClient.ts#L957">BlobClient.ts:957</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -503,7 +505,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="blobclient.html">BlobClient</a>.<a href="blobclient.html#delete">delete</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlobClient.ts#L835">BlobClient.ts:835</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlobClient.ts#L855">BlobClient.ts:855</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -543,7 +545,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="blobclient.html">BlobClient</a>.<a href="blobclient.html#download">download</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlobClient.ts#L718">BlobClient.ts:718</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlobClient.ts#L738">BlobClient.ts:738</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -591,7 +593,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="blobclient.html">BlobClient</a>.<a href="blobclient.html#downloadtobuffer">downloadToBuffer</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlobClient.ts#L1047">BlobClient.ts:1047</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlobClient.ts#L1067">BlobClient.ts:1067</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -641,7 +643,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="blobclient.html">BlobClient</a>.<a href="blobclient.html#downloadtofile">downloadToFile</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlobClient.ts#L1133">BlobClient.ts:1133</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlobClient.ts#L1153">BlobClient.ts:1153</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -691,7 +693,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="blobclient.html">BlobClient</a>.<a href="blobclient.html#getappendblobclient">getAppendBlobClient</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlobClient.ts#L679">BlobClient.ts:679</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlobClient.ts#L699">BlobClient.ts:699</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -719,7 +721,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="blobclient.html">BlobClient</a>.<a href="blobclient.html#getblockblobclient">getBlockBlobClient</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlobClient.ts#L689">BlobClient.ts:689</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlobClient.ts#L709">BlobClient.ts:709</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -746,7 +748,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlockBlobClient.ts#L671">BlockBlobClient.ts:671</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlockBlobClient.ts#L691">BlockBlobClient.ts:691</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -792,7 +794,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="blobclient.html">BlobClient</a>.<a href="blobclient.html#getleaseclient">getLeaseClient</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlobClient.ts#L925">BlobClient.ts:925</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlobClient.ts#L945">BlobClient.ts:945</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -827,7 +829,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="blobclient.html">BlobClient</a>.<a href="blobclient.html#getpageblobclient">getPageBlobClient</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlobClient.ts#L699">BlobClient.ts:699</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlobClient.ts#L719">BlobClient.ts:719</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -855,7 +857,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="blobclient.html">BlobClient</a>.<a href="blobclient.html#getproperties">getProperties</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlobClient.ts#L812">BlobClient.ts:812</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlobClient.ts#L832">BlobClient.ts:832</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -893,7 +895,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="blobclient.html">BlobClient</a>.<a href="blobclient.html#sethttpheaders">setHTTPHeaders</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlobClient.ts#L877">BlobClient.ts:877</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlobClient.ts#L897">BlobClient.ts:897</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -935,7 +937,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="blobclient.html">BlobClient</a>.<a href="blobclient.html#setmetadata">setMetadata</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlobClient.ts#L904">BlobClient.ts:904</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlobClient.ts#L924">BlobClient.ts:924</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -977,7 +979,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="blobclient.html">BlobClient</a>.<a href="blobclient.html#settier">setTier</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlobClient.ts#L1021">BlobClient.ts:1021</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlobClient.ts#L1041">BlobClient.ts:1041</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1023,7 +1025,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlockBlobClient.ts#L576">BlockBlobClient.ts:576</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlockBlobClient.ts#L596">BlockBlobClient.ts:596</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1079,7 +1081,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlockBlobClient.ts#L613">BlockBlobClient.ts:613</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlockBlobClient.ts#L633">BlockBlobClient.ts:633</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1145,7 +1147,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="blobclient.html">BlobClient</a>.<a href="blobclient.html#startcopyfromurl">startCopyFromURL</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlobClient.ts#L965">BlobClient.ts:965</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlobClient.ts#L985">BlobClient.ts:985</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1194,7 +1196,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="blobclient.html">BlobClient</a>.<a href="blobclient.html#undelete">undelete</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlobClient.ts#L856">BlobClient.ts:856</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlobClient.ts#L876">BlobClient.ts:876</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1232,7 +1234,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlockBlobClient.ts#L547">BlockBlobClient.ts:547</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlockBlobClient.ts#L567">BlockBlobClient.ts:567</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1290,7 +1292,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlockBlobClient.ts#L708">BlockBlobClient.ts:708</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlockBlobClient.ts#L728">BlockBlobClient.ts:728</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1333,7 +1335,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlockBlobClient.ts#L839">BlockBlobClient.ts:839</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlockBlobClient.ts#L859">BlockBlobClient.ts:859</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1372,7 +1374,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlockBlobClient.ts#L873">BlockBlobClient.ts:873</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlockBlobClient.ts#L893">BlockBlobClient.ts:893</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1427,7 +1429,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="blobclient.html">BlobClient</a>.<a href="blobclient.html#withsnapshot">withSnapshot</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/8e3db7c1abd/sdk/storage/storage-blob/src/BlockBlobClient.ts#L515">BlockBlobClient.ts:515</a></li>
+									<li>Defined in <a href="https://github.com/Azure/azure-sdk-for-js/blob/5fb39788d25/sdk/storage/storage-blob/src/BlockBlobClient.ts#L535">BlockBlobClient.ts:535</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
